@@ -1,27 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/* font  start  */
+
+.font-openSans {
+  font-family: 'Open Sans', sans-serif;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* font end */
+
+
+
+:root{
+  margin: 0;
+  padding: 0;
+  background-origin: border-box;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+
+  --dark-bg:#002244;
+  --dark-text:rgb(0, 46, 73);
+  --light-bg:#E1EBEE;
+  --light-text:#fff;
+
+  --royal-blue:#4169E1;
+  --del-blue:#0076CE;
+  --celdon-light:#ACE1AF;
+  
+}
+
+
+
+.btnHover:hover{
+  color: var(--royal-blue);
+}
+
+.title{
+  color: var(--del-blue);
+}
+
+
+.card-dark-bg{
+  background: var(--del-blue);
+}
+.card-light-bg{
+  background: var(--celdon-light);
+}
+
+.dark{
+  background-color:var(--dark-bg);
+  color:var(--light-text);
+}
+
+.light{
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+}
+
+
+.blobanimation{
+  background: url("/blobanimation.svg") ;
+  width: 100%;
+  height: 100%;
 }

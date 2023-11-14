@@ -23,7 +23,7 @@ export const Navbar = () => {
   const isDarkMode = useSelector((state) => state.mode);
 
   return (
-    <nav className={`mb-8 `}>
+    <nav className={`mb-8 z-50 `}>
       <div className="navbar-container flex justify-between sm:px-2  md:px-4 px-8 py-4 ">
         <div className="logo-and-mode flex gap-4 ">
           {/* logo */}
@@ -77,7 +77,7 @@ export const Navbar = () => {
             isMobileMenuOpen ? "flex flex-col gap-8 " : "hidden"
           } ${
             isDarkMode ? "dark" : "light"
-          }  w-full h-[100vh] flex justify-center items-center absolute `}
+          }  w-full h-[100vh] flex justify-center items-center relative `}
         >
           {/* mobile-menu-links  */}
           <ul className="flex flex-col justify-center  gap-6">

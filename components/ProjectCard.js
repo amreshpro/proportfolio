@@ -36,7 +36,7 @@ export const ProjectCard = ({
               href={github_link}
               className="bg-gradient-to-r from-blue to-carrot px-4 py-2 rounded-r-full rounded-l-full"
             >
-              <span className="flex justify-center gap-2 font-semibold">
+              <span className="flex justify-center gap-2 font-bold">
                 <p> Code</p> <FiGithub className="text-xl" />
               </span>
             </Link>
@@ -44,7 +44,7 @@ export const ProjectCard = ({
               href={live_link}
               className="bg-gradient-to-r from-blue to-carrot px-4 py-2 rounded-r-full rounded-l-full"
             >
-              <span className="flex justify-center gap-2 font-semibold">
+              <span className="flex justify-center gap-2 font-bold">
                 <p>Live</p> <RxExternalLink className="text-xl mt-0.5" />
               </span>
             </Link>

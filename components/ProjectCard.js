@@ -29,7 +29,7 @@ export const ProjectCard = ({
 
         {/* text-container */}
         <div className="text-content px-4 sm:px-2 py-1">
-          <h1 className="text-2xl sm:text-xl">{title}</h1>
+          <h1 className="text-2xl sm:text-xl font-bold">{title}</h1>
           <p className=" pt-2">{description}</p>
           <div className="flex gap-4 justify-start items-center py-2">
             <Link

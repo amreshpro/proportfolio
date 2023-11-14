@@ -8,7 +8,9 @@ import { CgMenuRight } from "react-icons/cg";
 import { TfiClose } from "react-icons/tfi";
 import { NAV_LINKS } from "@/constants";
 import { useState } from "react";
-import MobileSideBar from "./MobileSideBar";
+import { motion } from "framer-motion";
+
+
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -30,8 +32,7 @@ export const Navbar = () => {
           </Link>
           {/* dark mode btn */}
           <button onClick={darkModeHandler} className="text-xl mb-0.5">
-            {
-            isDarkMode ? (
+            {isDarkMode ? (
               <BsFillSunFill />
             ) : (
               <BsMoonStarsFill className="mb-0.5 text-lg" />
@@ -56,12 +57,46 @@ export const Navbar = () => {
           className="hidden text-3xl sm:flex"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <TfiClose className=" text-2xl " /> : <CgMenuRight />}
+          {isMobileMenuOpen ? (
+            <TfiClose className=" text-2xl " />
+          ) : (
+            <CgMenuRight />
+          )}
         </button>
       </div>
 
       {/* mobile menu */}
-      {isMobileMenuOpen && <MobileSideBar />}
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div
+          className={`  ${
+            isMobileMenuOpen ? "flex flex-col gap-8 " : "hidden"
+          } ${
+            isDarkMode ? "dark" : "light"
+          }  w-full h-[100vh] flex justify-center items-center absolute `}
+        >
+          {/* mobile-menu-links  */}
+          <ul className="flex flex-col justify-center  gap-6">
+            {NAV_LINKS?.map((link) => {
+              return (
+                <li key={link.id}>
+                  <Link
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className=" hover:text-blue px-4 py-4 text-3xl"
+                    href={link.path}
+                  >
+                    {link.title}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </motion.div>
     </nav>
   );
 };

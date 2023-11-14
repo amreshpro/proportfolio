@@ -18,7 +18,8 @@ export  function TechSkill() {
         </div>
         <div className="tech-stack flex flex-wrap">
           {SKILLS.map((skill) => {
-            return <SkillCard key={skill.id} {...skill} />;
+            return  <SkillCard key={skill.id} {...skill} />;
+          
           })}
         </div>
       </div>

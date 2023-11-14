@@ -42,6 +42,8 @@
   --royal-blue:#4169E1;
   --del-blue:#0076CE;
   --celdon-light:#ACE1AF;
+  --col-blue:#B9D9EB;
+  --kc-blue:#004687;
   
 }
 
@@ -57,7 +59,7 @@
 
 
 .card-dark-bg{
-  background: var(--del-blue);
+  background: var(--kc-blue);
 }
 .card-light-bg{
   background: var(--celdon-light);

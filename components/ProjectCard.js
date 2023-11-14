@@ -20,29 +20,23 @@ export const ProjectCard = ({
     <div
       className={`${
         isDarkMode ? "card-dark-bg shadow-lg " : "card-light-bg shadow-lg "
-      } mt-4 rounded-lg`}
+      } w-80 mt-4 rounded-lg flex flex-col gap-1`}
     >
-      <div className="img-bg-container rounded-lg w-96 sm:w-72   flex flex-col justify-center items-center  px-1 overflow-visible">
-        {/* img container */}
-        <div className="img px-4">
-          {/* // eslint-disable-next-line @next/next/no-img-element, @next/next/no-img-element, @next/next/no-img-element */}
-          <img
-            src={image_url}
-            alt={title}
-            className="rounded-lg relative -top-6 w-80  "
-          />
-        </div>
+
+      <div className="px-4  relative -top-8 ">
+        <img src={image_url} alt="project-photo" className="rounded-lg" />
+      </div>
 
         {/* text-container */}
         <div className="text-content px-4 sm:px-2 py-1">
-          <h1 className="text-2xl sm:text-xl gradient__text2">{title}</h1>
+          <h1 className="text-2xl sm:text-xl">{title}</h1>
           <p className=" pt-2">{description}</p>
           <div className="flex gap-4 justify-start items-center py-2">
             <Link
               href={github_link}
               className="bg-gradient-to-r from-blue to-carrot px-4 py-2 rounded-r-full rounded-l-full"
             >
-              <span className="flex justify-center gap-2">
+              <span className="flex justify-center gap-2 font-semibold">
                 <p> Code</p> <FiGithub className="text-xl" />
               </span>
             </Link>
@@ -50,13 +44,13 @@ export const ProjectCard = ({
               href={live_link}
               className="bg-gradient-to-r from-blue to-carrot px-4 py-2 rounded-r-full rounded-l-full"
             >
-              <span className="flex justify-center gap-2">
+              <span className="flex justify-center gap-2 font-semibold">
                 <p>Live</p> <RxExternalLink className="text-xl mt-0.5" />
               </span>
             </Link>
           </div>
         </div>
-      </div>
+ 
     </div>
   );
 };

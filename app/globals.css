@@ -44,6 +44,8 @@
   --celdon-light:#ACE1AF;
   --col-blue:#B9D9EB;
   --kc-blue:#004687;
+  --light-cyan:#E0FFFF;
+  --perwinkle:#CCCCFF;
   
 }
 
@@ -62,7 +64,7 @@
   background: var(--kc-blue);
 }
 .card-light-bg{
-  background: var(--celdon-light);
+  background: var(--perwinkle);
 }
 
 .dark{

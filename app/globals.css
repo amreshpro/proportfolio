@@ -46,6 +46,8 @@
   --kc-blue:#004687;
   --light-cyan:#E0FFFF;
   --perwinkle:#CCCCFF;
+  --hover-link:#ff4c30;
+  
   
 }
 
@@ -58,7 +60,9 @@
 .title{
   color: var(--del-blue);
 }
-
+.link-hover:hover{
+  color: var(--hover-link);
+}
 
 .card-dark-bg{
   background: var(--kc-blue);

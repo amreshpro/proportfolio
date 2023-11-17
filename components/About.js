@@ -42,15 +42,8 @@ const isDarkMode = useSelector((state)=>state.mode)
           </ul>
         </div>
 
-        {/* image or card */}
-        <div className=" bg-gradient-to-r from-lightBlue to-pink p-2 rounded-full">
-          {/* // eslint-disable-next-line @next/next/no-img-element, @next/next/no-img-element, @next/next/no-img-element */}
-          <img
-            src="/profile.jpeg"
-            alt="amresh"
-            className="rounded-full w-96 "
-          />
-        </div>
+     
+    
       </div>
     </div>
   );

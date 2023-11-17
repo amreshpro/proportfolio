@@ -7,6 +7,6 @@ export {About} from './About'
 export {Skills} from './Skills';
 export {ProjectCard} from './ProjectCard';
 export {Project} from './Project';
-export {ModeChangeButton} from './ModeChangeButton';
+
 
 export {TechSkill} from './TechSkill';

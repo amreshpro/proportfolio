@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 
 
-export const SkillCard = ({ icon, name }) => {
+export const SkillCard = ({ image_url, name }) => {
     const isDarkMode = useSelector((state)=>state.mode)
   return (
     <div
@@ -16,7 +16,7 @@ export const SkillCard = ({ icon, name }) => {
       //     : " bg-white border-lightBlue shadow-lg shadow-lightBlue "
       // } p-1 flex flex-col justify-center items-center gap-1 w-32 `}
     >
-      <img src={icon} alt={name} className="w-14 h-14   hover:animate-ping p-1 " />
+      <img src={image_url} alt={name} className="w-14 h-14 rounded-full    hover:animate-bounce p-1 px-1 " />
       {/* <h1
         className={`  ${
           isDarkMode ? "skill__gradient" : " text-lightBlue"

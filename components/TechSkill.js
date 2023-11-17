@@ -8,6 +8,10 @@ import { SkillCard } from './SkillCard';
 
 export  function TechSkill() {
   return (
+    <div className='flex flex-col justify-center items-center'>
+       <h1 id="skill" className="text-md uppercase font-bold  text-center my-6">
+        Skills
+      </h1>
     <div id='skills' className=" flex flex-col gap-2 justify-center px-14 sm:px-2">
       <div className=" flex flex-wrap justify-start items-center">
         <div className="flex ">
@@ -37,6 +41,7 @@ export  function TechSkill() {
           })}
         </div>
       </div>
+    </div>
     </div>
   );
 }

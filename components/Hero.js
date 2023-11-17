@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="flex justify-center items-center h-[80vh] md:h-full">
+    <div className="flex justify-center  md:h-full">
       <div
         className={`hero  py-4 px-8 sm:py-2 sm:px-2 flex  sm:flex-col-reverse justify-center items-center gap-8 w-full `}
       >

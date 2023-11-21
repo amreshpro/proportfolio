@@ -18,16 +18,20 @@ export default function Hero() {
               <FaLinkedin className="btnHover" />
             </Link>
             <Link href={socialLinks.github}>
-              <FiGithub  className="btnHover"/>
+              <FiGithub className="btnHover" />
             </Link>
           </div>
         </div>
         <div className=" flex justify-center w-1/2 sm:w-full sm:px-2 sm:py-2">
-          <img
-            src="/profile.jpeg"
+          {/* <img
+            src="/blobanimation.svg"
             alt="my-photo"
             className="rounded-full w-64"
-          />
+          /> */}
+            <div className="rounded-full   bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
+          <div className="blob w-64 rounded-full">
+            </div>
+          </div>
         </div>
       </div>
     </div>

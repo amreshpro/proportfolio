@@ -77,7 +77,7 @@ export const Navbar = () => {
             isMobileMenuOpen ? "flex flex-col gap-8 " : "hidden"
           } ${
             isDarkMode ? "dark" : "light"
-          }  w-full h-[100vh] flex justify-center items-center relative `}
+          }  w-full h-[100vh] absolute flex justify-center items-center relative `}
         >
           {/* mobile-menu-links  */}
           <ul className="flex flex-col justify-center  gap-6">

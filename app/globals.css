@@ -100,28 +100,28 @@ height: 250px;
 }
 
 .blob {
-  animation: move 20s ease-in-out infinite;
+  animation: move 5s ease-in-out infinite;
 }
 
 @keyframes move {
   0% {
-    clip-path: ellipse(45% 50% at 50% 50%);
+    clip-path: ellipse(25% 10% at 18% 13%);
   }
 
   15% {
-    clip-path: ellipse(47% 43% at 50% 56%);
+    clip-path: ellipse(7% 3% at 5% 8%);
   }
 
   30% {
-    clip-path: ellipse(65% 42% at 55% 50%);
+    clip-path: ellipse(6% 9% at 15% 5%);
   }
 
   45% {
-    clip-path: ellipse(40% 70% at 50% 45%);
+    clip-path: ellipse(8% 16% at 19% 12%);
   }
 
   60% {
-    clip-path: ellipse(37% 73% at 45% 50%);
+    clip-path: ellipse(37% 22% at 14% 5%);
   }
 
   75% {

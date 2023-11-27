@@ -79,20 +79,20 @@ export const project = [
   github_link:"https://github.com/amreshpro/swiggy",
   tag:["#reactjs","#tailwindcss","#nodejs","#clone"]
     },
-    {
+    // {
 
-      id : "clones_2",
-      title:"Airbnb Clone",
-      description:`Developed a fully functional clone of the Airbnb website using modern web technologies to replicate its core features and user interface.
-            Technologies/Tools Used: React.js, Tailwind CSS, JavaScript, HTML, CSS, Git, and GitHub.
+    //   id : "clones_2",
+    //   title:"Airbnb Clone",
+    //   description:`Developed a fully functional clone of the Airbnb website using modern web technologies to replicate its core features and user interface.
+    //         Technologies/Tools Used: React.js, Tailwind CSS, JavaScript, HTML, CSS, Git, and GitHub.
             
-            `,
-      image_url:"https://i.imgur.com/59W5ne7.png",
-      live_link:"https://clone-airbnb-site.netlify.app/",
-      github_link:"https://github.com/amreshpro/airbnb",
-      tag:["#reactjs","#tailwindcss","#nodejs","#clone"]
+    //         `,
+    //   image_url:"https://i.imgur.com/59W5ne7.png",
+    //   live_link:"https://clone-airbnb-site.netlify.app/",
+    //   github_link:"https://github.com/amreshpro/airbnb",
+    //   tag:["#reactjs","#tailwindcss","#nodejs","#clone"]
 
-    }
+    // }
   
   ];
   

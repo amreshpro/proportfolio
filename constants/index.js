@@ -96,12 +96,12 @@ export const SKILLS = [
     // image_url: "https://i.imgur.com/B8NJvnF.png",
     image_url: "/skills/nodejs.png",
   },
-  {
-    id: "techidmongodb",
-    name: "MongoDB",
-    // image_url: "https://i.imgur.com/RVCqVh8.png",
-    image_url: "/skills/mongodb.png",
-  },
+  // {
+  //   id: "techidmongodb",
+  //   name: "MongoDB",
+  //   // image_url: "https://i.imgur.com/RVCqVh8.png",
+  //   image_url: "/skills/mongodb.png",
+  // },
   // {
   //   id: "techidthree",
   //   name: "Three JS",
@@ -138,12 +138,12 @@ image_url:"/skills/vscode.png"},
   image_url:"/skills/ubuntu.png",
 
 },
-  {
-    id: "techidocker",
-    name: "Docker",
-    // image_url: "https://i.imgur.com/yslLZqN.png",
-    image_url: "/skills/docker.png",
-  },
+  // {
+  //   id: "techidocker",
+  //   name: "Docker",
+  //   // image_url: "https://i.imgur.com/yslLZqN.png",
+  //   image_url: "/skills/docker.png",
+  // },
 ];
 
 
@@ -156,7 +156,7 @@ export const socialLinks = {
   linkedin: "https://linkedin.com/in/ursamresh",
   portfolio: "https://amreshpro.com",
   resume:
-    "https://drive.google.com/file/d/1X5BBAHOvsV-RdjpzUXvP_TgQDZyvQcw4/view?usp=drive_link",
+    "/resume.pdf",
 };
 
 export const MYBIO = `Hi, I'm Amresh Maurya.I’m a software engineer specializing in building exceptional digital experiences.I code beautifully simple things.I enjoy creating things that live on internet and I love what I do.

@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import { useSelector } from "react-redux";
-import {FiGithub} from 'react-icons/fi';
-import {RxExternalLink} from 'react-icons/rx';
-
+import { FiGithub } from "react-icons/fi";
+import { RxExternalLink } from "react-icons/rx";
 
 export const ProjectCard = ({
   title,

@@ -100,7 +100,7 @@ height: 250px;
 }
 
 .blob {
-  animation: move 5s ease-in-out infinite;
+  animation: move 4s ease-in-out infinite;
 }
 
 @keyframes move {

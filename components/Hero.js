@@ -1,6 +1,7 @@
 "use client";
 import { FaLinkedin } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
+import { GiNotebook } from "react-icons/gi";
 import { MYBIO, MYPROFILE, socialLinks } from "@/constants";
 import Link from "next/link";
 
@@ -14,11 +15,14 @@ export default function Hero() {
           <h1 className="text-5xl sm:text-4xl font-bold ">{MYPROFILE}</h1>
           <p className="tracking-wide text-justify sm:text-start">{MYBIO}</p>
           <div className="social-links flex sm:justify-center gap-3 text-3xl">
-            <Link href={socialLinks.linkedin}>
+            <Link href={socialLinks.linkedin} target="_blank">
               <FaLinkedin className="btnHover" />
             </Link>
-            <Link href={socialLinks.github}>
+            <Link href={socialLinks.github} target="_blank">
               <FiGithub className="btnHover" />
+            </Link>
+            <Link href={socialLinks.resume} target="_blank">
+              <GiNotebook />
             </Link>
           </div>
         </div>
@@ -28,9 +32,8 @@ export default function Hero() {
             alt="my-photo"
             className="rounded-full w-64"
           /> */}
-            <div className="rounded-full   bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
-          <div className="blob w-64 rounded-full">
-            </div>
+          <div className="rounded-full   bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
+            <div className="blob w-64 rounded-full"></div>
           </div>
         </div>
       </div>

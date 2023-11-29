@@ -1,4 +1,4 @@
 "use client";
-export  function Footer() {
+export function Footer() {
   return <div>Footer</div>;
 }

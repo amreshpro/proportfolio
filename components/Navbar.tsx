@@ -11,8 +11,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useAppDispatch, useAppSelector } from "@/types/redux.types";
 
-
-
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -28,11 +26,17 @@ export const Navbar = () => {
       <div className="navbar-container flex justify-between sm:px-2  md:px-4 px-8 py-4 ">
         <div className="logo-and-mode flex gap-4 ">
           {/* logo */}
-          <Link href="/" className="font-openSans font-bold link-hover  text-xl">
+          <Link
+            href="/"
+            className="font-openSans font-bold link-hover  text-xl"
+          >
             amresh.dev
           </Link>
           {/* dark mode btn */}
-          <button onClick={darkModeHandler} className="text-xl mb-0.5 link-hover">
+          <button
+            onClick={darkModeHandler}
+            className="text-xl mb-0.5 link-hover"
+          >
             {isDarkMode ? (
               <BsFillSunFill />
             ) : (

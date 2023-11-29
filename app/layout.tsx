@@ -3,8 +3,7 @@ import Providers from "@/utils/Providers";
 import "./globals.css";
 
 import ThemeWrapper from "@/utils/ThemeWrapper";
-import {Navbar,Footer} from "@/components";
-
+import { Navbar, Footer } from "@/components";
 
 import { ReactNode } from "react";
 

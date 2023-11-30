@@ -14,7 +14,9 @@ export function About() {
       }   flex justify-center items-center md:flex-col-reverse gap-24 sm:gap-4 w-full h-full px-8 sm:px-1 py-8`}
     >
       <div className="about-content px-2  flex flex-col gap-4 w-1/2 md:w-full">
-        <h1 className="text-4xl sm:text-2xl font-bold">I'am Amresh Maurya</h1>
+        <h1 className="text-4xl sm:text-2xl font-bold">
+          I&apos;am Amresh Maurya
+        </h1>
         {/* <p className="about text-justify text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ratione iste eum enim odit doloribus doloremque non neque quia quo nemo facere voluptatum architecto at culpa deserunt illo inventore eius? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptates earum error voluptas itaque maiores magni aperiam exercitationem iste perferendis, alias nemo asperiores sit velit nostrum quos incidunt, illo vero eos iusto esse doloremque! Dignissimos soluta iusto reprehenderit natus dolores aliquam exercitationem, quibusdam sequi omnis dolorum, sunt provident quaerat ut?</p>
      <p className="about text-justify text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ratione iste eum enim odit doloribus doloremque non neque quia quo nemo facere voluptatum architecto at culpa deserunt illo inventore eius? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptates earum error voluptas itaque maiores magni aperiam exercitationem iste perferendis, alias nemo asperiores sit velit nostrum quos incidunt, illo vero eos iusto esse doloremque! Dignissimos soluta iusto reprehenderit natus dolores aliquam exercitationem, quibusdam sequi omnis dolorum, sunt provident quaerat ut?</p>
        */}

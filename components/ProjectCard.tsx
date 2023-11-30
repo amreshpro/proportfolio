@@ -20,7 +20,6 @@ export const ProjectCard = ({
   image_url,
   github_link,
   live_link,
-  tag,
 }: ProjectPropsType) => {
   const isDarkMode = useAppSelector((state) => state.mode);
 

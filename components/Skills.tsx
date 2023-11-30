@@ -1,5 +1,5 @@
 "use client";
-import { OTHER_SKILLS, SKILLS } from "@/constants";
+import { SKILLS } from "@/constants";
 import { SkillCard } from "./SkillCard";
 import { useAppSelector } from "@/types/redux.types";
 

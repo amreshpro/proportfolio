@@ -1,6 +1,6 @@
 "use client";
 
-import { SOCIAL_LINKS, socialLinks } from "@/constants";
+import { socialLinks } from "@/constants";
 import { useAppSelector } from "@/types/redux.types";
 import Link from "next/link";
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";

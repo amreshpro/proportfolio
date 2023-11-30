@@ -154,6 +154,32 @@ export const socialLinks = {
   resume: "/resume.pdf",
 };
 
+export const SOCIAL_LINKS=[
+  {
+    id:"instalink",
+  instagram: "https://instagram.com/amresh.here",
+  },
+  {
+    id:"twitterlink",
+  twitter: "https://twitter.com/ursamresh",
+  },
+  {
+    id:"githublink",
+  github: "https://github.com/amreshpro",
+      },
+      {
+        id:"linkedinlink",
+  linkedin: "https://linkedin.com/in/ursamresh",
+
+      }
+]
+
+
+
+
+
+
+
 export const MYBIO = `Hi, I'm Amresh Maurya.I’m a software engineer specializing in building exceptional digital experiences.I code beautifully simple things.I enjoy creating things that live on internet and I love what I do.
   `;
 

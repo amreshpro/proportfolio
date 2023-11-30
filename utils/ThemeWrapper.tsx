@@ -6,7 +6,7 @@ const ThemeWrapper = ({ children }: { children: ReactNode }) => {
   const isDarkMode = useAppSelector((state) => state.mode);
 
   return (
-    <main className={`${isDarkMode ? "dark " : "light"} `}>{children}</main>
+    <main className={`${isDarkMode ? "  dark  " : "light"} `}>{children}</main>
   );
 };
 export default ThemeWrapper;

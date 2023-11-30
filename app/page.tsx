@@ -1,3 +1,11 @@
+import { About, Contact, Hero, Project, Skills } from "@/components";
+
 export default function Main() {
-  return <div className="bg-blue-900 text-white">Hello bro, how are you?</div>;
+  return <main className="">
+    <Hero/>
+    <About/>
+    <Skills/>
+    <Project/>
+    <Contact/>
+  </main>
 }

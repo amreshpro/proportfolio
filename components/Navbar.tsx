@@ -22,15 +22,15 @@ export const Navbar = () => {
   const isDarkMode = useAppSelector((state) => state.mode);
 
   return (
-    <nav className={`mb-8 z-50 `}>
+    <nav className={` ${isDarkMode ? "dark " : "hero-light"}`}>
       <div className="navbar-container flex justify-between sm:px-2  md:px-4 px-8 py-4 ">
         <div className="logo-and-mode flex gap-4 ">
           {/* logo */}
           <Link
             href="/"
-            className="font-openSans font-bold link-hover  text-xl"
+            className="font-signature   link-hover  text-3xl"
           >
-            amresh.dev
+            amresh
           </Link>
           {/* dark mode btn */}
           <button
@@ -49,7 +49,7 @@ export const Navbar = () => {
           {NAV_LINKS?.map((link) => {
             return (
               <li key={link.id}>
-                <Link href={link.path} className="link-hover font-bold">
+                <Link href={link.path} className="link-hover text-lg">
                   {link.title}
                 </Link>
               </li>

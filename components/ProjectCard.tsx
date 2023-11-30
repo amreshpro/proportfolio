@@ -5,13 +5,13 @@ import { FiGithub } from "react-icons/fi";
 import { RxExternalLink } from "react-icons/rx";
 import { useAppSelector } from "@/types/redux.types";
 
-interface ProjectPropsType{
-  title : string,
-  description:string,
-  image_url:string,
-  github_link:string,
-  live_link:string,
-  tag:string[],
+interface ProjectPropsType {
+  title: string;
+  description: string;
+  image_url: string;
+  github_link: string;
+  live_link: string;
+  tag: string[];
 }
 
 export const ProjectCard = ({
@@ -21,7 +21,7 @@ export const ProjectCard = ({
   github_link,
   live_link,
   tag,
-}:ProjectPropsType) => {
+}: ProjectPropsType) => {
   const isDarkMode = useAppSelector((state) => state.mode);
 
   return (

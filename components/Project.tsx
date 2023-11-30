@@ -1,20 +1,15 @@
-"use client"
+"use client";
 
-import { SmallProjects, clones, othersContribution } from "@/constants/project"
-import { ProjectCard } from "./ProjectCard"
+import { SmallProjects, clones, othersContribution } from "@/constants/project";
+import { ProjectCard } from "./ProjectCard";
 import { useAppSelector } from "@/types/redux.types";
-
-
 
 export const Project = () => {
   const isDarkMode = useAppSelector((state) => state.mode);
 
   return (
     <div className={`mt-16 ${isDarkMode ? "project-dark " : "project-light"}`}>
-      <h1
-        id="projects"
-        className=" text-xl uppercase font-bold text-center"
-      >
+      <h1 id="projects" className=" text-xl uppercase font-bold text-center">
         Projects
       </h1>
       <div className=" flex flex-wrap justify-center items-center px-8 py-8 gap-8">
@@ -32,4 +27,4 @@ export const Project = () => {
       </div>
     </div>
   );
-}
+};

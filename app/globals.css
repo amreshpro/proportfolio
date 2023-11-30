@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -19,40 +18,39 @@
   --dark-text: #1a202c;
   --dark-bg: #000333;
   --light-bg: #fff;
-  --hero-light-bg:#3d54bf;
-  --hero-light-text:#fff;
---project-light-bg:#3d54bf;
---project-dark-bg:#002244;
---project-dark-text:#e7ebf4;
---project-light-text: #fff;
---card-dark-text:#1a202c;
---skill-light-bg:#c6eeff;
---skill-dark-bg:#002244;
---about-dark-bg:#1F305E;
---about-light-bg:#fff;
---contact-dark-bg:#1f305e;
---contact-light-bg:#e5e9f2;
---contact-dark-text:#1c1b1b;
---contact-light-text:#fff;
---footer-dark-bg:#002244;
---footer-light-bg:#bfc7d9;
---footer-dark-text:#000;
---footer-light-text:#fff;
+  --hero-light-bg: #3d54bf;
+  --hero-light-text: #fff;
+  --project-light-bg: #3d54bf;
+  --project-dark-bg: #002244;
+  --project-dark-text: #e7ebf4;
+  --project-light-text: #fff;
+  --card-dark-text: #1a202c;
+  --skill-light-bg: #c6eeff;
+  --skill-dark-bg: #002244;
+  --about-dark-bg: #1f305e;
+  --about-light-bg: #fff;
+  --contact-dark-bg: #1f305e;
+  --contact-light-bg: #e5e9f2;
+  --contact-dark-text: #1c1b1b;
+  --contact-light-text: #fff;
+  --footer-dark-bg: #002244;
+  --footer-light-bg: #bfc7d9;
+  --footer-dark-text: #000;
+  --footer-light-text: #fff;
 
-
-/* color */
-  --hallmark-purple:#452c63;
-  --royal-blue:#4169E1;
-  --del-blue:#0076CE;
-  --celdon-light:#ACE1AF;
-  --col-blue:#B9D9EB;
-  --kc-blue:#004687;
-  --light-cyan:#E0FFFF;
-  --perwinkle:#CCCCFF;
-  --hover-link:#ffcb30;
-  --uranian-blue:#AFDBF5;
-  --college-navy:#002244;
-  --deft-blue:#1F305E;
+  /* color */
+  --hallmark-purple: #452c63;
+  --royal-blue: #4169e1;
+  --del-blue: #0076ce;
+  --celdon-light: #ace1af;
+  --col-blue: #b9d9eb;
+  --kc-blue: #004687;
+  --light-cyan: #e0ffff;
+  --perwinkle: #ccccff;
+  --hover-link: #ffcb30;
+  --uranian-blue: #afdbf5;
+  --college-navy: #002244;
+  --deft-blue: #1f305e;
 }
 
 body {
@@ -60,7 +58,7 @@ body {
 }
 
 .font-signature {
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
 }
 
 .dark {
@@ -72,73 +70,65 @@ body {
   color: var(--dark-text);
 }
 
-.hero-light{
+.hero-light {
   background-color: var(--hero-light-bg);
   color: var(--hero-light-text);
 }
 
-.project-light{
+.project-light {
   background-color: var(--project-light-bg);
   color: var(--project-light-text);
 }
-.project-dark{
+.project-dark {
   background-color: var(--project-dark-bg);
   color: var(--project-dark-text);
 }
 
-
-.btnHover:hover{
+.btnHover:hover {
   color: var(--royal-blue);
 }
 
-.title{
+.title {
   color: var(--del-blue);
 }
-.link-hover:hover{
+.link-hover:hover {
   color: var(--hover-link);
 }
 
-.card-dark-bg{
+.card-dark-bg {
   background: var(--hallmark-purple);
 }
-.card-light-bg{
+.card-light-bg {
   background: var(--uranian-blue);
   color: var(--card-dark-text);
 }
 
-.skill-light{
-  background-color:var(--skill-light-bg) ;
+.skill-light {
+  background-color: var(--skill-light-bg);
 }
-.skill-dark{
-  background-color:var(--skill-dark-bg) ;
+.skill-dark {
+  background-color: var(--skill-dark-bg);
 }
 
-.about-light{
-  background-color:var(--about-light-bg) ;
+.about-light {
+  background-color: var(--about-light-bg);
 }
-.about-dark{
-  background-color:var(--about-dark-bg) ;
+.about-dark {
+  background-color: var(--about-dark-bg);
 }
-.contact-light{
+.contact-light {
   background-color: var(--contact-light-bg);
   color: var(--contact-dark-text);
 }
-.contact-dark{
+.contact-dark {
   background-color: var(--contact-dark-bg);
   color: var(--contact-light-text);
 }
-.foooter-light{
+.foooter-light {
   background-color: var(--footer-light-bg);
   color: var(--footer-dark-text);
 }
-.footer-dark{
+.footer-dark {
   background-color: var(--footer-dark-bg);
   color: var(--footer-light-text);
-}
-
-
-.bg-pattern1{
-  background: url("/bg/pattern1.jpg");
-  width: 100%;
-  height: 100%;
 }

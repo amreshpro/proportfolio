@@ -26,10 +26,7 @@ export const Navbar = () => {
       <div className="navbar-container flex justify-between sm:px-2  md:px-4 px-8 py-4 ">
         <div className="logo-and-mode flex gap-4 ">
           {/* logo */}
-          <Link
-            href="/"
-            className="font-signature   link-hover  text-3xl"
-          >
+          <Link href="/" className="font-signature   link-hover  text-3xl">
             amresh
           </Link>
           {/* dark mode btn */}

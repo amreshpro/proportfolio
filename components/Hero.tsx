@@ -14,7 +14,7 @@ export function Hero() {
         isDarkMode ? "dark " : "hero-light"
       } w-full h-[92vh] sm:h-auto flex sm:flex-col-reverse justify-center   `}
     >
-      <div className="content text-center mb-36 sm:mb-1  h-screen flex flex-col justify-center items-center gap-2   sm:h-full">
+      <div className="content text-center mb-36 sm:mb-1 pb-2  h-screen flex flex-col justify-center items-center gap-2   sm:h-full">
         <h1 className="text-8xl sm:text-4xl md:text-6xl font-bold">
           Amresh Maurya
         </h1>

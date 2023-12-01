@@ -12,7 +12,7 @@ export function Hero() {
     <div
       className={`${
         isDarkMode ? "dark " : "hero-light"
-      } w-screen h-[92vh] sm:h-auto flex sm:flex-col-reverse justify-center  mt-4  `}
+      }  h-[92vh] sm:h-auto flex sm:flex-col-reverse justify-center   `}
     >
       <div className="content text-center mb-36 sm:mb-1 pb-2  h-screen flex flex-col justify-center items-center gap-2   sm:h-full">
         <h1 className="text-8xl sm:text-4xl md:text-6xl font-bold">

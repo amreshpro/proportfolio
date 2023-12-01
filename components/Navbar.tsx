@@ -22,7 +22,7 @@ export const Navbar = () => {
   const isDarkMode = useAppSelector((state) => state.mode);
 
   return (
-    <nav className={` ${isDarkMode ? "dark " : "hero-light"}  rounded-l-full rounded-r-full sm:rounded-lg mx-6 mt-2 sm:mx-2`}>
+    <nav className={` ${isDarkMode ? "dark " : "hero-light"}  `}>
       <div className="navbar-container flex justify-between sm:px-2  md:px-4 px-8 py-4 ">
         <div className="logo-and-mode flex gap-4 ">
           {/* logo */}

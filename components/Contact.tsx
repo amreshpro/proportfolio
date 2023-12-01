@@ -11,7 +11,7 @@ export function Contact() {
     <div
       className={` ${
         isDarkMode ? "contact-dark " : "contact-light"
-      }  sm:px-4 py-4 sm:py-2 flex flex-col gap-4 justify-center items-center`}
+      }  sm:px-4 py-4 sm:py-2 flex flex-col gap-4 justify-center items-center   rounded-lg mx-6 sm:mx-2 mt-6`}
     >
       <h1 id="contact" className="text-md uppercase font-bold  ">
         Contact

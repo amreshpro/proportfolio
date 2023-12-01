@@ -8,7 +8,7 @@ export const Project = () => {
   const isDarkMode = useAppSelector((state) => state.mode);
 
   return (
-    <div className={`mt-16 ${isDarkMode ? "project-dark " : "project-light"}`}>
+    <div className={`mt-16 ${isDarkMode ? "project-dark " : "project-light"}  rounded-lg mx-6 sm:mx-2`}>
       <h1 id="projects" className=" text-xl uppercase font-bold text-center">
         Projects
       </h1>

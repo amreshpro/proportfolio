@@ -16,12 +16,12 @@
   --main-font: "Anek Latin", sans-serif;
   --light-text: #d4e0f7;
   --dark-text: #1a202c;
-  --dark-bg: #000333;
+  --dark-bg: #02020b;
   --light-bg: #fff;
   --hero-light-bg: #3d54bf;
   --hero-light-text: #fff;
   --project-light-bg: #3d54bf;
-  --project-dark-bg: #002244;
+  --project-dark-bg: #03111f;
   --project-dark-text: #e7ebf4;
   --project-light-text: #fff;
   --card-dark-text: #1a202c;
@@ -33,8 +33,8 @@
   --contact-light-bg: #e5e9f2;
   --contact-dark-text: #1c1b1b;
   --contact-light-text: #fff;
-  --footer-dark-bg: #002244;
-  --footer-light-bg: #bfc7d9;
+  --footer-dark-bg: #000f1f;
+  --footer-light-bg: #e2e2e2;
   --footer-dark-text: #000;
   --footer-light-text: #fff;
 
@@ -55,6 +55,7 @@
 
 body {
   font-family: var(--main-font);
+scroll-behavior: smooth;
 }
 
 .font-signature {
@@ -124,7 +125,7 @@ body {
   background-color: var(--contact-dark-bg);
   color: var(--contact-light-text);
 }
-.foooter-light {
+.footer-light {
   background-color: var(--footer-light-bg);
   color: var(--footer-dark-text);
 }

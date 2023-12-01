@@ -9,11 +9,11 @@ export const Skills = () => {
   return (
     <div
       id="skills"
-      className={`mt-16 ${isDarkMode ? "skill-dark " : "skill-light"}`}
+      className={`mt-16 ${isDarkMode ? "skill-dark " : "skill-light"}  rounded-lg mx-6 sm:mx-2`}
     >
       <div className="flex flex-col justify-start items-center px-8 py-8 gap-6">
         <h1 className="text-2xl font-bold uppercase">Skills</h1>
-        <div className="skills1 flex flex-wrap justify-start px-8  gap-6 ">
+        <div className="skills1 flex flex-wrap justify-center px-4  gap-6 ">
           {SKILLS.map((skill) => {
             return <SkillCard key={skill.id} {...skill} />;
           })}

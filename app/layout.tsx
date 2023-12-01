@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-      <body className="">
+      <body id="body" className="">
         <Providers>
           <ThemeWrapper>
             <Navbar />

@@ -25,13 +25,13 @@ export function Hero() {
           href={socialLinks.resume}
           className="flex text-xl font-bold gap-0.5 w-fit px-4 py-2 bg-red-500 rounded-r-full rounded-l-full"
         >
-          {" "}
+         
           Resume <GiNotebook className="text-3xl" />
         </Link>
       </div>
       <div className="img h-full flex sm:w-full justify-center  ">
         <img
-          className="w-full sm:ml-28 "
+          className="w-full  "
           src="/profile2.png"
           alt="profile-photo"
         />

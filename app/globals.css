@@ -39,6 +39,10 @@
   --dark-text:rgb(0, 46, 73);
   --light-bg:#E1EBEE;
   --light-text:#fff;
+--dark-mobile-menu:#452c63;
+--light-mobile-menu:#c1ccec;
+
+  /* color */
 --hallmark-purple:#452c63;
   --royal-blue:#4169E1;
   --del-blue:#0076CE;
@@ -47,7 +51,7 @@
   --kc-blue:#004687;
   --light-cyan:#E0FFFF;
   --perwinkle:#CCCCFF;
-  --hover-link:#ff4c30;
+  --hover-link:#7dfdae;
   --uranian-blue:#AFDBF5;
   
 }
@@ -79,6 +83,16 @@
 
 .light{
   background-color: var(--light-bg);
+  color: var(--dark-text);
+}
+
+.dark-mobile-menu{
+  background-color:var(--dark-mobile-menu);
+  color:var(--light-text);
+}
+
+.light-mobile-menu{
+  background-color: var(--light-mobile-menu);
   color: var(--dark-text);
 }
 

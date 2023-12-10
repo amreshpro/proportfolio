@@ -8,9 +8,6 @@ import { CgMenuRight } from "react-icons/cg";
 import { TfiClose } from "react-icons/tfi";
 import { NAV_LINKS } from "@/constants";
 import { useState } from "react";
-import { motion } from "framer-motion";
-
-
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,11 +24,17 @@ export const Navbar = () => {
       <div className="navbar-container flex justify-between sm:px-2  md:px-4 px-8 py-4 ">
         <div className="logo-and-mode flex gap-4 ">
           {/* logo */}
-          <Link href="/" className="font-openSans font-bold link-hover  text-xl">
+          <Link
+            href="/"
+            className="font-openSans font-bold link-hover  text-xl"
+          >
             amresh.dev
           </Link>
           {/* dark mode btn */}
-          <button onClick={darkModeHandler} className="text-xl mb-0.5 link-hover">
+          <button
+            onClick={darkModeHandler}
+            className="text-xl mb-0.5 link-hover"
+          >
             {isDarkMode ? (
               <BsFillSunFill />
             ) : (
@@ -66,37 +69,28 @@ export const Navbar = () => {
       </div>
 
       {/* mobile menu */}
-
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
+      <div 
+        className={`  ${isMobileMenuOpen ? "flex flex-col  " : "hidden"} ${
+          isDarkMode ? "dark-mobile-menu" : "light-mobile-menu"
+        } rounded-lg mx-2 py-4 px-4    z-50 flex justify-center items-center absolute right-0`}
       >
-        <div
-          className={`  ${
-            isMobileMenuOpen ? "flex flex-col gap-8 " : "hidden"
-          } ${
-            isDarkMode ? "dark" : "light"
-          }  w-full h-[100vh] absolute flex justify-center items-center relative `}
-        >
-          {/* mobile-menu-links  */}
-          <ul className="flex flex-col justify-center  gap-6">
-            {NAV_LINKS?.map((link) => {
-              return (
-                <li key={link.id}>
-                  <Link
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className=" hover:text-blue px-4 py-4 text-3xl"
-                    href={link.path}
-                  >
-                    {link.title}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </motion.div>
+        {/* mobile-menu-links  */}
+        <ul className="flex flex-col justify-center w-fit gap-6">
+          {NAV_LINKS?.map((link) => {
+            return (
+              <li key={link.id}>
+                <Link
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className=" hover:bg-blue-600 hover:rounded-lg px-1 py-1 text-xl"
+                  href={link.path}
+                >
+                  {link.title}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </nav>
   );
 };

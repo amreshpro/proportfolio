@@ -14,15 +14,15 @@ export default function Hero() {
         <div className="content w-1/2 sm:w-full px-8 sm:px-2 sm:py-2 flex flex-col gap-8 ">
           <h1 className="text-5xl sm:text-4xl font-bold ">{MYPROFILE}</h1>
           <p className="tracking-wide text-justify sm:text-start">{MYBIO}</p>
-          <div className="social-links flex sm:justify-center gap-3 text-3xl">
+          <div className="social-links flex items-center sm:justify-center gap-3 text-3xl">
             <Link href={socialLinks.linkedin} target="_blank">
               <FaLinkedin className="btnHover" />
             </Link>
             <Link href={socialLinks.github} target="_blank">
               <FiGithub className="btnHover" />
             </Link>
-            <Link href={socialLinks.resume} target="_blank">
-              <GiNotebook />
+            <Link href={socialLinks.resume} target="_blank" className=" bg-gradient-to-r from-orange-500 to-pink-400  rounded-lg px-3 py-1 flex items-center justify-center gap-1">
+              <h1 className="text-lg">Resume</h1><GiNotebook />
             </Link>
           </div>
         </div>

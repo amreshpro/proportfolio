@@ -9,7 +9,7 @@ export function Contact() {
       <h1 id="contact" className="text-md uppercase font-bold  ">
         Contact
       </h1>
-      <h1 className="text-2xl font-bold">Don&quot;t be shy! Hit me up! 👇</h1>
+      <h1 className="text-2xl font-bold">Don&#39;t be shy! Hit me up! 👇</h1>
       <div className="mt-6 contact-container flex sm:flex-col gap-8 sm:gap-4 ">
         <div className="location flex gap-2">
           {/* icon */}

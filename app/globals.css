@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,7 +11,8 @@
 /* font  start  */
 
 .font-openSans {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Anek Latin', sans-serif;
+
 
 }
 
@@ -31,7 +32,8 @@
   margin: 0;
   padding: 0;
   background-origin: border-box;
-  font-family: 'Open Sans', sans-serif;
+ font-family: 'Anek Latin', sans-serif;
+
   scroll-behavior: smooth;
 
   /* --dark-bg:#002244; */
@@ -51,7 +53,7 @@
   --kc-blue:#004687;
   --light-cyan:#E0FFFF;
   --perwinkle:#CCCCFF;
-  --hover-link:#7dfdae;
+  --hover-link:#044f20;
   --uranian-blue:#AFDBF5;
   
 }

@@ -15,10 +15,10 @@ export  function TechSkill() {
     <div id='skills' className=" flex flex-col gap-2 justify-center px-14 sm:px-2">
       <div className=" flex flex-wrap justify-start items-center">
         <div className="flex ">
-          <RiCheckboxCircleFill className="text-blue-500 mt-1.5 text-xl" />
-          <h1 className="text-2xl"> Tech Stack</h1>
+          {/* <RiCheckboxCircleFill className="text-blue-500 mt-1.5 text-xl" /> */}
+          {/* <h1 className="text-2xl"> Tech Stack</h1> */}
           {/* <img src="/arrow_trail.svg" className="w-24  h-full" alt="arrow" /> */}
-          <PiArrowBendUpRightLight className=" text-4xl ml-1" />
+          {/* <PiArrowBendUpRightLight className=" text-4xl ml-1" /> */}
         </div>
         <div className="tech-stack flex flex-wrap">
           {SKILLS.map((skill) => {
@@ -30,10 +30,10 @@ export  function TechSkill() {
 
       <div className=" flex flex-wrap justify-start items-center">
         <div className="flex ">
-          <RiCheckboxCircleFill className="text-blue-500 mt-1.5 text-xl " />
-          <h1 className="text-2xl"> Others</h1>
-          {/* <img src="/arrow_trail.svg" className="w-24 h-full" alt="arrow" /> */}
-          <PiArrowBendUpRightLight className=" text-4xl ml-1" />
+          {/* <RiCheckboxCircleFill className="text-blue-500 mt-1.5 text-xl " /> */}
+          {/* <h1 className="text-2xl"> Others</h1>
+          <img src="/arrow_trail.svg" className="w-24 h-full" alt="arrow" /> 
+          <PiArrowBendUpRightLight className=" text-4xl ml-1" /> */}
         </div>
         <div className="tech-stack flex flex-wrap">
           {OTHER_SKILLS.map((skill) => {

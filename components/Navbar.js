@@ -36,9 +36,9 @@ export const Navbar = () => {
             className="text-xl mb-0.5 link-hover"
           >
             {isDarkMode ? (
-              <BsFillSunFill />
+              <BsFillSunFill className="" />
             ) : (
-              <BsMoonStarsFill className="mb-0.5 text-lg" />
+              <BsMoonStarsFill className="mb-0.5  text-lg" />
             )}
           </button>
         </div>

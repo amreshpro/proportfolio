@@ -163,4 +163,4 @@ export const MYBIO = `Hi, I'm Amresh Maurya.I’m a software engineer specializi
   `;
 
 // profile
-export const MYPROFILE = "Full-Stack Web Developer";
+export const MYPROFILE = "React Developer, Frontend Developer";

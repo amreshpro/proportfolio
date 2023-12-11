@@ -75,6 +75,14 @@
 -webkit-text-fill-color: transparent;
 }
 
+.gradient-text{
+   background: linear-gradient(to right,orange,red);
+  background-clip:text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
 .card-dark-bg{
   background: var(--hallmark-purple);
 }

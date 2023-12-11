@@ -26,7 +26,7 @@ export const Navbar = () => {
           {/* logo */}
           <Link
             href="/"
-            className="font-openSans font-bold link-hover  text-xl"
+            className="gradient-text font-bold   text-xl"
           >
             amresh.dev
           </Link>

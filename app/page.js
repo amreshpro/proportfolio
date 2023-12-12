@@ -9,7 +9,7 @@ export default function MainPage() {
       <TechSkill />
 
       <Project />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }

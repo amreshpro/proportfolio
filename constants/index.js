@@ -155,6 +155,7 @@ export const socialLinks = {
   github: "https://github.com/amreshpro",
   linkedin: "https://linkedin.com/in/ursamresh",
   portfolio: "https://amreshpro.com",
+  mail:"amresh.terminal@gmail.com",
   resume:
     "/resume.pdf",
 };

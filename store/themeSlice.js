@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const themeSlice = createSlice({
     name:"mode",
-    initialState:false,
+    initialState:true,
     reducers:{
         changeMode: (state,action)=>{
             return !state

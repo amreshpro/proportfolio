@@ -8,9 +8,9 @@ export const Skills = () => {
   return (
     <div className="my-4">
     
-      <div className="flex flex-col justify-start items-center px-8 py-8 gap-6">
+      <div className="flex flex-col justify-center items-center px-8 py-8 gap-6">
         {/* <h1>Tech Stack</h1> */}
-        <div className="skills1 flex flex-wrap justify-start px-8  gap-6 ">
+        <div className="skills1 flex flex-wrap justify-center px-8  gap-6 ">
           {SKILLS.map((skill) => {
             return <SkillCard key={skill.id} {...skill} />;
           })}

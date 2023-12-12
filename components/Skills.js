@@ -20,7 +20,7 @@ export function Skills() {
           })}
         </div>
       
-        <h1 className="text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#f81879ee] to-[#ff4f0a] ">
+        <h1 className="mt-2 text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#f81879ee] to-[#ff4f0a] ">
           Development & Productivity Tool I Use
         </h1>
         <div className="tech-stack flex flex-wrap">

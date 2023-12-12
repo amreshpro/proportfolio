@@ -1,26 +1,33 @@
-"use client"
+"use client";
+
 import { OTHER_SKILLS, SKILLS } from "@/constants";
-import { SkillCard } from "./SkillCard";
 
+import SkillTag from "./mini/SkillTag";
 
-
-export const Skills = () => {
+export function Skills() {
   return (
-    <div className="my-4">
-    
-      <div className="flex flex-col justify-center items-center px-8 py-8 gap-6">
-        {/* <h1>Tech Stack</h1> */}
-        <div className="skills1 flex flex-wrap justify-center px-8  gap-6 ">
+    <div className="flex flex-col justify-start items-center">
+      <h1 id="skill" className="text-3xl uppercase font-bold  text-center my-6">
+        Skills
+      </h1>
+      <div id="skills" className="container flex flex-col justify-start ">
+        <h1 className="text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#f81879ee] to-[#ff4f0a] ">
+          Technologies I Use
+        </h1>
+        <div className="tech-stack flex flex-wrap">
           {SKILLS.map((skill) => {
-            return <SkillCard key={skill.id} {...skill} />;
+            return <SkillTag key={skill.id} {...skill} />;
           })}
         </div>
-
-        {/* <div className="skills2 flex flex-wrap justify-start items-start px-8 py-8 gap-6 ">
+      
+        <h1 className="text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#f81879ee] to-[#ff4f0a] ">
+          Development & Productivity Tool I Use
+        </h1>
+        <div className="tech-stack flex flex-wrap">
           {OTHER_SKILLS.map((skill) => {
-            return <SkillCard key={skill.id} {...skill} />;
+            return <SkillTag key={skill.id} {...skill} />;
           })}
-        </div> */}
+        </div>
       </div>
     </div>
   );

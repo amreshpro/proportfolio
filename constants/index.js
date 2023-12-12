@@ -32,13 +32,13 @@ export const NAV_LINKS = [
 export const SKILLS = [
   {
     id: "techidhtml",
-    name: "HTML 5",
+    name: "HTML5",
     // image_url: "https://i.imgur.com/whCcsR1.png",
     image_url: "/skills/html.png",
   },
   {
     id: "techidcss",
-    name: "CSS 3",
+    name: "CSS3",
 
     //  image_url: "https://i.imgur.com/eCUFQLX.png"
     image_url: "/skills/css.png",
@@ -84,11 +84,11 @@ export const SKILLS = [
     // image_url: "https://i.imgur.com/lxzmhyH.png",
     image_url: "/skills/redux.png",
   },
-  // {
-  //   id: "techidexpressjs",
-  //   name: "Expressjs",
-  //   image_url: "https://i.imgur.com/a2woN60.png",
-  // },
+  {
+    id: "techidexpressjs",
+    name: "Expressjs",
+    image_url: "https://i.imgur.com/a2woN60.png",
+  },
 
   {
     id: "techidnodejs",
@@ -134,7 +134,7 @@ image_url:"/skills/vscode.png"},
   },
 {
   id:"techidlinux",
-  name:"Ubuntu Linux",
+  name:"Ubuntu",
   image_url:"/skills/ubuntu.png",
 
 },

@@ -63,7 +63,7 @@ export const Navbar = () => {
           {isMobileMenuOpen ? (
             <TfiClose className=" text-2xl " />
           ) : (
-            <CgMenuRight />
+            <CgMenuRight className="text-2xl" />
           )}
         </button>
       </div>

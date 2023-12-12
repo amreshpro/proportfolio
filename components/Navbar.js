@@ -38,7 +38,7 @@ export const Navbar = () => {
             {isDarkMode ? (
               <BsFillSunFill className="" />
             ) : (
-              <BsMoonStarsFill className="mb-0.5  text-lg" />
+              <BsMoonStarsFill className="" />
             )}
           </button>
         </div>

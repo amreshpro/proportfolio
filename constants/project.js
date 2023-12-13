@@ -33,10 +33,19 @@ export const SmallProjects = [
     title: "Github User Search",
     description:
       "A github user search, which fetch all information about github user like name, username, follower, following etc.",
-    image_url: "https://i.imgur.com/HuGkUcA.png",
+    image_url: "https://i.imgur.com/brdwjej.png",
     github_link: "https://github.com/amreshpro/github-search",
     live_link: "https://amresh-github-search.netlify.app/",
     tag: ["#reactjs", "#tailwindcss", "#api", "#javascript"],
+    technologyUsed: [
+      { name: "Javascript", image_url: "/skills/js.png" },
+      { name: "ReactJS", image_url: "/skills/react.png" },
+      { name: "Redux", image_url: "/skills/redux.png" },
+      { name: "Vite", image_url: "/skills/vite.png" },
+      { name: "TailwindCSS", image_url: "/skills/tailwind.png" },
+      { name: "CSS", image_url: "/skills/css.png" },
+      { name: "HTML", image_url: "/skills/html.png" },
+    ],
   },
 ];
 
@@ -63,6 +72,15 @@ export const clones = [
     image_url: "https://i.imgur.com/LufubPv.png",
     live_link: "https://swigi.netlify.app/",
     github_link: "https://github.com/amreshpro/swiggy",
+    technologyUsed: [
+      { name: "Javascript", image_url: "/skills/js.png" },
+      { name: "ReactJS", image_url: "/skills/react.png" },
+      { name: "Redux", image_url: "/skills/redux.png" },
+      { name: "Vite", image_url: "/skills/vite.png" },
+      { name: "TailwindCSS", image_url: "/skills/tailwind.png" },
+      { name: "CSS", image_url: "/skills/css.png" },
+      { name: "HTML", image_url: "/skills/html.png" },
+    ],
     tag: ["#reactjs", "#tailwindcss", "#nodejs", "#clone"],
   },
   // {

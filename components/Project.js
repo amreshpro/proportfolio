@@ -34,8 +34,8 @@ export const Project = () => {
 
         {othersContribution.map((project) => {
              const style = {
-               cardBg: "bg-slate-800",
-               imageCardBg: "bg-slate-600",
+               cardBg: "bg-purple-800",
+               imageCardBg: "bg-purple-600",
              };
           return <ProjectPage key={project.id} {...project} {...style} />;
         })}

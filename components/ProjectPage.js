@@ -6,7 +6,7 @@ export default function ProjectPage(props) {
  
   return (
     <div
-      className={`${props.cardBg} flex sm:flex-col shadow-lg  gap-4 px-4 py-4 rounded-3xl w-fit `}
+      className={`${props.cardBg} flex sm:flex-col shadow-lg  gap-4 px-4 py-4 rounded-3xl w-fit  text-white `}
     >
       <div
         className={`${props.imageCardBg} img h-fit  w-fit rounded-3xl px-4 py-4`}

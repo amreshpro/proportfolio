@@ -9,7 +9,7 @@ export default function ProjectPage(props) {
       className={`${props.cardBg} flex sm:flex-col shadow-lg  gap-4 px-4 py-4 rounded-3xl w-fit  text-white `}
     >
       <div
-        className={`${props.imageCardBg} img h-fit  w-fit rounded-3xl px-4 py-4`}
+        className={`${props.imageCardBg} img h-fit  w-fit rounded-3xl px-2 py-2`}
       >
         <img className=" rounded-3xl w-96" src={props.image_url} />
       </div>

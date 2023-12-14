@@ -110,52 +110,32 @@
 }
 
 
-.blobanimation{
-  background: url("/blobanimation.svg") ;
-  width: 100%;
-  height: 100%;
-}
+
 
 
 
 .blob {
-width: 250px;
-height: 250px;
+  width: 250px;
+  height: 250px;
   margin: 0 auto;
   background: url('/profile.jpeg') no-repeat;
   background-size: contain;
+  box-shadow: 0 5px 5px 5px rgba(13,110,253,0.1);
+  animation: move 4s ease-in-out infinite;
+  transition: all 1s ease-in-out;
 }
 
-.blob {
-  animation: move 4s ease-in-out infinite;
-}
+
 
 @keyframes move {
-  0% {
-    clip-path: ellipse(25% 10% at 18% 13%);
+  0%,100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+   50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+     70% {
+    border-radius: 55% 45% 80% 65% / 50% 40% 55% 40%;
   }
 
-  15% {
-    clip-path: ellipse(7% 3% at 5% 8%);
-  }
-
-  30% {
-    clip-path: ellipse(6% 9% at 15% 5%);
-  }
-
-  45% {
-    clip-path: ellipse(8% 16% at 19% 12%);
-  }
-
-  60% {
-    clip-path: ellipse(37% 22% at 14% 5%);
-  }
-
-  75% {
-    clip-path: ellipse(40% 30% at 50% 35%);
-  }
-
-  100% {
-    clip-path: ellipse(45% 50% at 50% 50%);
-  }
 }

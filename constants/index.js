@@ -153,7 +153,7 @@ export const socialLinks = {
   instagram: "https://instagram.com/amresh.here",
   twitter: "https://twitter.com/ursamresh",
   github: "https://github.com/amreshpro",
-  linkedin: "https://linkedin.com/in/ursamresh",
+  linkedin: "https://linkedin.com/in/amreshpro",
   portfolio: "https://amreshpro.com",
   mail:"amresh.terminal@gmail.com",
   resume:

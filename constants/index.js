@@ -150,8 +150,8 @@ image_url:"/skills/vscode.png"},
 
 // socila links
 export const socialLinks = {
-  instagram: "https://instagram.com/amresh.here",
-  twitter: "https://twitter.com/ursamresh",
+  instagram: "https://instagram.com/linuxflix",
+  twitter: "https://twitter.com/amreshpro",
   github: "https://github.com/amreshpro",
   linkedin: "https://linkedin.com/in/amreshpro",
   portfolio: "https://amreshpro.com",

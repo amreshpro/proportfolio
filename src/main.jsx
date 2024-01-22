@@ -1,0 +1,43 @@
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import AppLayout from "./App";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    errorElement: (
+      <h1 className="text-red-500 w-screen text-center p-2 ">
+        Error Something Went Wrong
+      </h1>
+    ),
+    children: [
+      {
+        path: "/",
+        element: <h1>Hello Home</h1>,
+      },
+      {
+        path: "/about",
+        element: <h1>Hello about</h1>,
+      },
+      {
+        path: "/works",
+        element: <h1>Hello works</h1>,
+      },
+      {
+        path: "/skills",
+        element: <h1>Hello Skills</h1>,
+      },
+      {
+        path: "/*",
+        element: <h1>Hello Page Not found</h1>,
+      },
+     
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
+);

@@ -1,4 +1,4 @@
-import { CLONES, ZSH_THEME } from "../constants/PROJECTS"
+import { CLONES, SmallProjects, ZSH_THEME } from "../constants/PROJECTS"
 import { ProjectCard } from "./ProjectCard"
 
 const Projects = () => {
@@ -15,6 +15,10 @@ const Projects = () => {
         {CLONES?.map((clone) => {
           return <ProjectCard {...clone} key={clone.id} />;
         })}
+        {SmallProjects?.map((clone) => {
+          return <ProjectCard {...clone} key={clone.id} />;
+        })}
+
         {ZSH_THEME?.map((clone) => {
           return <ProjectCard {...clone} key={clone.id} />;
         })}

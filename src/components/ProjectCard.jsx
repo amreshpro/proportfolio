@@ -18,14 +18,14 @@ const {theme } = useContext(ThemeContext)
           ? "bg-[#070929] text-gray-300"
           : "bg-[#c7dcfc] text-blue-900"
       }
-       w-72 h-96 mt-4 rounded-lg flex flex-col shadow-lg  `}
+       w-72   mt-4 rounded-lg flex flex-col shadow-lg  `}
     >
       <div className="image-container ">
         <img src={image_url} alt="" className="rounded-t-lg h-44 w-full" />
       </div>
       <div className="content px-2 py-2 sm:text-sm">
       <h1 className="font-bold text-xl">{title}</h1>
-        <h1>{description}</h1>
+        <h1 className="text-md sm:text-sm text-justify">{description}</h1>
         <div className="btn flex  gap-4 py-1">
           <Link to={live_link} className="flex items-center gap-1 text-xl">
             Live

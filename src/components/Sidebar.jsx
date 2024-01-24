@@ -7,11 +7,11 @@ export default function Sidebar() {
   const { theme } = useContext(ThemeContext);
   return (
     <div
-      className={`mobile z-50 ${
+      className={` ${
         theme == "dark"
           ? "bg-[#151b27] text-gray-200"
           : "bg-[#badaf8] text-blue-900"
-      } h-fit absolute right-0 w-[60vw] rounded-xl`}
+      } h-fit absolute right-0 w-36 rounded-xl z-50`}
     >
       <ul className="my-16 flex flex-col gap-4 text-2xl   justify-center  items-center mt-4">
         {NAV_LINKS?.map((link) => {

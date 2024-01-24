@@ -98,6 +98,8 @@ export default function Navbar() {
             stiffness: 260,
             damping: 20,
           }}
+
+          className="z-50"
         >
           <Sidebar />
         </motion.div>

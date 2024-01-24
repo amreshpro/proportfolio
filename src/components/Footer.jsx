@@ -1,15 +1,10 @@
-
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
-import {SiGmail} from "react-icons/si";
+import { SiGmail } from "react-icons/si";
 import { Link } from "react-router-dom";
-import { socialLinks } from "../constants/socialLinks";
-
-
-
-
+import { socialLinks } from "../constants/SOCIAL_LINKS";
 
 const Footer = () => {
-    const {linkedin,github,instagram,mail} = socialLinks
+  const { linkedin, github, instagram, mail } = socialLinks;
   return (
     <footer className="mt-4 flex flex-col items-center w-screen">
       <h1
@@ -65,5 +60,4 @@ const Footer = () => {
   );
 };
 
-
-export default Footer
+export default Footer;

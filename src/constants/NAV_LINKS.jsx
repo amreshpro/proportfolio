@@ -4,11 +4,11 @@ export default [
     title: "Home",
     path: "/",
   },
-  {
-    id: "nav-links2",
-    title: "About",
-    path: "/about",
-  },
+  // {
+  //   id: "nav-links2",
+  //   title: "About",
+  //   path: "/about",
+  // },
   {
     id: "nav-links3",
     title: "Skills",
@@ -18,11 +18,11 @@ export default [
   {
     id: "nav-links4",
     title: "Projects",
-    path: "#projects",
+    path: "/projects",
   },
-  {
-    id: "nav-links5",
-    title: "Contact",
-    path: "#contact",
-  },
+  // {
+  //   id: "nav-links5",
+  //   title: "Contact",
+  //   path: "#contact",
+  // },
 ];

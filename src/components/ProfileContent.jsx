@@ -1,17 +1,15 @@
-
 import { FaLinkedin } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { GiNotebook } from "react-icons/gi";
-import { MYBIO, MYPROFILE } from "../constants/Info";
+import { MYBIO, MYPROFILE } from "../constants/INFO";
 
-import { socialLinks } from "../constants/socialLinks";
+import { socialLinks } from "../constants/SOCIAL_LINKS";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ThemeContext } from "../context/context";
 
-
 export default function ProfileContent() {
-const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div className="content w-1/2 sm:w-full px-8 sm:px-2 sm:py-2 flex flex-col gap-8 ">

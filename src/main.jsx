@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AppLayout from "./App";
-import { Hero } from "./components";
+import { Hero, Projects, Skills } from "./components";
 
 
 
@@ -20,17 +20,14 @@ const router = createBrowserRouter([
         path: "/",
         element: <Hero/>,
       },
+   
       {
-        path: "/about",
-        element: <h1>Hello about</h1>,
-      },
-      {
-        path: "/works",
-        element: <h1>Hello works</h1>,
+        path: "/projects",
+        element:<Projects/>,
       },
       {
         path: "/skills",
-        element: <h1>Hello Skills</h1>,
+        element: <Skills/>,
       },
       {
         path: "/*",

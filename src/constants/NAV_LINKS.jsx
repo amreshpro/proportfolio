@@ -2,7 +2,7 @@ export default [
   {
     id: "nav-links1",
     title: "Home",
-    path: "#home",
+    path: "/",
   },
   {
     id: "nav-links2",

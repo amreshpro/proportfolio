@@ -35,26 +35,35 @@ if(themeChangeAnimation){
 
   return (
     <nav className={`mb-8 z-50 `}>
-      <div className="navbar-container flex justify-between sm:px-2  md:px-4 px-8 py-4 ">
-        <div className="logo-and-mode flex gap-4 ">
+      <div className=" flex justify-between sm:px-2  md:px-4 px-8 py-4 ">
+        <div className=" flex gap-4 ">
           {/* logo */}
-          <Link to="/" className="gradient-text font-cursive    text-2xl">
+          <Link
+            to="/"
+            className=" font-cursive hover:font-bold hover:underline hover:underline-offset-4 hover:decoration-4 hover:decoration-pink-500 text-2xl"
+          >
             amresh
           </Link>
           {/* dark mode btn */}
           <button
             onClick={() => themeChangeHandler()}
-            className="text-xl mb-0.5 link-hover"
+            className="text-xl mb-1  flex items-start  link-hover hover:rounded-full p-2 hover:bg-pink-500 "
           >
-            {theme == "dark" ? <BsFillSunFill /> : <BsMoonStarsFill />}
+            {theme == "dark" ? <BsFillSunFill className="pb-0.5" /> : <BsMoonStarsFill className="pb-0.5" />}
           </button>
         </div>
         {/* links */}
         <ul className="flex gap-4 sm:hidden">
           {NAV_LINKS?.map((link) => {
             return (
-              <li key={link.id} className="overflow-hidden text-center m-1 w-16 h-6">
-                <Link to={link.path} className="link-hover font-light hover:font-bold hover:underline hover:underline-offset-4 hover:decoration-4 hover:decoration-pink-500  ">
+              <li
+                key={link.id}
+                className="overflow-hidden text-center m-1 w-16 h-6"
+              >
+                <Link
+                  to={link.path}
+                  className="font-light hover:font-bold hover:underline hover:underline-offset-4 hover:decoration-4 hover:decoration-pink-500  "
+                >
                   {link.title}
                 </Link>
               </li>

@@ -2,6 +2,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AppLayout from "./App";
+import { Hero } from "./components";
+
+
 
 const router = createBrowserRouter([
   {
@@ -15,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <h1>Hello Home</h1>,
+        element: <Hero/>,
       },
       {
         path: "/about",

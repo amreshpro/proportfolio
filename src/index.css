@@ -63,48 +63,6 @@
 
 
 
-.title{
-  color: var(--del-blue);
-}
-.link-hover:hover{
-  /* color: var(--hover-link); */
-  background: linear-gradient(to right,orange,red);
-  background-clip:text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-
-
-
-.card-dark-bg{
-  background: var(--hallmark-purple);
-}
-.card-light-bg{
-  background: var(--uranian-blue);
-}
-
-.dark{
-  background-color:var(--dark-bg);
-  color:var(--light-text);
-}
-
-.light{
-  background-color: var(--light-bg);
-  color: var(--dark-text);
-}
-
-.dark-mobile-menu{
-  background-color:var(--dark-mobile-menu);
-  color:var(--light-text);
-}
-
-.light-mobile-menu{
-  background-color: var(--light-mobile-menu);
-  color: var(--dark-text);
-}
-
-
 
 
 

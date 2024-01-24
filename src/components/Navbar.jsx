@@ -23,15 +23,14 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-   setTimeout(() => {
+    setTimeout(() => {
       setThemeChangeAnimation(false);
     }, 1500);
-  }, [ themeChangeAnimation]);
+  }, [themeChangeAnimation]);
 
-if(themeChangeAnimation){
-  return<ThemeChangeAnimation/>
-}
-
+  if (themeChangeAnimation) {
+    return <ThemeChangeAnimation />;
+  }
 
   return (
     <nav className={`mb-8 z-50 `}>
@@ -47,9 +46,15 @@ if(themeChangeAnimation){
           {/* dark mode btn */}
           <button
             onClick={() => themeChangeHandler()}
-            className="text-xl mb-1  flex items-start  link-hover hover:rounded-full p-2 hover:bg-pink-500 "
+            className={`text-xl mb-1  flex items-start  link-hover hover:rounded-full p-2  ${
+              theme == "dark" ? "hover:bg-blue-900 " : "hover:bg-blue-300"
+            }  `}
           >
-            {theme == "dark" ? <BsFillSunFill className="pb-0.5" /> : <BsMoonStarsFill className="pb-0.5" />}
+            {theme == "dark" ? (
+              <BsFillSunFill className="pb-0.5" />
+            ) : (
+              <BsMoonStarsFill className="pb-0.5" />
+            )}
           </button>
         </div>
         {/* links */}

@@ -13,6 +13,6 @@ export default function ThemeWrapper({children}) {
     const {theme}= useContext(ThemeContext)
     console.log(theme)
   return (
-    <div className={`${theme=='dark'? 'bg-slate-950 text-white':'bg-pink-300 text-pink-800'}`}>{children}</div>
+    <div className={`${theme=='dark'? 'bg-[#10141b] text-gray-300':'bg-blue-100 text-blue-900'}`}>{children}</div>
   )
 }

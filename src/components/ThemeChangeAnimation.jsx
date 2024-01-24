@@ -1,12 +1,10 @@
-import {motion} from 'framer-motion'
-import { useContext } from 'react'
-import { ThemeContext } from '../context/context'
-import { BsFillSunFill, BsMoonStarsFill } from 'react-icons/bs'
-
+import { motion } from "framer-motion";
+import { useContext } from "react";
+import { ThemeContext } from "../context/context";
+import { BsFillSunFill, BsMoonStarsFill } from "react-icons/bs";
 
 const ThemeChangeAnimation = () => {
-
-const {theme} = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext);
 
   return (
     <motion.div
@@ -19,13 +17,10 @@ const {theme} = useContext(ThemeContext)
       }}
     >
       <div
-        className={` w-screen h-[100vh] ${
-          theme == "dark"
-            ? "bg-slate-950 text-white"
-            : "bg-pink-300 text-pink-800"
-        } flex justify-center items-center  `}
+        className={` w-screen h-[100vh] 
+     flex justify-center items-center  `}
       >
-        {theme == "dark" ? (
+        {theme != "dark" ? (
           <BsFillSunFill className="text-5xl" />
         ) : (
           <BsMoonStarsFill className="text-5xl" />
@@ -33,5 +28,5 @@ const {theme} = useContext(ThemeContext)
       </div>
     </motion.div>
   );
-}
-export default ThemeChangeAnimation
+};
+export default ThemeChangeAnimation;

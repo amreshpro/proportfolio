@@ -25,7 +25,7 @@ export default function Navbar() {
   useEffect(() => {
    setTimeout(() => {
       setThemeChangeAnimation(false);
-    }, 1000);
+    }, 1500);
   }, [ themeChangeAnimation]);
 
 if(themeChangeAnimation){
@@ -53,8 +53,8 @@ if(themeChangeAnimation){
         <ul className="flex gap-4 sm:hidden">
           {NAV_LINKS?.map((link) => {
             return (
-              <li key={link.id}>
-                <Link to={link.path} className="link-hover font-light">
+              <li key={link.id} className="overflow-hidden text-center m-1 w-16 h-6">
+                <Link to={link.path} className="link-hover font-light hover:font-bold hover:underline hover:underline-offset-4 hover:decoration-4 hover:decoration-pink-500  ">
                   {link.title}
                 </Link>
               </li>

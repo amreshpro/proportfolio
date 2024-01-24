@@ -25,7 +25,7 @@ export default function Navbar() {
   useEffect(() => {
     setTimeout(() => {
       setThemeChangeAnimation(false);
-    }, 1500);
+    }, 1200);
   }, [themeChangeAnimation]);
 
   if (themeChangeAnimation) {

@@ -3,6 +3,7 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AppLayout from "./App";
 import { Hero, Projects, Skills } from "./components";
+import AllMobilePage from "./components/AllMobilePage";
 
 
 
@@ -18,7 +19,12 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Hero/>,
+        element: <div>
+
+        <Hero/>,
+        <AllMobilePage/>
+        </div>
+          
       },
    
       {

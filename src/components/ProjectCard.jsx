@@ -15,7 +15,7 @@ const {theme } = useContext(ThemeContext)
     <div
       className={` ${
         theme == "dark"
-          ? "bg-[#070929] text-gray-300"
+          ? "bg-[#013050] text-gray-100"
           : "bg-[#c7dcfc] text-blue-900"
       }
        w-72   mt-4 rounded-lg flex flex-col shadow-lg  `}

@@ -15,23 +15,37 @@ const {theme } = useContext(ThemeContext)
     <div
       className={` ${
         theme == "dark"
-          ? "bg-[#013050] text-gray-100"
-          : "bg-[#c7dcfc] text-blue-900"
+          ? "bg-[#0e3f6d] text-white shadow-md  shadow-pink-500"
+          : "bg-[#f6e0fa] text-blue-900 shadow-xl  shadow-blue-500"
       }
-       w-72   mt-4 rounded-lg flex flex-col shadow-lg  `}
+       w-72   mt-4 rounded-lg flex flex-col `}
     >
       <div className="image-container ">
         <img src={image_url} alt="" className="rounded-t-lg h-44 w-full" />
       </div>
       <div className="content px-2 py-2 sm:text-sm">
-      <h1 className="font-bold text-xl">{title}</h1>
+        <h1 className="font-bold text-xl underline underline-offset-4 decoration-4 decoration-pink-500">{title}</h1>
         <h1 className="text-md sm:text-sm text-justify">{description}</h1>
         <div className="btn flex  gap-4 py-1">
-          <Link to={live_link} className="flex items-center gap-1 text-xl">
+          <Link
+            to={live_link}
+            className={`flex items-center gap-1 text-xl ${
+              theme == "dark"
+                ? "bg-blue-800 hover:bg-blue-900 border-b-4 border-r-2 border-pink-200"
+                : "bg-blue-300 hover:bg-blue-400  border-b-4 border-r-2 border-blue-200"
+            } shadow-md shadow-blue-500 px-2 py-0.5 rounded-full`}
+          >
             Live
             <RxExternalLink />
           </Link>
-          <Link to={github_link} className="flex items-center gap-1 text-xl">
+          <Link
+            to={github_link}
+            className={`flex items-center gap-1 text-xl ${
+              theme == "dark"
+                ? "bg-blue-800 hover:bg-blue-900 border-b-4 border-r-2 border-pink-200"
+                : "bg-blue-300 hover:bg-blue-400   border-b-4 border-r-2 border-blue-200"
+            } shadow-md shadow-blue-500 px-2 py-0.5 rounded-full`}
+          >
             Code
             <FiGithub />
           </Link>

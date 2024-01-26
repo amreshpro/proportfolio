@@ -13,10 +13,10 @@ export default function ProfileContent() {
 
   return (
     <div className="content w-1/2 sm:w-full px-8 sm:px-2 sm:py-2 flex flex-col gap-8 ">
-      <h1 className="text-5xl sm:text-3xl font-bold ">{MYPROFILE}</h1>
-      <p className="tracking-wide text-justify text-xl sm:text-lg sm:text-start">
+      <p className="tracking-wide text-justify text-5xl sm:text-3xl font-bold sm:text-start">
         {MYBIO}
       </p>
+      <h1 className="text-3xl sm:text-xl font-bold ">{MYPROFILE}</h1>
       <div className="social-links flex items-center sm:justify-center gap-3 text-3xl">
         <Link
           to={socialLinks.linkedin}

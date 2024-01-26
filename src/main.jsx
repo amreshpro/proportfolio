@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AppLayout from "./App";
 import { Hero, Projects, Skills } from "./components";
 import AllMobilePage from "./components/AllMobilePage";
+import About from "./components/About";
 
 
 
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <div>
 
-        <Hero/>,
+        <Hero/>
         <AllMobilePage/>
         </div>
           
@@ -34,6 +35,9 @@ const router = createBrowserRouter([
       {
         path: "/skills",
         element: <Skills/>,
+      },{
+        path:"/about",
+        element:<About/>
       },
       {
         path: "/*",

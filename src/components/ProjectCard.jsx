@@ -15,8 +15,8 @@ const {theme } = useContext(ThemeContext)
     <div
       className={` ${
         theme == "dark"
-          ? "bg-[#0e3f6d] text-white shadow-md  shadow-pink-500"
-          : "bg-[#f6e0fa] text-blue-900 shadow-xl  shadow-blue-500"
+          ? "bg-[#0e3f6d] text-white shadow-sm  shadow-pink-500"
+          : "bg-[#faf0fc] text-blue-900 shadow-sm  shadow-blue-500"
       }
        w-72   mt-4 rounded-lg flex flex-col `}
     >
@@ -33,7 +33,7 @@ const {theme } = useContext(ThemeContext)
               theme == "dark"
                 ? "bg-blue-800 hover:bg-blue-900 border-b-4 border-r-2 border-pink-200"
                 : "bg-blue-300 hover:bg-blue-400  border-b-4 border-r-2 border-blue-200"
-            } shadow-md shadow-blue-500 px-2 py-0.5 rounded-full`}
+            } shadow-sm shadow-blue-500 px-2 py-0.5 rounded-full`}
           >
             Live
             <RxExternalLink />
@@ -44,7 +44,7 @@ const {theme } = useContext(ThemeContext)
               theme == "dark"
                 ? "bg-blue-800 hover:bg-blue-900 border-b-4 border-r-2 border-pink-200"
                 : "bg-blue-300 hover:bg-blue-400   border-b-4 border-r-2 border-blue-200"
-            } shadow-md shadow-blue-500 px-2 py-0.5 rounded-full`}
+            } shadow-sm shadow-blue-500 px-2 py-0.5 rounded-full`}
           >
             Code
             <FiGithub />

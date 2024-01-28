@@ -12,7 +12,7 @@ export default function ProfileContent() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className="content w-1/2 sm:w-full px-8 sm:px-2 sm:py-2 flex flex-col gap-8 ">
+    <div className="content w-1/2 sm:w-full px-8 sm:px-2 sm:py-2 pt-8 flex flex-col gap-8 ">
       <p className="tracking-wide text-justify text-5xl sm:text-3xl font-bold sm:text-start">
         {MYBIO}
       </p>

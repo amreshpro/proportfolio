@@ -17,7 +17,7 @@ export default function ProfileContent() {
         {MYNAME}
       </h1>
       <h1 className="text-3xl sm:text-lg font-bold ">{MYPROFILE}</h1>
-      <div className="social-links flex items-center sm:justify-center gap-3  sm:text-lg text-3xl">
+      <div className="social-links flex items-center sm:justify-center gap-3   text-3xl">
         <Link
           to={socialLinks.linkedin}
           target="_blank"

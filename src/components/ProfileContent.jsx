@@ -12,12 +12,12 @@ export default function ProfileContent() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className="content w-1/2 sm:w-full px-8 sm:px-2 sm:py-2 pt-8 flex flex-col sm:justify-center sm:items-center sm:gap-2 gap-8 ">
+    <div className="content w-1/2 sm:w-full px-8 sm:px-2 sm:py-2 pt-2 flex flex-col sm:justify-center sm:items-center sm:gap-2 gap-8 ">
       <h1 className="tracking-wide text-justify text-5xl sm:text-3xl font-bold ">
         {MYNAME}
       </h1>
-      <h1 className="text-3xl sm:text-xl font-bold ">{MYPROFILE}</h1>
-      <div className="social-links flex items-center sm:justify-center gap-3 text-3xl">
+      <h1 className="text-3xl sm:text-lg font-bold ">{MYPROFILE}</h1>
+      <div className="social-links flex items-center sm:justify-center gap-3  sm:text-lg text-3xl">
         <Link
           to={socialLinks.linkedin}
           target="_blank"

@@ -31,9 +31,9 @@ const {theme } = useContext(ThemeContext)
             to={live_link}
             className={`flex items-center gap-1 text-xl ${
               theme == "dark"
-                ? "bg-blue-800 hover:bg-blue-900 border-b-4 border-r-2 border-pink-200"
-                : "bg-blue-300 hover:bg-blue-400  border-b-4 border-r-2 border-blue-200"
-            } shadow-sm shadow-blue-500 px-2 py-0.5 rounded-full`}
+                ? "bg-blue-800 hover:bg-blue-900 "
+                : "bg-blue-300 hover:bg-blue-400  "
+            }  px-2 py-0.5 rounded-full`}
           >
             Live
             <RxExternalLink />
@@ -42,9 +42,9 @@ const {theme } = useContext(ThemeContext)
             to={github_link}
             className={`flex items-center gap-1 text-xl ${
               theme == "dark"
-                ? "bg-blue-800 hover:bg-blue-900 border-b-4 border-r-2 border-pink-200"
-                : "bg-blue-300 hover:bg-blue-400   border-b-4 border-r-2 border-blue-200"
-            } shadow-sm shadow-blue-500 px-2 py-0.5 rounded-full`}
+                ? "bg-blue-800 hover:bg-blue-900 "
+                : "bg-blue-300 hover:bg-blue-400 "
+            } px-2 py-0.5 rounded-full`}
           >
             Code
             <FiGithub />

@@ -1,9 +1,9 @@
 export default function About() {
   return (
-    <div id="about" className="w-full">
+    <div id="about" className="w-full text-justify flex flex-col gap-2 px-4 sm:px-2">
       <h1 className="text-2xl font-bold">What I do</h1>
       <p>I am well-versed in the following technologies:</p>
-      <ul className="about-list ">
+      <ul className="about-list flex flex-col gap-4 ">
         <li className="">
           <strong> React.js:</strong> I love building dynamic user interfaces
           and single-page applications with React. My experience includes state

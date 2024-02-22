@@ -5,10 +5,18 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import About from "./components/About.tsx";
 import Skills from "./components/Skills.tsx";
 import Projects from "./components/Projects.tsx";
+import ThemeProviders from "./theme/ThemeProvider.tsx";
+import ThemeWrapper from "./theme/ThemeWrapper.tsx";
 
 const router = createBrowserRouter([
   {
-    element: <App />,
+    element: (
+      <ThemeProviders>
+        <ThemeWrapper>
+          <App />
+        </ThemeWrapper>
+      </ThemeProviders>
+    ),
     path: "/",
     errorElement: (
       <p className="text-red-500 text-center m-2">
@@ -18,7 +26,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        
+
         element: <About />,
       },
       {

@@ -61,12 +61,12 @@ export const SKILLS = [
     // image_url: "https://i.imgur.com/B8NJvnF.png",
     image_url: "/skills/nodejs.png",
   },
-  // {
-  //   id: "techidmongodb",
-  //   name: "MongoDB",
-  //   // image_url: "https://i.imgur.com/RVCqVh8.png",
-  //   image_url: "/skills/mongodb.png",
-  // },
+  {
+    id: "techidmongodb",
+    name: "MongoDB",
+    // image_url: "https://i.imgur.com/RVCqVh8.png",
+    image_url: "/skills/mongodb.png",
+  },
   // {
   //   id: "techidthree",
   //   name: "Three JS",
@@ -98,13 +98,13 @@ export const OTHER_SKILLS = [
   },
   {
     id: "techidlinux",
-    name: "Ubuntu",
+    name: "Linux",
     image_url: "/skills/ubuntu.png",
   },
-  // {
-  //   id: "techidocker",
-  //   name: "Docker",
-  //   // image_url: "https://i.imgur.com/yslLZqN.png",
-  //   image_url: "/skills/docker.png",
-  // },
+  {
+    id: "techidocker",
+    name: "Docker",
+    // image_url: "https://i.imgur.com/yslLZqN.png",
+    image_url: "/skills/docker.png",
+  },
 ];

@@ -5,11 +5,11 @@ export const PROJECTS= [
         id: "proj1",
         title: "Moviehub",
         description:
-          "A movie website using Next.js, TypeScript, React, Tailwind CSS, and the TMDB API. The website allows users to browse a collection of movies, view details about each movie, search for movies, and discover new releases. I utilized Next.js for server-side rendering and routing, TypeScript for static typing and improved code quality, React for building user interfaces, Tailwind CSS for efficient styling, and the TMDB API for fetching movie data.",
+          "A movie website using Next.js, TypeScript, React, Tailwind CSS, and the TMDB API. The website allows users to browse a collection of movies, view details about each movie, search for movies, and discover new releases. I utilized Next.js for server-side rendering and routing, TypeScript for static typing and improved code quality.",
         image_url: "projects/moviehub.png",
         github_link: "https://github.com/amreshpro/movieflix",
         live_link: "https://filmiflix.netlify.app/",
-        tag: ["#nextjs", "#reactjs", "#redux-toolkit", "#tailwindcss", "#axios"],
+        tag: ["nextjs", "reactjs", "#redux-toolkit", "tailwindcss", "axios"],
       },
 
 
@@ -49,7 +49,7 @@ export const SmallProjects = [
     image_url: "https://i.imgur.com/brdwjej.png",
     github_link: "https://github.com/amreshpro/github-search",
     live_link: "https://amresh-github-search.netlify.app/",
-    tag: ["#reactjs", "#tailwindcss", "#api", "#javascript"],
+    tag: ["reactjs", "tailwindcss", "api", "javascript"],
     technologyUsed: [
       { name: "Javascript", image_url: "/skills/js.png" },
       { name: "ReactJS", image_url: "/skills/react.png" },
@@ -72,7 +72,7 @@ export const ZSH_THEME = [
     live_link:
       "https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes#amresh-terminal-theme",
     github_link: "https://github.com/amreshpro/zsh-theme",
-    tag: ["#cli", "#terminal", "#zsh", "#oh-my-zsh"],
+    tag: ["cli", "terminal", "zsh", "oh-my-zsh"],
   },
 ];
 
@@ -82,7 +82,7 @@ export const CLONES = [
     title: "Swiggy Clone",
     description: `Developed a fully functional clone of the Swiggy.com website using modern web technologies to replicate its core features and user interface.
   Technologies/Tools Used: React.js, Tailwind CSS, JavaScript, HTML, CSS, Git, and GitHub.`,
-    image_url: "https://i.imgur.com/LufubPv.png",
+    image_url: "/projects/swigi.png",
     live_link: "https://swigi.netlify.app/",
     github_link: "https://github.com/amreshpro/swiggy",
     technologyUsed: [
@@ -94,7 +94,7 @@ export const CLONES = [
       { name: "CSS", image_url: "/skills/css.png" },
       { name: "HTML", image_url: "/skills/html.png" },
     ],
-    tag: ["#reactjs", "#tailwindcss", "#nodejs", "#clone"],
+    tag: ["reactjs", "tailwindcss", "nodejs", "clone"],
   },
 //   {
 
@@ -123,7 +123,7 @@ export const vscodeThemes = [
     image_url: "https://i.imgur.com/oNeK6RT.png",
     live_link: "",
     github_link: "https://github.com/amreshpro/brogang",
-    tag: ["#vscode", "#themes"],
+    tag: ["vscode", "themes"],
   },
   {
     id: "vscode_theme_2",
@@ -133,7 +133,7 @@ export const vscodeThemes = [
     image_url: "https://i.imgur.com/EoDLDMr.png",
     live_link: "",
     github_link: "https://github.com/amreshpro/darkuto",
-    tag: ["#vscode", "#themes"],
+    tag: ["vscode", "themes"],
   },
 ];
 

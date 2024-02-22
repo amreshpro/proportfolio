@@ -1,21 +1,23 @@
 import { Outlet } from "react-router-dom";
 import Hero from "./components/Hero";
 import ThemeButton from "./components/ThemeButton";
-// import About from "./components/About";
-// import Projects from "./components/Projects";
-// import Skills from "./components/Skills";
+import AllSection from "./components/AllSection";
 
 export default function App() {
-  return (<div className="w-screen">
-  <ThemeButton/>
- <div className="layout flex gap-8 justify-evenly " >
-    <div className="left px-16 pt-8 ">
-        <Hero/>
+  return (
+    <div>
+      <ThemeButton />
+      <div className="large-screeen flex sm:flex-col justify-evenly ">
+        <div className="hero sm:hidden pt-8 px-16 sm:px-8">
+          <Hero />
+        </div>
+        <div className="outlet sm:hidden pt-8 overflow-y-scroll h-screen">
+          <Outlet />
+        </div>
+        <div className=" hidden sm:flex pt-8 overflow-y-scroll h-screen">
+          <AllSection />
+        </div>
+      </div>
     </div>
-    <div className="right overflow-scroll px-16 pt-8">
-        <Outlet/>
-    </div>
- </div>
-  </div>
   );
 }

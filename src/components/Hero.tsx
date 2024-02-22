@@ -5,22 +5,40 @@ import SocialLinks from "./SocialLinks";
 import { SOCIAL_LINKS } from "../constants/SOCIAL_LINKS";
 import { useThemeContext } from "../theme/ThemeProvider";
 export default function Hero() {
-    const { theme } = useThemeContext();
+  const { theme } = useThemeContext();
 
   return (
-    <div className=" flex flex-col gap-4 h-screen">
-      <h1 className={`${theme=='dark' ? 'text-slate-200' : 'text-red-900'} sm:text-3xl md:text-4xl text-5xl font-bold tracking-tight `}>
+    <div className=" w-full flex flex-col gap-4  ">
+      <h1
+        className={`${
+          theme == "dark" ? "text-slate-200" : "text-red-900"
+        } sm:text-3xl md:text-4xl text-5xl font-bold tracking-tight `}
+      >
         {MYNAME}
       </h1>
-      <h2 className={` ${theme=='dark' ? 'text-slate-200' : 'text-red-900'}  text-xl sm:text-lg font-light tracking-tight `}>
+      <h2
+        className={` ${
+          theme == "dark" ? "text-slate-200" : "text-red-900"
+        }  text-xl sm:text-lg font-light tracking-tight `}
+      >
         {MYPROFILE}
       </h2>
       <p className="tracking-tight text-justify">{MYBIO}</p>
-{/* resume link */}
-<Link to={SOCIAL_LINKS?.resume} target="_blank" className={`px-4 py-2 ${theme=='dark' ? ' bg-teal-200 hover:bg-teal-900 hover:text-teal-200 text-teal-900 ':' bg-red-900 hover:bg-red-700 hover:text-red-100 text-red-50 '}transition-all  rounded-lg w-fit`}>Resume</Link>
+      {/* resume link */}
+      <Link
+        to={SOCIAL_LINKS?.resume}
+        target="_blank"
+        className={`px-4 py-2 ${
+          theme == "dark"
+            ? " bg-teal-200 hover:bg-teal-900 hover:text-teal-200 text-teal-900 "
+            : " bg-red-900 hover:bg-red-700 hover:text-red-100 text-red-50 "
+        }transition-all  rounded-lg w-fit`}
+      >
+        Resume
+      </Link>
       {/* Navlink */}
-      <div className="navbar visible ">
-      <Navbar />
+      <div className="navbar sm:hidden">
+        <Navbar />
       </div>
       {/* social links */}
       <SocialLinks />

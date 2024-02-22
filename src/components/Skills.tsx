@@ -5,7 +5,7 @@ import SkillTag from "./SkillTag";
 
 export  default function Skills() {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center w-full">
       <h1 id="skill" className="text-3xl uppercase font-bold  text-center my-6">
         Skills
       </h1>

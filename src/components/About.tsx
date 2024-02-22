@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div id="about" className="h-screen w-full">
+    <div id="about" className="w-full">
       <h1 className="text-2xl font-bold">What I do</h1>
       <p>I am well-versed in the following technologies:</p>
       <ul className="about-list ">

@@ -3,7 +3,7 @@ import ProjectCard  from "./ProjectCard"
 
 const Projects = () => {
   return (
-    <div className="flex  flex-col justify-center items-center px-4  ">
+    <div className="flex  flex-col justify-center items-center px-4 w-full ">
       <h1
         id="projects"
         className=" text-3xl uppercase font-bold text-center"

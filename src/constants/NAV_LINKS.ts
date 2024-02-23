@@ -1,13 +1,13 @@
 export default [
-//   {
-//     id: "nav-links1",
-//     title: "Home",
-//     path: "/",
-//   },
+  {
+    id: "nav-links1",
+    title: "Home",
+    path: "/",
+  },
   {
     id: "nav-links2",
     title: "About",
-    path: "/",
+    path: "/about",
   },
   {
     id: "nav-links3",

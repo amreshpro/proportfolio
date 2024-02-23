@@ -7,6 +7,7 @@ import Skills from "./components/Skills.tsx";
 import Projects from "./components/Projects.tsx";
 import ThemeProviders from "./theme/ThemeProvider.tsx";
 import ThemeWrapper from "./theme/ThemeWrapper.tsx";
+import Profile from "./components/Profile.tsx";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,12 @@ const router = createBrowserRouter([
       {
         path: "/",
 
-        element: <About />,
+        element: <Profile />,
+      },
+      {
+        path: "/home",
+
+        element: <Profile />,
       },
       {
         path: "/about",

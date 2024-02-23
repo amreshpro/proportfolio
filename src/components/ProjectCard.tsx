@@ -34,7 +34,7 @@ const ProjectCard = (props:ProjectPropType) => {
         <h1 className={`${theme=='dark' ? 'text-slate-200' :' text-red-900'} font-bold text-xl `}>
           {title}
         </h1>
-        <h1 className="text-md sm:text-sm text-justify">{description}</h1>
+        <h1 className="text-md sm:text-sm ">{description}</h1>
         <div className="btn flex  gap-2 py-1">
           <Link
             to={live_link}

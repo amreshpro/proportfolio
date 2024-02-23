@@ -31,7 +31,7 @@ const ProjectCard = (props:ProjectPropType) => {
 
       {/* project content */}
       <div className="content   px-2 py-2 sm:text-sm">
-        <h1 className={`${theme=='dark' ? 'text-slate-200' :' text-red-900'} font-bold text-xl `}>
+        <h1 className={`${theme=='dark' ? 'text-slate-200' :' text-[#f22256]'} font-bold text-xl `}>
           {title}
         </h1>
         <h1 className="text-md sm:text-sm ">{description}</h1>
@@ -41,7 +41,7 @@ const ProjectCard = (props:ProjectPropType) => {
             className={`flex items-center gap-1 text-xl transition-all ${
               theme == "dark"
                 ? " hover:bg-slate-900"
-                : "hover:bg-red-700 hover:text-red-50  "
+                : "hover:bg-[#f22256] hover:text-red-50  "
             }  px-2 py-0.5 rounded-lg`}
           >
             Live
@@ -52,7 +52,7 @@ const ProjectCard = (props:ProjectPropType) => {
             className={`flex items-center gap-1 text-xl transition-all ${
               theme == "dark"
                 ? "hover:bg-slate-900"
-                : "hover:bg-red-700 hover:text-red-50"
+                : "hover:bg-[#f22256] hover:text-red-50"
             } px-2 py-0.5 rounded-lg`}
           >
             Code

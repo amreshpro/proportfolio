@@ -13,15 +13,15 @@ export default function Hero() {
     <div className=" w-full flex flex-col gap-4  ">
       <h1
         className={`${
-          theme == "dark" ? "text-slate-200" : "text-red-800"
+          theme == "dark" ? "text-slate-200" : "text-blue-400"
         } sm:text-3xl md:text-4xl text-5xl font-bold tracking-tight `}
       >
         {MYNAME}
       </h1>
       <h2
         className={` ${
-          theme == "dark" ? "text-slate-200" : "text-red-700"
-        }  text-xl sm:text-lg font-extralight tracking-tight `}
+          theme == "dark" ? "text-slate-200" : "text-[#748DA6]"
+        }  text-xl sm:text-lg font-semibold tracking-tight `}
       >
         {MYPROFILE}
       </h2>
@@ -33,7 +33,7 @@ export default function Hero() {
         className={` px-4 py-2 ${
           theme == "dark"
             ? " bg-teal-200 hover:bg-teal-900 hover:text-teal-200 text-teal-900 "
-            : " bg-red-900 hover:bg-red-700 hover:text-red-100 text-red-50 "
+            : " bg-[#f90a46] hover:bg-[#f22256] hover:text-red-100 text-red-50 "
         } marker:transition-all  rounded-lg w-fit`}
       >
         Resume

@@ -16,7 +16,7 @@ export default function Navbar() {
               console.log("isactive:" + isActive);
               return isActive
                 ? `flex items-center gap-1 text-lg font-semibold  ${
-                    theme == "dark" ? "text-slate-200" : "text-red-900"
+                    theme == "dark" ? "text-slate-200" : "text-[#f22256]"
                   }`
                 : `flex gap-1 items-center`;
             }}

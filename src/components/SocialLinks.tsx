@@ -12,13 +12,13 @@ export default function SocialLinks() {
       <Link
         to={portfolio}
         className={`${
-          theme == "dark" ? "hover:text-slate-200" : "hover:text-red-500"
+          theme == "dark" ? "hover:text-slate-200" : "hover:text-[#f22256]"
         }`}
       ></Link>
       <Link
         to={github}
         className={`${
-          theme == "dark" ? "hover:text-slate-200" : "hover:text-red-500"
+          theme == "dark" ? "hover:text-slate-200" : "hover:text-[#f22256]"
         }`}
       >
         <BsGithub />
@@ -26,7 +26,7 @@ export default function SocialLinks() {
       <Link
         to={linkedin}
         className={`${
-          theme == "dark" ? "hover:text-slate-200" : "hover:text-red-500"
+          theme == "dark" ? "hover:text-slate-200" : "hover:text-[#f22256]"
         }`}
       >
         <BsLinkedin />
@@ -34,7 +34,7 @@ export default function SocialLinks() {
       <Link
         to={mail}
         className={`${
-          theme == "dark" ? "hover:text-slate-200" : "hover:text-red-500"
+          theme == "dark" ? "hover:text-slate-200" : "hover:text-[#f22256]"
         }`}
       >
         <TbMailOpenedFilled />
@@ -42,7 +42,7 @@ export default function SocialLinks() {
       <Link
         to={instagram}
         className={`${
-          theme == "dark" ? "hover:text-slate-200" : "hover:text-red-500"
+          theme == "dark" ? "hover:text-slate-200" : "hover:text-[#f22256]"
         }`}
       >
         <BsInstagram />

@@ -4,7 +4,7 @@ const BIO = " I am a passionate and innovative frontend developer with a focus o
 export default function HeroContent() {
   return (
     <div className="about flex flex-col gap-4 text-3xl ">
-      <span className=" text-5xl md:text-2xl sm:text-xl">
+      <span className=" text-5xl md:text-3xl sm:text-2xl">
         <strong> Hii, I'm</strong>
         <strong className="mx-2 font-bold bg-gradient-to-r from-orange-500 to-pink-500 text-transparent bg-clip-text">
           Amresh Maurya

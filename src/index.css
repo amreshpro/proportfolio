@@ -45,7 +45,7 @@
   font-weight: 600;
 }
 
-.light-btn {
+.ternary-btn {
   background-color: var(--ternary);
   color: var(--text-color);
   padding: 5px 8px;

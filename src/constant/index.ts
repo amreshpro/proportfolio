@@ -162,7 +162,7 @@ export const PROJECTS= [
       id: "proj1",
       title: "Moviehub",
       description:
-        "A movie website using Next.js, TypeScript, React, Tailwind CSS, and the TMDB API. The website allows users to browse a collection of movies, view details about each movie, search for movies, and discover new releases. I utilized Next.js for server-side rendering and routing, TypeScript for static typing and improved code quality.",
+        "A movie website using Next.js, TypeScript, React, Tailwind CSS, and the TMDB API.",
       image_url: "projects/moviehub.png",
       github_link: "https://github.com/amreshpro/movieflix",
       live_link: "https://filmiflix.netlify.app/",
@@ -170,27 +170,6 @@ export const PROJECTS= [
     },
 
 
-//   {
-//     id: "proj1",
-//     title: "Ecommerce Website",
-//     description:
-//       "A MERN application that allows users to buy items and add to cart product with payment gateway functionality. Also integrated popular web development frameworks and Tailwind CSS for a responsive and visually appealing user interface, showcasing their proficiency in the MERN stack.It is compatible with all mobile device.",
-//     image_url: "https://i.imgur.com/yTJSuhF.png",
-//     github_link: "https://github.com/amreshpro/ecommerce-website",
-//     live_link: "https://buyshy.netlify.app/",
-//     tag: ["#nextjs", "#reactjs", "#redux-toolkit", "#tailwindcss", "#axios"],
-//   },
-//   {
-//     id: "proj2",
-//     title: "3D Portfolio Landing Page",
-//     description:
-//       "A 3d portfolio website creating by using threejs,react,react-fiber,tailwindcss.It is fully responsive. ",
-
-//     image_url: "https://i.imgur.com/pd0Aqqc.png",
-//     github_link: "https://github.com/amreshpro/3dthree",
-//     live_link: "https://yoursamresh.netlify.app/",
-//     tag: ["#nextjs", "#reactjs", "#react-three-fiber", "#threejs"],
-//   },
 ];
 
 
@@ -203,7 +182,7 @@ export const SmallProjects = [
   title: "Github User Search",
   description:
     "A github user search, which fetch all information about github user like name, username, follower, following etc.",
-  image_url: "https://i.imgur.com/brdwjej.png",
+  image_url: "/projects/github-user.png",
   github_link: "https://github.com/amreshpro/github-search",
   live_link: "https://amresh-github-search.netlify.app/",
   tag: ["reactjs", "tailwindcss", "api", "javascript"],
@@ -225,7 +204,7 @@ export const ZSH_THEME = [
   title: "Oh My Zsh Terminal Theme ",
   description:
     "Oh My Zsh will not make you a 10x developer...but you may feel like one.",
-  image_url: "https://i.imgur.com/4Eebkys.png",
+  image_url: "/projects/zsh.png",
   live_link:
     "https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes#amresh-terminal-theme",
   github_link: "https://github.com/amreshpro/zsh-theme",

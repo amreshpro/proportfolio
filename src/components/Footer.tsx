@@ -8,7 +8,7 @@ import { SOCIAL_LINKS } from "../constant";
 const Footer = () => {
   const { linkedin, github, instagram, mail,portfolio } = SOCIAL_LINKS;
   return (
-    <footer className="mt-24 flex flex-col items-center w-screen">
+    <footer className="mt-2 flex flex-col items-center w-screen">
       <h1
         id="contact"
         className=" secondary w-fit p-2 px-6 rounded-lg text-2xl sm:text-lg font-bold text-center gradient-text "

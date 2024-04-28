@@ -1,5 +1,4 @@
-import { FiGithub } from "react-icons/fi";
-import { RxExternalLink } from "react-icons/rx";
+
 import { Link } from "react-router-dom";
 
 

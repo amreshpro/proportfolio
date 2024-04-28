@@ -1,4 +1,4 @@
-import { CLONES, PROJECTS, ZSH_THEME } from "../constant"
+import {  PROJECTS,} from "../constant"
 import ProjectCard from "./ProjectCard";
 
 

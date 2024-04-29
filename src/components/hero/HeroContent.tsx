@@ -21,7 +21,7 @@ export default function HeroContent() {
       </span>
 
       <p className="intro text-xl sm:text-lg">{BIO}</p>
-      <Link to={SOCIAL_LINKS?.resume} className="blue-btn w-fit text-2xl sm:text-xl font-light" >Resume</Link>
+      <Link to={SOCIAL_LINKS?.resume} className="blue-btn hover:bg-pink-500  w-fit text-2xl sm:text-xl font-light" >Resume</Link>
     </div>
   );
 }

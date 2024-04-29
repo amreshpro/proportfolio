@@ -44,7 +44,7 @@ export  default function Skills() {
 
 function SkillTag({ name, image_url }:{name:string,image_url:string}) {
    return (
-    <div className=" secondary p-2 rounded-lg w-20 h-20 flex flex-col justify-center items-center">
+    <div className=" secondary  hover:animate-bounce p-2 rounded-lg w-20 h-20 flex flex-col justify-center items-center">
       <img src={image_url} alt="name" className="w-6" />
       <h1 className=" mt-0.5">{name}</h1>
     </div>

@@ -69,12 +69,12 @@
 .blob {
   width: 250px;
   height: 250px;
-  background: url('/profile.jpeg') no-repeat;
+  background: url('/profile/profile.png') no-repeat;
   background-size: cover;
   box-shadow: 0 3px 3px 3px rgba(13,110,253,0.1);
   animation: move 4s ease-in-out infinite;
   transition: all 1s ease-in-out;
-  filter: sepia(50%) contrast(150%) saturate(170%) brightness(76%) hue-rotate(-15deg);
+  /* filter: sepia(50%) contrast(150%) saturate(170%) brightness(76%) hue-rotate(-15deg); */
 
 }
 

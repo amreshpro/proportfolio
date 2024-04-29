@@ -8,7 +8,7 @@ const Projects = () => {
         Projects
       </h1>
 
-      <div className="my-6 mb-36 flex flex-wrap gap-4">
+      <div className="my-10  flex flex-wrap justify-center gap-4">
         {PROJECTS?.map((project) => {
           return <ProjectCard {...project} key={project?.id} />;
         })}

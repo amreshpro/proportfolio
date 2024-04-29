@@ -13,7 +13,7 @@ export  default function Skills() {
       <h1 id="skill" className="secondary w-fit p-2 px-6 rounded-lg text-3xl uppercase font-bold  text-center my-6">
         Skills
       </h1>
-      <div id="skills" className="container flex flex-col justify-start ">
+      <div id="skills" className="container mb-28 flex flex-col justify-start ">
         <h1 className="text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#f81879ee] to-[#ff4f0a] ">
           Technologies I Use
         </h1>

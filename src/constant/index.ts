@@ -103,12 +103,12 @@ export const SKILLS = [
     // image_url: "https://i.imgur.com/B8NJvnF.png",
     image_url: "/skills/nodejs.png",
   },
-  // {
-  //   id: "techidmongodb",
-  //   name: "MongoDB",
-  //   // image_url: "https://i.imgur.com/RVCqVh8.png",
-  //   image_url: "/skills/mongodb.png",
-  // },
+  {
+    id: "techidmongodb",
+    name: "MongoDB",
+    // image_url: "https://i.imgur.com/RVCqVh8.png",
+    image_url: "/skills/mongodb.png",
+  },
   // {
   //   id: "techidthree",
   //   name: "Three JS",

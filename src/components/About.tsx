@@ -2,7 +2,7 @@ import { BiSolidChevronRightCircle } from "react-icons/bi";
 
 export default function About() {
   return (
-    <div id="about" className="w-full m-1 mt-4 flex flex-col justify-center gap-2 px-4 sm:px-2">
+    <div id="about" className="w-full m-1 mt-4 mb-36 flex flex-col justify-center gap-2 px-4 sm:px-2">
       <h1 className=" secondary w-fit p-2 px-6 rounded-lg  text-2xl text-center font-bold">What I do</h1>
       <p>I am well-versed in the following technologies:</p>
       <ul className="about-list flex flex-col gap-4 ">

@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { SOCIAL_LINKS } from "../../constant";
+
 const PROFILE = "Javascript Dev | React Developer | Frontend Dev";
 const BIO = " I am a passionate and innovative frontend developer with a focus on creating engaging and interactive web experiences. I specialize in using cutting-edge technologies and frameworks to bring ideas to life.";
 
@@ -18,6 +21,7 @@ export default function HeroContent() {
       </span>
 
       <p className="intro text-xl sm:text-lg">{BIO}</p>
+      <Link to={SOCIAL_LINKS?.resume} className="blue-btn w-fit text-2xl sm:text-xl font-light" >Resume</Link>
     </div>
   );
 }

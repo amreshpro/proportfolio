@@ -1,5 +1,5 @@
 export const SOCIAL_LINKS = {
-  instagram: "https://instagram.com/boot.dev",
+  instagram: "https://instagram.com/trulyamresh",
   twitter: "https://twitter.com/amreshpro",
   github: "https://github.com/amreshpro",
   linkedin: "https://linkedin.com/in/amreshpro",

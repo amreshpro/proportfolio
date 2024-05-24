@@ -1,5 +1,57 @@
+"use client"
+import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
+import { useThemeStore } from "@/store/themeStore";
+import Link from "next/link";
+
+
+
 export default function Hero() {
   return (
-    <div>Hero</div>
+    <div className=" min-h-[80vh] mb-12  flex justify-between gap-2 sm:flex-wrap-reverse items-center p-4 ">
+     
+<HeroContent/>
+<HeroImage/>
+    
+    </div>
+  );
+}
+
+
+
+
+const PROFILE = "Web Developer";
+const BIO = " I am a passionate and innovative web developer with a focus on creating engaging and interactive web experiences. I specialize in using cutting-edge technologies and frameworks to bring ideas to life.";
+
+const HeroContent=() =>{
+  const isDarkModeEnabled = useThemeStore((state)=>state.isDarkModeEnabled)
+  return (
+    <div className="about flex flex-col gap-4 text-3xl ">
+      <span className=" text-5xl md:text-3xl sm:text-2xl">
+        <strong> Hii, I&apos;m</strong>
+        <strong className="mx-2 font-bold bg-gradient-to-r from-orange-500 to-pink-500 text-transparent bg-clip-text">
+          Amresh Maurya
+        </strong>
+      </span>
+
+      <span className="flex gap-2 text-3xl md:text-2xl sm:text-xl">
+        <h1 className="font-bold bg-gradient-to-r from-orange-500 to-pink-500 text-transparent bg-clip-text">
+          {PROFILE}
+        </h1>
+      </span>
+
+      <p className="intro text-xl sm:text-lg">{BIO}</p>
+      <Link href={`${SOCIAL_MEDIA_LINKS?.resume}`} target="_blank" className="bg-gradient-to-r from-orange-600 to-pink-500  rounded-md px-0.5 py-0.5 w-fit text-xl sm:text-xl font-light" ><p className={`${isDarkModeEnabled? "dark shadow-md shadow-pink-500 ":"light shadow-md shadow-pink-500"} rounded-md px-1 py-1 `}>Resume</p></Link>
+    </div>
+  );
+}
+
+
+
+const HeroImage=()=> {
+  return (
+    <div className=" w-full flex justify-center p-1 ">
+    {/* image div */}
+    <div className="blob px-4 py-4 sm:px-2 border-2 border-ternary box"></div>
+  </div>
   )
 }

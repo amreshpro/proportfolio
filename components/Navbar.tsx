@@ -11,7 +11,7 @@ export default function Navbar() {
 
 const {isDarkModeEnabled,toggleDarkMode} = useThemeStore((state)=>state)
   return (
-    <nav className={`${ isDarkModeEnabled ? 'dark-box' : 'light-box'}   px-4 py-4 flex justify-between items-center rounded-r-full rounded-l-full  `}>
+    <nav className={`${ isDarkModeEnabled ? 'dark-box' : 'light-box'} fixed  px-4 py-4 flex justify-between gap-4 sm:gap-1 items-center rounded-r-full rounded-l-full  `}>
       <div className="logo flex gap-2 px-0.5">
         <p className="bg-red-400 rounded-full p-2 sm:p-1  hover:animate-bounce"></p>
         <p className="bg-purple-400 rounded-full p-2 sm:p-1 hover:animate-bounce"></p>

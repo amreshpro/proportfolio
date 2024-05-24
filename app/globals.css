@@ -9,7 +9,7 @@
   --light: #bbe1fa;
   --primary: #202c33;
   --secondary: #beffeb;
-  --ternary: #bbe1fa;
+  --ternary: #0762C8;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -48,6 +48,51 @@
   background: #07b39b;
 }
 
+.link-btn{
+  background-color: var(--ternary);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.blob {
+  width: 250px;
+  height: 250px;
+  background: url('/profile/profile.png') no-repeat;
+  background-size: cover;
+  box-shadow: 0 3px 3px 3px rgba(13,110,253,0.1);
+  animation: move 4s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  /* filter: sepia(50%) contrast(150%) saturate(170%) brightness(76%) hue-rotate(-15deg); */
+
+}
+
+
+
+@keyframes move {
+  0%,100% {
+    border-radius: 67% 33% 72% 28% / 46% 41% 59% 54% ;
+  }
+   25% {
+    border-radius: 29% 71% 48% 52% / 46% 58% 42% 54% ;
+  }
+   50% {
+    border-radius: 29% 71% 48% 52% / 77% 78% 22% 23% ;
+  }
+  60% {
+      border-radius: 33% 67% 65% 48% / 55% 68% 37% 40%;
+    }
+     65% {
+    border-radius: 33% 67% 75% 48% / 55% 68% 37% 69%;
+  }
+     70% {
+    border-radius: 61% 39% 47% 53% / 56% 49% 51% 44% ;
+  }
+  80% {
+      border-radius: 31% 39% 47% 63% / 56% 69% 51% 54% ;
+    }
+
+}
 
 
 

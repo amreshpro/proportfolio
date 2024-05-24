@@ -1,7 +1,7 @@
 "use client"
 /* eslint-disable @next/next/no-img-element */
 import { useThemeStore } from "@/store/themeStore";
-import { OTHER_SKILLS, SKILLS } from "../data/SKILLS";
+import { BACKEND_TECHNOLOGY, FRONTEND_TECHNOLOGY, OTHER_SKILLS, PROGRAMMING_LANGUAGES, SKILLS } from "../data/SKILLS";
 
 
 
@@ -18,10 +18,28 @@ export  default function Skills() {
       </h1>
       <div id="skills" className="container mb-28 flex flex-col justify-start ">
         <h1 className="text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#f81879ee] to-[#ff4f0a] ">
-          Technologies I Use
+         Programming Language
         </h1>
         <div className="px-6 py-6 flex gap-4 justify-center items-center flex-wrap">
-          {SKILLS?.map((skill:SkillPropTypes) => {
+          {PROGRAMMING_LANGUAGES?.map((skill:SkillPropTypes) => {
+            return <SkillTag key={skill.id} {...skill} />;
+          })}
+        </div>
+
+        <h1 className="text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#f81879ee] to-[#ff4f0a] ">
+       Frontend Technology
+        </h1>
+        <div className="px-6 py-6 flex gap-4 justify-center items-center flex-wrap">
+          {FRONTEND_TECHNOLOGY?.map((skill:SkillPropTypes) => {
+            return <SkillTag key={skill.id} {...skill} />;
+          })}
+        </div>
+
+        <h1 className="text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#f81879ee] to-[#ff4f0a] ">
+       Backend Technology
+        </h1>
+        <div className="px-6 py-6 flex gap-4 justify-center items-center flex-wrap">
+          {BACKEND_TECHNOLOGY?.map((skill:SkillPropTypes) => {
             return <SkillTag key={skill.id} {...skill} />;
           })}
         </div>

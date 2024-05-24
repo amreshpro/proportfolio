@@ -20,11 +20,11 @@
       title: "Projects",
       path: "#projects",
     },
-    // {
-    //   id: "nav-links5",
-    //   title: "Contact",
-    //   path: "#contact",
-    // },
+    {
+      id: "nav-links5",
+      title: "Contact",
+      path: "#contact",
+    },
   ];
   
 

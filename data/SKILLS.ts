@@ -1,4 +1,72 @@
 
+
+export const PROGRAMMING_LANGUAGES = [
+  {
+    id:"pl-1",
+    name:"Javascript",
+    image_url: "/skills/js.png",
+  },
+  {
+    id:"pl-2",
+    name:"Python",
+    image_url: "/skills/python.png",
+  },
+  {
+    id:"pl-3",
+    name:"Go",
+    image_url: "/skills/go.svg",
+  },
+
+
+]
+
+
+export const FRONTEND_TECHNOLOGY=[
+  {
+    id: "reactid",
+    name: "React",
+    image_url: "/skills/react.png",
+  },
+  {
+    id: "techidnextjs",
+    name: "Nextjs",
+    image_url: "/skills/nextjs.png",
+  },{
+    id:"zustand",
+    name:"Zustand",
+    image_url:"/skills/zustand.jpeg"
+  },
+  
+  {
+    id: "tailwind",
+    name: "Tailwind",
+    image_url: "/skills/tailwind.png",
+  },
+  {
+    id: "techidcss",
+    name: "CSS3",
+    image_url: "/skills/css.png",
+  },
+  {
+    id: "techidhtml",
+    name: "HTML5",
+    image_url: "/skills/html.png",
+  },
+]
+
+export const BACKEND_TECHNOLOGY=[
+  {
+    id:"expressjs",
+    name:"Express",
+    image_url:"/skills/expressjs.png"
+  },{
+    id:"django",
+    name:"Django",
+    image_url:"/skills/django.png"
+  }
+]
+
+
 export const SKILLS = [
     {
       id: "techidhtml",
@@ -89,25 +157,23 @@ export const SKILLS = [
     {
       id: "techidgit",
       name: "Git",
-      image_url: "https://i.imgur.com/h7DICgz.png",
+      image_url: "/skills/git.png",
     },
     {
       id: "techidgithub",
       name: "Github",
-      // image_url: "https://i.imgur.com/9Bv0oxe.png",
-      image_url: "/skills/github.png",
+       image_url: "/skills/github.png",
     },
     {
       id: "techidlinux",
-      name: "Ubuntu",
-      image_url: "/skills/ubuntu.png",
+      name: "Linux",
+      image_url: "/skills/linux.png",
     },
-    // {
-    //   id: "techidocker",
-    //   name: "Docker",
-    //   // image_url: "https://i.imgur.com/yslLZqN.png",
-    //   image_url: "/skills/docker.png",
-    // },
+    {
+      id: "techidocker",
+      name: "Docker",
+      image_url: "/skills/docker.png",
+    },
   ];
   
   

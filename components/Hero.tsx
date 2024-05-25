@@ -34,7 +34,7 @@ const HeroContent=() =>{
       </span>
 
       <span className="flex gap-2 text-3xl md:text-2xl sm:text-xl">
-        <h1 className="font-bold bg-gradient-to-r from-orange-500 to-pink-500 text-transparent bg-clip-text">
+        <h1 className="font-bold bg-gradient-to-r from-green-400 to-yellow-500 text-transparent bg-clip-text">
           {PROFILE}
         </h1>
       </span>

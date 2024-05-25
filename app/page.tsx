@@ -1,4 +1,5 @@
-import { Container, Footer, Hero, Navbar, Projects, Skills } from "@/components";
+"use client"
+import { Container, DarkModeButton, Footer, Hero, Navbar, Projects, Skills } from "@/components";
 import { Toaster } from "react-hot-toast";
 
 export default function Main() {
@@ -9,6 +10,8 @@ export default function Main() {
       <Skills/>
       <Projects/>
        <Footer />
+       <DarkModeButton/>
+       {/* for hot react toast  */}
       <Toaster
   position="bottom-center"
   reverseOrder={true}

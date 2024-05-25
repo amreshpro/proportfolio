@@ -1,6 +1,7 @@
 import About from "./About";
 import Contact from "./Contact";
 import Container from "./Container";
+import DarkModeButton from "./DarkModeButton";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
@@ -17,4 +18,5 @@ export  {
   About,
   Footer,
   Skills,
+  DarkModeButton
 };

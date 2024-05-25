@@ -8,8 +8,10 @@
   --dark: #1b262c;
   --light: #bbe1fa;
   --primary: #202c33;
-  --secondary: #beffeb;
-  --ternary: #0762C8;
+  --secondary: #f5e4f7;
+  --ternary: #ff21ec;
+  --btn-light:#e6c1e3;
+  --btn-dark:#2b3941;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -32,6 +34,17 @@
 }
 .light-box{
   background: var(--secondary);
+}
+
+.dark-btn{
+background:var(--btn-dark);
+padding: 5px;
+border-radius: 5px;
+}
+.light-btn{
+background: var(--btn-light);
+padding: 5px;
+border-radius: 5px;
 }
 
 .primary{

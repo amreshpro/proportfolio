@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { PROJECTS, SmallProjects, ZSH_THEME } from "../data/PROJECTS";
 import { useThemeStore } from "@/store/themeStore";
+import LinkButton from "./LinkButton";
 
 
 const Projects = () => {
@@ -53,12 +54,9 @@ const ProjectCard = (props: ProjectPropType) => {
         <h1 className="text-2xl font-bold">{title}</h1>
         <p>{description}</p>
         <div className="btns py-2  flex gap-4">
-          <Link className="link-btn " href={github_link} target="_blank">
-            Code
-          </Link>
-          <Link className="link-btn" href={live_link} target="_blank">
-            Live
-          </Link>
+          <LinkButton title={"Code"} link={github_link}  />
+          
+          <LinkButton title={"Live"} link={live_link}  />
         </div>
       </div>
     </div>

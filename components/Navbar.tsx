@@ -20,15 +20,18 @@ const {isDarkModeEnabled,toggleDarkMode} = useThemeStore((state)=>state)
       </div>
 
       <ul className="flex gap-8 sm:gap-2 md:gap-4 items-center sm:text-sm">
-      <button onClick={()=>toggleDarkMode()} className="w-fit   flex justify-start items-center text-center text-xl "><p className="">{isDarkModeEnabled ? <IoMdSunny/>:<IoMoonSharp/> }</p></button>
         {NAV_LINKS.map((nav) => {
+      
+          const {id,title,path}= nav
           return (
-            <li key={nav.id} >
-              <Link href={nav.path}>{nav.title}</Link>
+            <li key={id} >
+              <Link href={path}>{title}</Link>
             </li>
           );
         })}
       </ul>
+      <button onClick={()=>toggleDarkMode()} className="w-fit   flex justify-start items-center text-center text-xl "><p className="">{isDarkModeEnabled ? <IoMdSunny/>:<IoMoonSharp/> }</p></button>
+
     </nav>
   );
 }

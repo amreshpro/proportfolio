@@ -1,4 +1,10 @@
- const NAV_LINKS = [
+type Nav_Type= {
+  id: string,
+  title:string,
+  path:string,
+}
+
+const NAV_LINKS :Nav_Type[] = [
     // {
     //   id: "nav-links1",
     //   title: "Home",
@@ -20,7 +26,7 @@
       title: "Projects",
       path: "#projects",
     },
-    {
+  {
       id: "nav-links5",
       title: "Contact",
       path: "#contact",

@@ -17,7 +17,7 @@ export  default function Skills() {
         Skills
       </h1>
       <div id="skills" className="container mb-28 flex flex-col justify-start ">
-        <h1 className="text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#f81879ee] to-[#ff4f0a] ">
+        <h1 className="text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#ca45ffee] to-[#f15e39] ">
          Programming Language
         </h1>
         <div className="px-6 py-6 flex gap-4 justify-center items-center flex-wrap">
@@ -35,7 +35,7 @@ export  default function Skills() {
           })}
         </div>
 
-        <h1 className="text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#f81879ee] to-[#ff4f0a] ">
+        <h1 className="text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#ff3355ee] to-[#ffd54b] ">
        Backend Technology
         </h1>
         <div className="px-6 py-6 flex gap-4 justify-center items-center flex-wrap">
@@ -44,7 +44,7 @@ export  default function Skills() {
           })}
         </div>
 
-        <h1 className="mt-1 text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#f81879ee] to-[#ff4f0a] ">
+        <h1 className="mt-1 text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#ff8dd9ee] to-[#ff8839] ">
           Development & Productivity Tool I Use
         </h1>
         <div className="px-6 py-6 flex gap-4 justify-center items-center flex-wrap">

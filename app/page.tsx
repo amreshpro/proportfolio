@@ -1,4 +1,4 @@
-import { Contact, Container, Footer, Hero, Navbar, Projects, Skills } from "@/components";
+import { Container, Footer, Hero, Navbar, Projects, Skills } from "@/components";
 import { Toaster } from "react-hot-toast";
 
 export default function Main() {
@@ -8,8 +8,7 @@ export default function Main() {
       <Hero />
       <Skills/>
       <Projects/>
-      <Contact/>
-      <Footer />
+       <Footer />
       <Toaster
   position="bottom-center"
   reverseOrder={true}

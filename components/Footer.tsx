@@ -2,6 +2,7 @@ import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
 import Link from "next/link";
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
+import Contact from "./Contact";
 
 
 
@@ -17,6 +18,7 @@ const Footer = () => {
       >
         Connect With Me
       </h1>
+      <Contact/>
       <div className="mt-6 flex flex-wrap gap-4 justify-center">
         <Link
           href={linkedin}

@@ -16,7 +16,7 @@ export default function Contact() {
   }
 
   return (
-    <div id="contact" className="w-fit p-1 mx-1 sm:text-sm rounded-md bg-gradient-to-r bg-red-300 from-orange-500 to-pink-500 ">
+    <div id="contact" className="w-fit p-1 mx-1 transition-all ease-in-out hover:transform  hover:scale-125 sm:text-sm rounded-md bg-gradient-to-r bg-red-300 from-orange-500 to-pink-500 ">
       <button onClick={() => {emailCopiedHandler()}} className={`${isDarkModeEnabled? "dark":"light"} rounded-md  p-6 flex gap-1 justify-center items-center `}><Link href={'mailto:'+SOCIAL_MEDIA_LINKS.mail}>{SOCIAL_MEDIA_LINKS.mail}</Link> <FaCopy className="animate-bounce text-2xl"/> </button>
     
     </div>

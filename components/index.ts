@@ -1,12 +1,15 @@
 import About from "./About";
-import Contact from "./Contact";
+import Email from "./ui/Email";
 import Container from "./Container";
-import DarkModeButton from "./DarkModeButton";
+import DarkModeButton from "./ui/DarkModeButton";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import VSCodeThemes from "./VSCodeThemes";
+
+
 
 
 export  {
@@ -14,9 +17,10 @@ export  {
   Navbar,
   Hero,
   Projects,
-  Contact,
+  Email,
   About,
   Footer,
   Skills,
-  DarkModeButton
+  DarkModeButton,
+  VSCodeThemes
 };

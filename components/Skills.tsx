@@ -13,7 +13,7 @@ type SkillPropTypes =   {id:string, name: string; image_url: string; }
 export  default function Skills() {
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1 id="skills" className=" w-fit p-2 px-6 rounded-lg text-3xl uppercase font-bold  text-center my-6">
+      <h1 id="skills" className="uppercase  w-fit p-2 px-6 rounded-lg text-3xl font-bold  text-center my-6">
         Skills
       </h1>
       <div id="skills" className="container mb-28 flex flex-col justify-start ">

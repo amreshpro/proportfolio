@@ -40,7 +40,7 @@ const HeroContent=() =>{
       </span>
 
       <p className="intro text-xl sm:text-lg">{BIO}</p>
-      <Link href={`${SOCIAL_MEDIA_LINKS?.resume}`} target="_blank" className="bg-gradient-to-r from-orange-600 to-pink-500  rounded-md px-0.5 py-0.5 w-fit text-xl sm:text-xl font-light" ><p className={`${isDarkModeEnabled? "dark shadow-md shadow-pink-500 ":"light shadow-md shadow-pink-500"} rounded-md px-1 py-1 `}>Resume</p></Link>
+      <Link href={`${SOCIAL_MEDIA_LINKS?.resume}`} target="_blank" className=" transition-all hover:scale-125 bg-gradient-to-r from-orange-600 to-pink-500  rounded-md px-0.5 py-0.5 w-fit text-xl sm:text-xl font-light" ><p className={`${isDarkModeEnabled? "dark shadow-md shadow-pink-500 ":"light shadow-md shadow-pink-500"} rounded-md px-1 py-1 `}>Resume</p></Link>
     </div>
   );
 }
@@ -51,7 +51,7 @@ const HeroImage=()=> {
   return (
     <div className=" w-full flex justify-center p-1 ">
     {/* image div */}
-    <div className="blob px-4 py-4 sm:px-2 border-2 border-ternary box"></div>
+    <div className="blob cursor-grabbing transition-all hover:scale-125 ease-in-out px-4 py-4 sm:px-2 border-2 border-ternary box"></div>
   </div>
   )
 }

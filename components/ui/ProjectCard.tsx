@@ -42,7 +42,7 @@ export default function ProjectCard(props: PROJECT_TYPES) {
           <h1 className="text-2xl font-bold">{title}</h1>
           <p>{description}</p>
           <div className="btns py-2  flex gap-4">
-            <LinkButton title={"Code"} link={github_link}  />
+            <LinkButton title={"Code"} link={github_link}  styles="absolute top-2" />
             
             <LinkButton title={"Live"} link={live_link??'#'}  />
           </div>

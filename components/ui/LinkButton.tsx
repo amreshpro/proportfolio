@@ -11,7 +11,7 @@ export default function LinkButton(props: Link_Button_Type) {
   const isDarkModeEnabled = useThemeStore((state) => state.isDarkModeEnabled);
   return (
     <Link
-      className={`${isDarkModeEnabled ? "dark-btn" : "light-btn"}`}
+      className={`${isDarkModeEnabled ? "dark-btn" : "light-btn"}  font-bold`}
       href={link}
       target="_blank"
     >

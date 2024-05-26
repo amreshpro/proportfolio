@@ -66,7 +66,7 @@ export  default function Skills() {
 function SkillTag({ name, image_url }:{name:string,image_url:string}) {
   const isDarkModeEnabled = useThemeStore((state)=>state.isDarkModeEnabled)
    return (
-    <div className={` ${isDarkModeEnabled ? 'dark-box': 'light-box'}  hover:animate-bounce p-2.5 rounded-lg w-20 h-20 flex flex-col justify-center items-center`}>
+    <div className={` ${isDarkModeEnabled ? 'dark-box': 'light-box'}  border border-gray-300 hover:animate-bounce p-2.5 rounded-lg w-20 h-20 flex flex-col justify-center items-center`}>
       <img src={image_url} alt="name" className="w-6" />
       <h1 className=" mt-0.5 text-sm">{name}</h1>
     </div>

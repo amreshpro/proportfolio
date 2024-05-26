@@ -31,7 +31,7 @@ export default function ProjectCard(props: PROJECT_TYPES) {
           <LinkButton title={"Code"} link={github_link} />
           <LinkButton title={"Check Live Site"} link={live_link ?? "#"} />
         </div>
-        <div className="tag flex  flex-wrap gap-1">
+        <div className="tag flex  flex-wrap gap-2 sm:gap-1">
           {
             tag?.map((tagItem)=>{
          

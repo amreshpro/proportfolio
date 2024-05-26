@@ -10,7 +10,7 @@ const Projects = () => {
         Projects
       </h1>
 
-      <div className="my-10  flex flex-wrap justify-center gap-4">
+      <div className="my-10  flex flex-wrap justify-center gap-4 sm:gap-8">
         {PROJECTS?.map((project) => {
           return <ProjectCard {...project} key={project?.id} />;
         })}

@@ -5,5 +5,5 @@ export type PROJECT_TYPES=   {
     image_url: string,
     github_link:string,
     live_link?:string,
-    tag?: string[],
+    tag?: {id:string,name:string,image_url:string,}[],
   }

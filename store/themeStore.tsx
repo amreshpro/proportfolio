@@ -1,4 +1,6 @@
 "use client"
+
+
 import { create } from "zustand";
 
 type Store = {
@@ -6,21 +8,16 @@ type Store = {
 };
 
 type Action = {
-  toggleDarkMode: () => void;
+  toggleDarkMode: () => void,
+  updateThemeMode:(arg0: boolean)=>void
 };
 
 export const useThemeStore = create<Store & Action>()((set) => ({
-  isDarkModeEnabled: getThemeModeBySystem(),
+  isDarkModeEnabled: false,
   toggleDarkMode: () =>
     set((state) => ({ isDarkModeEnabled: !state.isDarkModeEnabled })),
+  updateThemeMode:(isDarkMode:boolean)=>set((state)=>({isDarkModeEnabled:isDarkMode}))
 }));
 
 
 
-function getThemeModeBySystem(){
-  if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-    return true
-  }
-  return false
-
-}

@@ -1,13 +1,7 @@
 "use client"
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
 import { PROJECTS, OTHERS_PROJECTS, ZSH_THEME } from "../data/PROJECTS";
-import { useThemeStore } from "@/store/themeStore";
-import LinkButton from "./ui/LinkButton";
-import { VSCODE_THEMES } from "@/data/THEMES";
-import { PROJECT_TYPES } from "@/data/types";
 import ProjectCard from "./ui/ProjectCard";
-
 
 const Projects = () => {
   return (

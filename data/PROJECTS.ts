@@ -1,38 +1,39 @@
-
 import { PROJECT_TYPES } from "./types";
 
+const VITE = { id: "techvite", name: "Vite", image_url: "/skills/vite.png" };
+const REACT = {
+  id: "techreact",
+  name: "ReactJS",
+  image_url: "/skills/react.png",
+};
+const JS = { id: "techjs", name: "Javascript", image_url: "/skills/js.png" };
+const TAILWINDCSS = {
+  id: "techtailwindcss",
+  name: "TailwindCSS",
+  image_url: "/skills/tailwind.png",
+};
+const HTML = { id: "techcss", name: "CSS", image_url: "/skills/css.png" };
+const CSS = { id: "techhtml", name: "HTML", image_url: "/skills/html.png" };
+const NEXTJS= { id: "technextjs", name: "NEXT", image_url: "/skills/nextjs.png" }
 
-export const FRONTEND_TECHNOLOGY_USED= [
-  { name: "Javascript", image_url: "/skills/js.png" },
-  { name: "ReactJS", image_url: "/skills/react.png" },
-  { name: "Redux", image_url: "/skills/redux.png" },
-  { name: "Vite", image_url: "/skills/vite.png" },
-  { name: "TailwindCSS", image_url: "/skills/tailwind.png" },
-  { name: "CSS", image_url: "/skills/css.png" },
-  { name: "HTML", image_url: "/skills/html.png" },
-]
 //  project
-export const PROJECTS : PROJECT_TYPES[]= [
+export const PROJECTS: PROJECT_TYPES[] = [
+  {
+    id: "proj1",
+    title: "Moviehub",
+    description:
+      "A movie website using Next.js, TypeScript, React, Tailwind CSS, and the TMDB API.",
+    image_url: "projects/moviehub.png",
+    github_link: "https://github.com/amreshpro/movieflix",
+    live_link: "https://filmiflix.netlify.app/",
 
-    {
-        id: "proj1",
-        title: "Moviehub",
-        description:
-          "A movie website using Next.js, TypeScript, React, Tailwind CSS, and the TMDB API.",
-        image_url: "projects/moviehub.png",
-        github_link: "https://github.com/amreshpro/movieflix",
-        live_link: "https://filmiflix.netlify.app/",
-        tag: ["nextjs", "reactjs", "#redux-toolkit", "tailwindcss", "axios"],
-      },
-  
-  
-  ];
-  
-  
-  
-  // small-projects
-  
-  export const OTHERS_PROJECTS:PROJECT_TYPES[] = [
+    tag:[NEXTJS,REACT,JS,TAILWINDCSS,CSS,HTML]
+  },
+];
+
+// small-projects
+
+export const OTHERS_PROJECTS: PROJECT_TYPES[] = [
   {
     id: "small_proj_3",
     title: "Github User Search",
@@ -41,12 +42,11 @@ export const PROJECTS : PROJECT_TYPES[]= [
     image_url: "/projects/github-user.png",
     github_link: "https://github.com/amreshpro/github-search",
     live_link: "https://amresh-github-search.netlify.app/",
-    tag: ["reactjs", "tailwindcss", "api", "javascript"],
-   
+    tag: [REACT,JS,TAILWINDCSS,VITE,CSS,HTML],
   },
-  ];
-  
-  export const ZSH_THEME:PROJECT_TYPES[] = [
+];
+
+export const ZSH_THEME: PROJECT_TYPES[] = [
   {
     id: "zsh_terminal_theme-1",
     title: "Oh My Zsh Terminal Theme ",
@@ -56,9 +56,6 @@ export const PROJECTS : PROJECT_TYPES[]= [
     live_link:
       "https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes#amresh-terminal-theme",
     github_link: "https://github.com/amreshpro/zsh-theme",
-    tag: ["cli", "terminal", "zsh", "oh-my-zsh"],
+  
   },
-  ];
-  
-
-  
+];

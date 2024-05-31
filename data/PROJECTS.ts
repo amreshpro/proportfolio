@@ -14,7 +14,11 @@ const TAILWINDCSS = {
 };
 const HTML = { id: "techcss", name: "CSS", image_url: "/skills/css.png" };
 const CSS = { id: "techhtml", name: "HTML", image_url: "/skills/html.png" };
-const NEXTJS= { id: "technextjs", name: "NEXT", image_url: "/skills/nextjs.png" }
+const NEXTJS = {
+  id: "technextjs",
+  name: "NEXT",
+  image_url: "/skills/nextjs.png",
+};
 
 //  project
 export const PROJECTS: PROJECT_TYPES[] = [
@@ -27,12 +31,25 @@ export const PROJECTS: PROJECT_TYPES[] = [
     github_link: "https://github.com/amreshpro/movieflix",
     live_link: "https://filmiflix.netlify.app/",
 
-    tag:[NEXTJS,REACT,JS,TAILWINDCSS,CSS,HTML]
+    tag: [NEXTJS, REACT, JS, TAILWINDCSS, CSS, HTML],
+  },
+];
+
+// react projects
+export const REACT_PROJECTS: PROJECT_TYPES[] = [
+  {
+    id: "react_Proj1",
+    title: "TextUtils",
+    description: "Streamline your text editing tasks with our intuitive tools.",
+    image_url: "projects/textutils.png",
+    github_link: "https://github.com/amreshpro/textutils",
+    live_link: "https://textutilsify.netlify.app/",
+
+    tag: [NEXTJS, REACT, JS, TAILWINDCSS, CSS, HTML],
   },
 ];
 
 // small-projects
-
 export const OTHERS_PROJECTS: PROJECT_TYPES[] = [
   {
     id: "small_proj_3",
@@ -42,7 +59,7 @@ export const OTHERS_PROJECTS: PROJECT_TYPES[] = [
     image_url: "/projects/github-user.png",
     github_link: "https://github.com/amreshpro/github-search",
     live_link: "https://amresh-github-search.netlify.app/",
-    tag: [REACT,JS,TAILWINDCSS,VITE,CSS,HTML],
+    tag: [REACT, JS, TAILWINDCSS, VITE, CSS, HTML],
   },
 ];
 
@@ -56,6 +73,5 @@ export const ZSH_THEME: PROJECT_TYPES[] = [
     live_link:
       "https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes#amresh-terminal-theme",
     github_link: "https://github.com/amreshpro/zsh-theme",
-  
   },
 ];

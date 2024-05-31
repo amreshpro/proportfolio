@@ -13,9 +13,9 @@ export default function ProjectCard(props: PROJECT_TYPES) {
     <div
       className={` ${
         isDarkModeEnabled ? "dark-box" : "light-box"
-      } border border-gray-300 rounded-lg  transition-all ease-in-out hover:transform  hover:scale-110 w-80 h-[450px]`}
+      } border border-gray-300 rounded-lg  transition-all ease-in-out hover:transform  hover:scale-105 p-3 w-80 h-[450px]`}
     >
-      <div className="img-box   w-full rounded-lg p-2">
+      <div className="img-box w-full rounded-lg p-2">
         <Link
           href={live_link ?? "#"}
           target="_blank"

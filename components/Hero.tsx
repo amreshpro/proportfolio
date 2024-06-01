@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className=" min-h-[80vh] mb-12 sm:mt-12  flex justify-between gap-2 sm:flex-wrap-reverse items-center p-4 ">
+    <div className=" min-h-screen  flex justify-between gap-6 sm:flex-wrap-reverse items-center p-4 ">
      
 <HeroContent/>
 <HeroImage/>

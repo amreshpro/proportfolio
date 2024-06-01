@@ -9,8 +9,8 @@
   --light: #bbe1fa;
   --primary: #1e293b;
   --secondary: #e4f7f6;
-  --ternary: #ff21ec;
-  --btn-light:#e6c1e3;
+  --ternary: #2181ff;
+  --btn-light:#70bfff;
   --btn-dark:#2b3941;
   scroll-behavior: smooth;
   margin: 0;
@@ -39,11 +39,15 @@
 .dark-btn{
 background:var(--btn-dark);
 padding: 5px;
+border: 1px solid rgb(209 213 219);
+opacity: 1;
 border-radius: 5px;
 }
+
 .light-btn{
 background: var(--btn-light);
 padding: 5px;
+border: 2px solid #fafffe;
 border-radius: 5px;
 }
 

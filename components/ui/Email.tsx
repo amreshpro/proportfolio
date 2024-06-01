@@ -14,6 +14,7 @@ export default function Contact() {
       position:"bottom-center"
     })
   }
+  
 
   return (
     <div id="contact" className="w-fit p-1 mx-1 transition-all ease-in-out hover:transform  hover:scale-125 sm:text-sm rounded-md bg-gradient-to-r bg-red-300 from-orange-500 to-pink-500 ">

@@ -2,17 +2,21 @@
 import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
 import { useThemeStore } from "@/store/themeStore";
 import Link from "next/link";
+import TechInfinteScroll from "./ui/TechInfinteScroll";
 
 
 
 export default function Hero() {
   return (
+    <>
     <div className=" min-h-screen  flex justify-between gap-6 sm:flex-wrap-reverse items-center p-4 ">
      
 <HeroContent/>
 <HeroImage/>
     
     </div>
+    <TechInfinteScroll/>
+    </>
   );
 }
 

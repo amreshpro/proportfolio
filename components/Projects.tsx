@@ -9,7 +9,7 @@ const Projects = () => {
       <h1 id="projects" className=" uppercase w-fit p-2 px-6 rounded-lg  text-2xl text-center font-bold">
         Projects
       </h1>
-      <div className="my-10  flex flex-wrap justify-center gap-4 sm:gap-8">
+      <div className="my-10  flex flex-wrap justify-center gap-8 sm:gap-8">
         {PROJECTS?.map((project) => {
           return <ProjectCard {...project} key={project?.id} />;
         })}
@@ -25,7 +25,7 @@ const Projects = () => {
       <h1 id="projects" className=" uppercase w-fit p-2 px-6 rounded-lg  text-2xl text-center font-bold">
         React.js Projects
       </h1>
-      <div className="my-10  flex flex-wrap justify-center gap-4 sm:gap-8">
+      <div className="my-10  flex flex-wrap justify-center gap-8 sm:gap-8">
      
         {REACT_PROJECTS.map((project) => {
           return <ProjectCard {...project} key={project?.id} />;

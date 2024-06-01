@@ -40,7 +40,7 @@ export default function Navbar() {
     </nav>
 
     {/* mobile menu */}
-    <nav className="mobile-menu hidden sm:flex w-full px-2 z-50">
+    <nav className="mobile-menu hidden sm:flex w-full px-2  z-50">
 <MobileMenu/>
     </nav>
   </>

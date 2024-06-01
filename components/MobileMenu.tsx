@@ -27,8 +27,8 @@ export default function MobileMenu() {
         </button>
       </div>
       {isMobileMenuOpen && (
-        <div className={`${isDarkModeEnabled  ? ' dark-box' : 'light-box ' } absolute flex flex-col gap-3 top-12 right-2 rounded-lg p-4`}>
-          {" "}
+        <div className={`${isDarkModeEnabled  ? ' dark-box' : 'light-box ' } absolute w-[50vw] h- flex flex-col gap-8 top-12 right-2 rounded-lg p-4`}>
+      
           <button
             onClick={() => toggleDarkMode()}
             className="w-fit   flex justify-start items-center text-center text-4xl "
@@ -37,7 +37,7 @@ export default function MobileMenu() {
               {isDarkModeEnabled ? <IoMdSunny /> : <IoMoonSharp />}
             </p>
           </button>
-          <ul className=" flex flex-col gap-4   rounded-lg">
+          <ul className=" text-xl flex flex-col gap-8  rounded-lg items-center">
             {NAV_LINKS.map((nav) => {
               const { id, title, path } = nav;
               return (

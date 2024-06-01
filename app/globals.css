@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 :root {
-  --dark: #1b262c;
+  --dark: #0f172a;
   --light: #bbe1fa;
-  --primary: #202c33;
+  --primary: #1e293b;
   --secondary: #e4f7f6;
   --ternary: #ff21ec;
   --btn-light:#e6c1e3;

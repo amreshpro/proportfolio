@@ -6,6 +6,7 @@ export const VSCODE_THEMES = [
     description:"A Dark theme for night owl.",
     image_url:"/themes/owlify.png",
     github_link:"https://github.com/amreshpro/owlify",
+    live_link: "https://owlify.netlify.app/",
     
 }
 ]

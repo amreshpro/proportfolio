@@ -7,7 +7,7 @@ import LinkButton from "./LinkButton";
 import TechnologyUsed from "./TechnologyUsed";
 
 export default function ProjectCard(props: PROJECT_TYPES) {
-  const { title, image_url, github_link, live_link, description,tag } = props;
+  const { title, image_url, github_link, live_link, description, tag } = props;
   const isDarkModeEnabled = useThemeStore((state) => state.isDarkModeEnabled);
   return (
     <div
@@ -28,16 +28,15 @@ export default function ProjectCard(props: PROJECT_TYPES) {
         <h1 className="text-2xl font-bold">{title}</h1>
         <p>{description}</p>
         <div className="btns py-2  flex gap-4">
-          <LinkButton title={"Code"} link={github_link} />
-          <LinkButton title={"Check Live Site"} link={live_link ?? "#"} />
+          {github_link && <LinkButton title={"Code"} link={github_link} />}
+          {live_link && (
+            <LinkButton title={"Check Live Site"} link={live_link} />
+          )}
         </div>
         <div className="tag flex  flex-wrap gap-2 sm:gap-1">
-          {
-            tag?.map((tagItem)=>{
-         
-              return <TechnologyUsed key={tagItem.id} {...tagItem}/>
-            })
-          }
+          {tag?.map((tagItem) => {
+            return <TechnologyUsed key={tagItem.id} {...tagItem} />;
+          })}
         </div>
       </div>
     </div>

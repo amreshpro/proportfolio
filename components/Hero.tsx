@@ -2,7 +2,6 @@
 import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
 import { useThemeStore } from "@/store/themeStore";
 import Link from "next/link";
-import TechInfinteScroll from "./ui/TechInfinteScroll";
 
 
 
@@ -15,7 +14,6 @@ export default function Hero() {
 <HeroImage/>
     
     </div>
-    <TechInfinteScroll/>
     </>
   );
 }
@@ -44,7 +42,7 @@ const HeroContent=() =>{
       </span>
 
       <p className="intro text-xl sm:text-lg">{BIO}</p>
-      <Link href={`${SOCIAL_MEDIA_LINKS?.resume}`} target="_blank" className=" transition-all hover:scale-125 bg-gradient-to-r from-orange-600 to-pink-500  rounded-md px-0.5 py-0.5 w-fit text-xl sm:text-xl font-light" ><p className={`${isDarkModeEnabled? "dark shadow-md shadow-pink-500 ":"light shadow-md shadow-pink-500"} rounded-md px-1 py-1 `}>Resume</p></Link>
+      <Link href={`${SOCIAL_MEDIA_LINKS?.resume}`} target="_blank" className=" transition-all hover:scale-105 rounded-md px-0.5 py-0.5 w-fit text-xl sm:text-xl font-light" ><p className={`${isDarkModeEnabled? "shadow-md  bg-slate-700 border-r-4 border-b-4 border-slate-800 ":" shadow-md text-blue-500 bg-gray-100 border-r-4 border-b-4 border-gray-200 "} rounded-md px-1 py-1 `}>Resume</p></Link>
     </div>
   );
 }

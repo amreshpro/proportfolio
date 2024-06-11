@@ -11,11 +11,11 @@ export const PROGRAMMING_LANGUAGES = [
     name:"Python",
     image_url: "/skills/python.png",
   },
-  {
-    id:"pl-3",
-    name:"Go",
-    image_url: "/skills/go.svg",
-  },
+  // {
+  //   id:"pl-3",
+  //   name:"Go",
+  //   image_url: "/skills/go.svg",
+  // },
 
 
 ]

@@ -6,14 +6,13 @@ import NAV_LINKS from "@/data/NAV_LINKS";
 import { IoMdSunny } from "react-icons/io";
 import { IoMoonSharp } from "react-icons/io5";
 import { useThemeStore } from "@/store/themeStore";
-import { benefitCard3 } from "@/assets/";
 
 export default function MobileMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { isDarkModeEnabled, toggleDarkMode } = useThemeStore((state) => state);
 
   return (
-    <>
+    <div className=" fixed  flex justify-between w-screen px-2 ">
       <div className="flex justify-between items-center px-2 w-full">
         <div className="logo flex sm:gap-0.5 gap-2 px-0.5 sm:animate-bounce">
           <p className="bg-red-400 rounded-full p-2 sm:p-1  hover:animate-bounce"></p>
@@ -30,8 +29,8 @@ export default function MobileMenu() {
       {isMobileMenuOpen && (
         <div
           className={`${
-            isDarkModeEnabled ? " dark-box" : "light-box "
-          } absolute w-[50vw] h- flex flex-col gap-8 top-12 right-2 rounded-lg p-4`}
+            isDarkModeEnabled ? " bg-n-10" : "light-box "
+          } absolute w-[50vw] flex flex-col gap-8 top-12 right-2 rounded-lg p-4 mr-5`}
         >
           <button
             onClick={() => toggleDarkMode()}
@@ -59,6 +58,6 @@ export default function MobileMenu() {
         </div>
        
       )}
-    </>
+    </div>
   );
 }

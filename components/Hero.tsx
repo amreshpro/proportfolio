@@ -6,9 +6,11 @@ import Link from "next/link";
 
 
 export default function Hero() {
+const isDarkModeEnabled =  useThemeStore((state)=>state.isDarkModeEnabled)
+
   return (
     <>
-    <div className=" min-h-screen  flex justify-between gap-6 sm:flex-wrap-reverse items-center p-4 ">
+    <div className={` ${isDarkModeEnabled ?  'bg-hero object-cover bg-center' : 'bg-hero-light object-cover bg-center'}   min-h-screen flex justify-between gap-6 sm:flex-wrap-reverse items-center p-4 mt-0 `}>
      
 <HeroContent/>
 <HeroImage/>

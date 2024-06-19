@@ -6,6 +6,7 @@ import NAV_LINKS from "@/data/NAV_LINKS";
 import { IoMdSunny } from "react-icons/io";
 import { IoMoonSharp } from "react-icons/io5";
 import { useThemeStore } from "@/store/themeStore";
+import { benefitCard3 } from "@/assets/";
 
 export default function MobileMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,8 +28,11 @@ export default function MobileMenu() {
         </button>
       </div>
       {isMobileMenuOpen && (
-        <div className={`${isDarkModeEnabled  ? ' dark-box' : 'light-box ' } absolute w-[50vw] h- flex flex-col gap-8 top-12 right-2 rounded-lg p-4`}>
-      
+        <div
+          className={`${
+            isDarkModeEnabled ? " dark-box" : "light-box "
+          } absolute w-[50vw] h- flex flex-col gap-8 top-12 right-2 rounded-lg p-4`}
+        >
           <button
             onClick={() => toggleDarkMode()}
             className="w-fit   flex justify-start items-center text-center text-4xl "
@@ -53,6 +57,7 @@ export default function MobileMenu() {
             })}
           </ul>
         </div>
+       
       )}
     </>
   );

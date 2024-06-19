@@ -19,18 +19,22 @@
   font-family: "Poppins", sans-serif;
 }
 
-.dark {
-  background: var(--dark);
-  color: var(--light);
+@layer {
+  .dark {
+    /* background: var(--dark); */
+    @apply bg-n-8 text-n-2;
+  }
+
+  .dark-box {
+    /* background: var(--primary); */
+  @apply bg-n-6;
+  }
 }
 .light {
   color: var(--dark);
   background: var(--light);
 }
 
-.dark-box {
-  background: var(--primary);
-}
 .light-box {
   background: var(--secondary);
 }

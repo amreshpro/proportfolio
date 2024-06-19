@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 export default function Main() {
   return (
     <Container>
+
       <Navbar />
       <Hero />
       <Skills/>

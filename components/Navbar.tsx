@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav
       className={`${
         isDarkModeEnabled ? "dark-box" : "light-box"
-      } z-50 fixed sm:hidden  border border-gray-300 px-4 py-4 flex justify-between gap-4 sm:gap-1 items-center rounded-r-full rounded-l-full  `}
+      } z-50 fixed sm:hidden mt-2 border border-gray-300 px-4 py-4 flex justify-between gap-4 sm:gap-1 items-center rounded-r-full rounded-l-full  `}
     >
       <div className="logo flex sm:gap-0.5 gap-2 px-0.5 sm:animate-bounce">
         <p className="bg-red-400 rounded-full p-2 sm:p-1  hover:animate-bounce"></p>

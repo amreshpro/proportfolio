@@ -82,7 +82,7 @@ const config: Config = {
         DEFAULT: "0.0625rem",
       },
       backgroundImage: {
-        "hero":"url('/hero/hero-background.jpg')",
+        "hero-dark":"url('/hero/hero-background.jpg')",
         "hero-light":"url('/hero/hero-light.jpg')",
 
         "radial-gradient": "radial-gradient(var(--tw-gradient-stops))",

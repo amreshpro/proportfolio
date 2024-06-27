@@ -12,7 +12,7 @@ import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
 
 
 const Footer = () => {
-  const { linkedin, github, mail, portfolio } = SOCIAL_MEDIA_LINKS;
+  const { linkedin, github, mail, portfolio,instagram } = SOCIAL_MEDIA_LINKS;
 
   const { isDarkModeEnabled } = useThemeStore((state) => state);
 
@@ -40,14 +40,14 @@ const Footer = () => {
             <BsLinkedin className="rounded-lg text-3xl sm:text-[24px]" />
           </Link>
 
-          {/* <Link
+          <Link
           href={instagram}
           target="_blank"
-          className="sm:h-fit sm:p-2 px-4 py-2 rounded-l-full rounded-r-full bg-[#e4405f] text-white text-lg flex gap-2 items-center"
+          className="sm:h-fit sm:p-2 px-2 py-2 rounded-l-full rounded-r-full bg-[#e4405f] text-white text-lg flex gap-2 items-center"
         >
-          <p className="sm:hidden text-lg font-bold">Instagram</p>
+          {/* <p className="sm:hidden text-lg font-bold">Instagram</p> */}
           <BsInstagram className="rounded-lg text-3xl sm:text-[24px]" />
-        </Link> */}
+        </Link>
           <Link
             href={github}
             target="_blank"
@@ -68,9 +68,9 @@ const Footer = () => {
         </div>
 
         <div className="w-full p-4 text-center sm:text-sm">
-          © 2023 Copyright:
-          <Link className="link-hover font-semibold" href={portfolio}>
-            amreshpro
+          © 2024 Copyright : &nbsp;
+          <Link className="link-hover italic font-semibold" href={portfolio}>
+             Amresh Maurya
           </Link>
         </div>
       </div>

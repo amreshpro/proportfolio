@@ -1,11 +1,14 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import { IoMoonSharp } from "react-icons/io5";
 import { IoMdSunny } from "react-icons/io";
-import NAV_LINKS from "@/data/NAV_LINKS";
-import { useThemeStore } from "@/store/themeStore";
+
 import MobileMenu from "./MobileMenu";
-import { useState } from "react";
+import { useThemeStore } from "@/store/themeStore";
+
+import NAV_LINKS from "@/data/NAV_LINKS";
+
 
 export default function Navbar() {
   const { isDarkModeEnabled, toggleDarkMode } = useThemeStore((state) => state);

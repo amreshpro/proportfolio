@@ -1,8 +1,11 @@
 "use client";
-import { useThemeStore } from "@/store/themeStore";
 /* eslint-disable @next/next/no-img-element */
-import { PROJECTS, OTHERS_PROJECTS, ZSH_THEME } from "../data/PROJECTS";
+import { useThemeStore } from "@/store/themeStore";
+
 import ProjectCard from "./ui/ProjectCard";
+
+import { PROJECTS, OTHERS_PROJECTS, ZSH_THEME } from "../data/PROJECTS";
+
 
 const Projects = () => {
   const { isDarkModeEnabled } = useThemeStore((state) => state);

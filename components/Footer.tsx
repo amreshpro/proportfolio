@@ -1,9 +1,15 @@
-import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
 import Link from "next/link";
+
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
+
 import Contact from "./ui/Email";
+
 import { useThemeStore } from "@/store/themeStore";
+
+import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
+
+
 
 const Footer = () => {
   const { linkedin, github, mail, portfolio } = SOCIAL_MEDIA_LINKS;

@@ -1,5 +1,7 @@
-import { VSCODE_THEMES } from "@/data/THEMES";
 import ProjectCard from "./ui/ProjectCard";
+
+import { VSCODE_THEMES } from "@/data/THEMES";
+
 
 export default function VSCodeThemes() {
   return (

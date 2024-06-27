@@ -1,4 +1,3 @@
-import About from "./About";
 import Email from "./ui/Email";
 import Container from "./Container";
 import DarkModeButton from "./ui/DarkModeButton";
@@ -18,7 +17,6 @@ export  {
   Hero,
   Projects,
   Email,
-  About,
   Footer,
   Skills,
   DarkModeButton,

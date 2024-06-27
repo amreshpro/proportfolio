@@ -1,7 +1,9 @@
 "use client"
-import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
-import { useThemeStore } from "@/store/themeStore";
 import Link from "next/link";
+
+import { useThemeStore } from "@/store/themeStore";
+
+import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
 
 
 

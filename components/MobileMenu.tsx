@@ -1,11 +1,15 @@
 import { useState } from "react";
 import Link from "next/link";
+
 import { TbMenu } from "react-icons/tb";
 import { RxCross1 } from "react-icons/rx";
-import NAV_LINKS from "@/data/NAV_LINKS";
 import { IoMdSunny } from "react-icons/io";
 import { IoMoonSharp } from "react-icons/io5";
+
 import { useThemeStore } from "@/store/themeStore";
+
+import NAV_LINKS from "@/data/NAV_LINKS";
+
 
 export default function MobileMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

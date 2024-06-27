@@ -1,8 +1,8 @@
 "use client"
 /* eslint-disable @next/next/no-img-element */
 import { useThemeStore } from "@/store/themeStore";
-import { BACKEND_TECHNOLOGY, FRONTEND_TECHNOLOGY, OTHER_SKILLS, PROGRAMMING_LANGUAGES, SKILLS } from "../data/SKILLS";
 
+import { BACKEND_TECHNOLOGY, FRONTEND_TECHNOLOGY, OTHER_SKILLS, PROGRAMMING_LANGUAGES, SKILLS } from "../data/SKILLS";
 
 
 

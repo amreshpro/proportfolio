@@ -1,10 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-
-import { PROJECT_TYPES } from "@/data/types";
-import { useThemeStore } from "@/store/themeStore";
 import Link from "next/link";
+
+import { useThemeStore } from "@/store/themeStore";
+
 import LinkButton from "./LinkButton";
 import TechnologyUsed from "./TechnologyUsed";
+
+import { PROJECT_TYPES } from "@/data/types";
+
 
 export default function ProjectCard(props: PROJECT_TYPES) {
   const { title, image_url, github_link, live_link, description, tag } = props;

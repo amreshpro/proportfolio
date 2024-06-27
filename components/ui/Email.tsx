@@ -1,9 +1,13 @@
 "use client";
-import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
-import { useThemeStore } from "@/store/themeStore";
 import Link from "next/link";
+
 import toast from "react-hot-toast";
 import { FaCopy } from "react-icons/fa";
+
+import { useThemeStore } from "@/store/themeStore";
+
+import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
+
 
 export default function Contact() {
   const isDarkModeEnabled = useThemeStore((state) => state.isDarkModeEnabled);

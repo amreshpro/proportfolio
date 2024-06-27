@@ -6,7 +6,6 @@ import NAV_LINKS from "@/data/NAV_LINKS";
 import { useThemeStore } from "@/store/themeStore";
 import MobileMenu from "./MobileMenu";
 import { useState } from "react";
-import MenuSvg from "../assets/svg/MenuSvg";
 
 export default function Navbar() {
   const { isDarkModeEnabled, toggleDarkMode } = useThemeStore((state) => state);

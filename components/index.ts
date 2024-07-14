@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import VSCodeThemes from "./VSCodeThemes";
-
+import Contact from "./Contact";
 
 
 
@@ -17,6 +17,7 @@ export  {
   Hero,
   Projects,
   Email,
+  Contact,
   Footer,
   Skills,
   DarkModeButton,

@@ -32,8 +32,7 @@ export default function Contact() {
       );
   }
 
-
-  if(isLoading) return <Loading/>
+  if (isLoading) return <Loading />;
   return (
     <form
       ref={form}
@@ -42,6 +41,7 @@ export default function Contact() {
     >
       <label>Name</label>
       <input
+        required
         type="text"
         name="user_name"
         placeholder="Enter your name..."
@@ -49,6 +49,7 @@ export default function Contact() {
       />
       <label>Email</label>
       <input
+        required
         type="email"
         name="user_email"
         placeholder="Enter your email..."
@@ -56,6 +57,7 @@ export default function Contact() {
       />
       <label>Message</label>
       <textarea
+        required
         name="message"
         placeholder="Enter your email..."
         className="px-2 py-1 bg-slate-700 text-white outline-none rounded-lg"

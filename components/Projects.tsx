@@ -11,7 +11,7 @@ const Projects = () => {
   const { isDarkModeEnabled } = useThemeStore((state) => state);
 
   return (
-    <div className={`${ isDarkModeEnabled ? 'bg-n-7' : 'bg-color-5'} mt-4 flex  flex-col justify-center items-center px-4 w-full `}>
+    <div className={`${ isDarkModeEnabled ? '' : ''} mt-4 flex  flex-col justify-center items-center px-4 w-full `}>
       <h1
         id="projects"
         className=" uppercase w-fit p-2 px-6 rounded-lg  text-2xl text-center font-bold"

@@ -26,7 +26,7 @@ const Footer = () => {
         Connect With Me
       </h1>
       <Contact />
-      <div className={`${isDarkModeEnabled ? "bg-n-9" : "bg-color-5"} mt-4 w-screen py-4 `}>
+      <div className={`${isDarkModeEnabled ? "" : ""} mt-4 w-screen py-4 `}>
         <div
           className={` mt-6 flex flex-wrap gap-4 justify-center`}
         >

@@ -13,8 +13,8 @@ export default function Hero() {
       <div
         className={` ${
           isDarkModeEnabled
-            ? "bg-hero-dark object-cover bg-center"
-            : "bg-hero-light object-cover bg-center"
+            ? ""
+            : ""
         }   min-h-screen flex justify-between gap-6 sm:flex-wrap-reverse items-center p-4 w-screen sm:mt-4 mt-0 `}
       >
         <HeroContent />

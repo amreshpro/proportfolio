@@ -10,7 +10,6 @@ import { useThemeStore } from "@/store/themeStore";
 
 import NAV_LINKS from "@/data/NAV_LINKS";
 
-
 export default function MobileMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { isDarkModeEnabled, toggleDarkMode } = useThemeStore((state) => state);
@@ -18,10 +17,22 @@ export default function MobileMenu() {
   return (
     <div className=" fixed  flex justify-between w-screen px-2 ">
       <div className="flex justify-between items-center px-2 w-full">
-        <div className="logo flex sm:gap-0.5 gap-2 px-0.5 sm:animate-bounce">
-          <p className="bg-red-400 rounded-full p-2 sm:p-1  hover:animate-bounce"></p>
-          <p className="bg-orange-400 rounded-full p-2 sm:p-1 hover:animate-bounce "></p>
-          <p className="bg-green-400 rounded-full p-2 sm:p-1 hover:animate-bounce"></p>
+        <div className="logo flex gap-4 items-center sm:gap-0.5  px-0.5 ">
+          <div className="logo flex h-fit pr-4  animate-bounce">
+            <p className="bg-red-400 rounded-full p-2 sm:p-1  hover:animate-bounce"></p>
+            <p className="bg-orange-400 rounded-full p-2 sm:p-1 hover:animate-bounce "></p>
+            <p className="bg-green-400 rounded-full p-2 sm:p-1 hover:animate-bounce"></p>
+          </div>
+          <div className="dark-mode">
+            <button
+              onClick={() => toggleDarkMode()}
+              className="w-fit   flex justify-start items-center text-center text-3xl "
+            >
+              <p className="">
+                {isDarkModeEnabled ? <IoMdSunny /> : <IoMoonSharp />}
+              </p>
+            </button>
+          </div>
         </div>
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -60,7 +71,6 @@ export default function MobileMenu() {
             })}
           </ul>
         </div>
-       
       )}
     </div>
   );

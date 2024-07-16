@@ -44,7 +44,7 @@ const Footer = () => {
           <Link
           href={instagram}
           target="_blank"
-          className="sm:h-fit sm:p-2 px-2 py-2 rounded-l-full rounded-r-full bg-[#e4405f] text-white text-lg flex gap-2 items-center"
+          className="sm:h-fit sm:p-2 px-2 py-2 rounded-l-full rounded-r-full bg-[#e4405f] text-white text-lg flex gap-2 items-center transition-all ease-in-out hover:transform  hover:scale-110"
         >
           {/* <p className="sm:hidden text-lg font-bold">Instagram</p> */}
           <BsInstagram className="rounded-lg text-3xl sm:text-[24px]" />

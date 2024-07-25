@@ -1,5 +1,5 @@
-import ProjectCard from "./ui/ProjectCard";
 
+import Project from "@/components/projects/card";
 import { VSCODE_THEMES } from "@/data/THEMES";
 
 
@@ -14,7 +14,7 @@ export default function VSCodeThemes() {
 
     <div className="my-10  flex flex-wrap justify-center gap-8">
       {VSCODE_THEMES?.map((project) => {
-        return <ProjectCard   {...project} key={project?.id} />;
+        return <Project   {...project} key={project?.id} />;
       })}
       </div>
   </div>

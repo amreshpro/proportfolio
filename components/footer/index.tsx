@@ -8,7 +8,7 @@ import { SiGmail } from "react-icons/si";
 import { useThemeStore } from "@/store/themeStore";
 
 import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
-import Contact from "./Contact";
+import Contact from "../contact";
 
 
 

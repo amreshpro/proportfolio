@@ -1,15 +1,16 @@
-/* eslint-disable @next/next/no-img-element */
+
 import Link from "next/link";
 
 import { useThemeStore } from "@/store/themeStore";
 
-import LinkButton from "./LinkButton";
-import TechnologyUsed from "./TechnologyUsed";
+
 
 import { PROJECT_TYPES } from "@/data/types";
+import LinkButton from "@/components/ui/LinkButton";
+import Technology from "@/components/ui/Technology";
 
 
-export default function ProjectCard(props: PROJECT_TYPES) {
+export default function Project(props: PROJECT_TYPES) {
   const { title, image_url, github_link, live_link, description, tag } = props;
   const isDarkModeEnabled = useThemeStore((state) => state.isDarkModeEnabled);
   return (
@@ -38,7 +39,7 @@ export default function ProjectCard(props: PROJECT_TYPES) {
         </div>
         <div className="tag flex  flex-wrap gap-2 sm:gap-1">
           {tag?.map((tagItem) => {
-            return <TechnologyUsed key={tagItem.id} {...tagItem} />;
+            return <Technology key={tagItem.id} {...tagItem} />;
           })}
         </div>
       </div>

@@ -1,7 +1,7 @@
 "use client"
+import { PROGRAMMING_LANGUAGES, FRONTEND_TECHNOLOGY, BACKEND_TECHNOLOGY, OTHER_SKILLS } from "@/data/SKILLS";
 import { useThemeStore } from "@/store/themeStore";
 
-import { BACKEND_TECHNOLOGY, FRONTEND_TECHNOLOGY, OTHER_SKILLS, PROGRAMMING_LANGUAGES, SKILLS } from "../data/SKILLS";
 import Image from "next/image";
 
 

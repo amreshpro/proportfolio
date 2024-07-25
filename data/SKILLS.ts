@@ -9,11 +9,11 @@ export const PROGRAMMING_LANGUAGES = [
     name: "Java",
     image_url: "/skills/java.svg",
   },
-  {
-    id: "pl-3",
-    name: "Python",
-    image_url: "/skills/python.png",
-  },
+  // {
+  //   id: "pl-3",
+  //   name: "Python",
+  //   image_url: "/skills/python.png",
+  // },
   // {
   //   id:"pl-3",
   //   name:"Go",
@@ -22,7 +22,6 @@ export const PROGRAMMING_LANGUAGES = [
 ];
 
 export const FRONTEND_TECHNOLOGY = [
- 
   {
     id: "techidnextjs",
     name: "Nextjs",
@@ -33,7 +32,7 @@ export const FRONTEND_TECHNOLOGY = [
     name: "React",
     image_url: "/skills/react.png",
   },
- 
+
   {
     id: "tailwind",
     name: "Tailwind",
@@ -53,10 +52,11 @@ export const FRONTEND_TECHNOLOGY = [
 
 export const BACKEND_TECHNOLOGY = [
   {
-    id: "expressjs",
-    name: "Express",
-    image_url: "/skills/expressjs.svg",
+    id: "nodejs",
+    name: "Nodejs",
+    image_url: "/skills/nodejs.svg",
   },
+
   {
     id: "spring",
     name: "Spring",
@@ -136,15 +136,16 @@ export const SKILLS = [
 
 export const OTHER_SKILLS = [
   {
-    id: "techidpostman",
-    name: "Postman",
-    image_url: "/skills/postman.svg",
-  },
-  {
     id: "techidvscode",
     name: "VSCode",
     image_url: "/skills/vscode.png",
   },
+  {
+    id: "techidpostman",
+    name: "Postman",
+    image_url: "/skills/postman.svg",
+  },
+
   {
     id: "techidgit",
     name: "Git",
@@ -156,13 +157,13 @@ export const OTHER_SKILLS = [
     image_url: "/skills/github.png",
   },
   {
-    id: "techidlinux",
-    name: "Linux",
-    image_url: "/skills/ubuntu.svg",
-  },
-  {
     id: "techidocker",
     name: "Docker",
     image_url: "/skills/docker.png",
+  },
+  {
+    id: "techidlinux",
+    name: "Linux",
+    image_url: "/skills/ubuntu.svg",
   },
 ];

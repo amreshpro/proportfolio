@@ -15,7 +15,7 @@ export default function MobileMenu() {
   const { isDarkModeEnabled, toggleDarkMode } = useThemeStore((state) => state);
 
   return (
-    <div className=" fixed  flex justify-between w-screen px-2 ">
+    <div className=" fixed py-2 flex justify-between w-screen px-2">
       <div className="flex justify-between items-center px-2 w-full">
         <div className="logo flex gap-4 items-center sm:gap-0.5  px-0.5 ">
           <div className="logo flex h-fit pr-4  animate-bounce">
@@ -45,16 +45,9 @@ export default function MobileMenu() {
         <div
           className={`${
             isDarkModeEnabled ? " bg-n-10" : "light-box "
-          } absolute w-[50vw] flex flex-col gap-8 top-12 right-2 rounded-lg p-4 mr-5`}
+          } absolute w-[50vw] h-screen flex flex-col gap-8 top-12 right-2 rounded-lg p-4 mx-1 `}
         >
-          <button
-            onClick={() => toggleDarkMode()}
-            className="w-fit   flex justify-start items-center text-center text-4xl "
-          >
-            <p className="">
-              {isDarkModeEnabled ? <IoMdSunny /> : <IoMoonSharp />}
-            </p>
-          </button>
+        
           <ul className=" text-xl flex flex-col gap-8  rounded-lg items-center">
             {NAV_LINKS.map((nav) => {
               const { id, title, path } = nav;

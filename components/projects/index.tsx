@@ -29,9 +29,7 @@ const Projects = () => {
           return <Project {...project} key={project?.id} />;
         })}
 
-        {ZSH_THEME?.map((project) => {
-          return <Project {...project} key={project?.id} />;
-        })}
+  
       </div>
     </div>
   );

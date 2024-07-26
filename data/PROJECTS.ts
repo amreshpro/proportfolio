@@ -27,7 +27,7 @@ export const PROJECTS: PROJECT_TYPES[] = [
     title: "Moviehub",
     description:
       "A movie website using Next.js, TypeScript, React, Tailwind CSS, and the TMDB API.",
-    image_url: "projects/moviehub.png",
+    image_url: "/projects/moviehub.png",
     github_link: "https://github.com/amreshpro/movieflix",
     live_link: "https://filmiflix.netlify.app/",
 
@@ -41,7 +41,7 @@ export const REACT_PROJECTS: PROJECT_TYPES[] = [
     id: "react_Proj1",
     title: "TextUtils",
     description: "Streamline your text editing tasks with our intuitive tools.",
-    image_url: "projects/textutils.png",
+    image_url: "/projects/textutils.png",
     github_link: "https://github.com/amreshpro/textutils",
     live_link: "https://textutilsify.netlify.app/",
 

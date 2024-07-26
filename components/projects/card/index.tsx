@@ -8,6 +8,7 @@ import { useThemeStore } from "@/store/themeStore";
 import { PROJECT_TYPES } from "@/data/types";
 import LinkButton from "@/components/ui/LinkButton";
 import Technology from "@/components/ui/Technology";
+import Image from "next/image";
 
 
 export default function Project(props: PROJECT_TYPES) {
@@ -25,7 +26,7 @@ export default function Project(props: PROJECT_TYPES) {
           target="_blank"
           className="rounded-lg  w-full  "
         >
-          <img src={image_url} alt={title} className="rounded-lg" />
+          <Image quality={100} width={1000} height={1000} src={image_url} alt={title} className="rounded-lg" />
         </Link>
       </div>
       <div className="content w-full p-2">

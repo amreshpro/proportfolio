@@ -24,11 +24,11 @@ const NEXTJS = {
 export const PROJECTS: PROJECT_TYPES[] = [
   {
     id: "proj1",
-    title: "Moviehub",
+    title: "FilmiFlix",
     description:
       "A movie website using Next.js, TypeScript, React, Tailwind CSS, and the TMDB API.",
-    image_url: "/projects/moviehub.png",
-    github_link: "https://github.com/amreshpro/movieflix",
+    image_url: "/projects/filmiflix.png",
+    github_link: "https://github.com/amreshpro/filmiflix",
     live_link: "https://filmiflix.netlify.app/",
 
     tag: [NEXTJS, REACT, JS, TAILWINDCSS, CSS, HTML],

@@ -26,7 +26,7 @@ export const PROJECTS: PROJECT_TYPES[] = [
     id: "proj1",
     title: "FilmiFlix",
     description:
-      "A movie website using Next.js, TypeScript, React, Tailwind CSS, and the TMDB API.",
+      "A movie website created by using Next.js, TypeScript, React, Tailwind CSS, and the TMDB API.",
     image_url: "/projects/filmiflix.png",
     github_link: "https://github.com/amreshpro/filmiflix",
     live_link: "https://filmiflix.netlify.app/",

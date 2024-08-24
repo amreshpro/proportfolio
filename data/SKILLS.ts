@@ -1,24 +1,15 @@
 export const PROGRAMMING_LANGUAGES = [
   {
     id: "pl-1",
-    name: "Javascript",
-    image_url: "/skills/js.png",
-  },
-  {
-    id: "pl-2",
     name: "Java",
     image_url: "/skills/java.svg",
   },
-  // {
-  //   id: "pl-3",
-  //   name: "Python",
-  //   image_url: "/skills/python.png",
-  // },
-  // {
-  //   id:"pl-3",
-  //   name:"Go",
-  //   image_url: "/skills/go.svg",
-  // },
+  {
+    id: "pl-2",
+    name: "Javascript",
+    image_url: "/skills/js.png",
+  },
+
 ];
 
 export const FRONTEND_TECHNOLOGY = [
@@ -59,14 +50,10 @@ export const BACKEND_TECHNOLOGY = [
 
   {
     id: "spring",
-    name: "Spring",
+    name: "Spring Boot",
     image_url: "/skills/spring.svg",
   },
-  // {
-  //   id:"django",
-  //   name:"Django",
-  //   image_url:"/skills/django.png"
-  // }
+
 ];
 
 export const SKILLS = [
@@ -100,7 +87,6 @@ export const SKILLS = [
     name: "React",
     image_url: "/skills/react.png",
   },
-
   {
     id: "techidexpress",
     name: "Express",
@@ -127,11 +113,7 @@ export const SKILLS = [
     name: "MongoDB",
     image_url: "/skills/mongodb.png",
   },
-  // {
-  //   id: "techidthree",
-  //   name: "Three JS",
-  //   image_url: "https://i.imgur.com/Lky1TeM.jpg",
-  // },
+  
 ];
 
 export const OTHER_SKILLS = [

@@ -1,9 +1,7 @@
 "use client";
-import Link from "next/link";
 
 import { useThemeStore } from "@/store/themeStore";
 
-import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
 
 export default function Hero() {
   const isDarkModeEnabled = useThemeStore((state) => state.isDarkModeEnabled);
@@ -29,7 +27,6 @@ const BIO =
   " I am a passionate and innovative web developer with a focus on creating engaging and interactive web experiences. I specialize in using cutting-edge technologies and frameworks to bring ideas to life.";
 
 const HeroContent = () => {
-  const isDarkModeEnabled = useThemeStore((state) => state.isDarkModeEnabled);
   return (
     <div className="about flex flex-col gap-4 text-3xl ">
       <span className=" text-5xl md:text-3xl sm:text-2xl">
@@ -46,7 +43,7 @@ const HeroContent = () => {
       </span>
 
       <p className="intro text-xl sm:text-lg">{BIO}</p>
-      <Link
+      {/* <Link
         href={`${SOCIAL_MEDIA_LINKS?.resume}`}
         target="_blank"
         className=" transition-all hover:scale-105 rounded-md px-0.5 py-0.5 w-fit text-xl sm:text-xl font-light"
@@ -60,7 +57,7 @@ const HeroContent = () => {
         >
           Resume
         </p>
-      </Link>
+      </Link> */}
     </div>
   );
 };

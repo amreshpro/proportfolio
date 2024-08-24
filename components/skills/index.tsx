@@ -80,7 +80,7 @@ function SkillTag({ name, image_url }:{name:string,image_url:string}) {
    return (
     <div className={` ${isDarkModeEnabled ? 'dark-box': 'light-box'}  border border-gray-300 hover:animate-bounce p-2.5 rounded-lg w-20 h-20 flex flex-col justify-center items-center`}>
       <Image unoptimized={true} width={6} height={6} src={image_url} alt="name" className="w-6" />
-      <h1 className=" mt-0.5 text-sm">{name}</h1>
+      <h1 className=" mt-0.5 text-sm text-center">{name}</h1>
     </div>
   );
 }

@@ -80,8 +80,9 @@
 .blob {
   width: 250px;
   height: 250px;
-  background: url("/profile/profile.png") no-repeat;
+  background: url("/profile/amreshpro.jpg") no-repeat;
   background-size: cover;
+  border-radius:50%;
   box-shadow: 0 3px 3px 3px rgba(13, 110, 253, 0.1);
   animation: move 4s ease-in-out infinite;
   transition: all 1s ease-in-out;

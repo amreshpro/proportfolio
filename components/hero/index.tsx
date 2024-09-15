@@ -1,5 +1,6 @@
 "use client";
 
+import { PROFILE, BIO } from "@/data/ABOUT";
 import { useThemeStore } from "@/store/themeStore";
 
 
@@ -13,7 +14,7 @@ export default function Hero() {
           isDarkModeEnabled
             ? ""
             : ""
-        }   min-h-screen flex justify-between gap-6 sm:flex-wrap-reverse items-center p-4 w-screen sm:mt-4 mt-0 `}
+        }   min-h-screen flex justify-center items-center  md:flex-col-reverse gap-8 sm:px-2 py-2  md:px-24 px-52`}
       >
         <HeroContent />
         <HeroImage />
@@ -22,9 +23,6 @@ export default function Hero() {
   );
 }
 
-const PROFILE = "Web Developer";
-const BIO =
-  " I am a passionate and innovative web developer with a focus on creating engaging and interactive web experiences. I specialize in using cutting-edge technologies and frameworks to bring ideas to life.";
 
 const HeroContent = () => {
   return (

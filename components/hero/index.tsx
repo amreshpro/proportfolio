@@ -3,7 +3,6 @@
 import { PROFILE, BIO } from "@/data/ABOUT";
 import { useThemeStore } from "@/store/themeStore";
 
-
 export default function Hero() {
   const isDarkModeEnabled = useThemeStore((state) => state.isDarkModeEnabled);
 
@@ -11,10 +10,8 @@ export default function Hero() {
     <>
       <div
         className={` ${
-          isDarkModeEnabled
-            ? ""
-            : ""
-        }   min-h-screen flex justify-center items-center  md:flex-col-reverse gap-8 sm:px-2 py-2  md:px-24 px-52`}
+          isDarkModeEnabled ? "" : ""
+        }   min-h-screen flex justify-center items-center  md:flex-col-reverse gap-8 sm:px-2 py-2 md:px-24 px-52`}
       >
         <HeroContent />
         <HeroImage />
@@ -22,7 +19,6 @@ export default function Hero() {
     </>
   );
 }
-
 
 const HeroContent = () => {
   return (

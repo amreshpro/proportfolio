@@ -27,7 +27,9 @@ body {
   }
 } */
 
-
+*,:root,body{
+  scroll-behavior: smooth;
+}
 
 @layer base {
   :root {

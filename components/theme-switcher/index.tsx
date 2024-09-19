@@ -1,9 +1,9 @@
 "use client";
 import { useTheme } from "next-themes";
-import { buttonVariants } from "../ui/button";
 import { useEffect, useState } from "react";
 import SunIcon from "../icons/SunIcon";
 import MoonIcon from "../icons/MoonIcon";
+import { Switch } from "../ui/switch";
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -22,11 +22,9 @@ export default function ThemeSwitcher() {
   };
 
   return (
-    <button
-      onClick={toggleTheme}
-      className={buttonVariants({ variant: "default" })}
-    >
-      {theme === "dark" ? <SunIcon/> : <MoonIcon/>}
+    <button className={" flex justify-center items-center gap-2 "}>
+      {theme === "dark" ? <SunIcon /> : <MoonIcon />}{" "}
+      <Switch onClick={toggleTheme} />
     </button>
   );
 }

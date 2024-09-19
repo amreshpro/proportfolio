@@ -14,14 +14,7 @@ export default function Footer() {
 
   return (
     <footer className="mt-2 flex flex-col items-center ">
-      <h1
-        id="contact"
-        className="uppercase mb-3 w-fit p-2 px-6 rounded-lg text-2xl sm:text-lg font-bold text-center gradient-text "
-      >
-        Connect With Me
-      </h1>
-
-      <div className={` mt-4 w-screen py-4 `}>
+         <div className={` mt-4 w-screen py-4 `}>
         <div
           className={` mt-6 flex flex-wrap gap-4 justify-center`}
         >

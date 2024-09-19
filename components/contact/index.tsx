@@ -44,7 +44,7 @@ export default function Contact() {
       onSubmit={(e) => sendEmail(e)}
       className="flex flex-col justify-center items-center "
     >
-      <div className="flex flex-col gap-4 px-2 w-full md:w-fit">
+      <div className="flex flex-col gap-4 px-2 sm:w-full w-80">
         <label>Name</label>
         <Input
           required

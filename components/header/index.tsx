@@ -1,27 +1,20 @@
 "use client";
 
-import NAV_LINKS from "@/data/NAV_LINKS";
-import Link from "next/link";
-import { buttonVariants } from "../ui/button";
 import ThemeSwitcher from "../theme-switcher";
+import MobileMenu from "./mobile-menu";
+import Navbar, { navbarVariant } from "./navbar";
 
 export default function Header() {
   return (
-    <div className="fixed z-50 w-screen flex gap-4 p-2 justify-center items-center ">
-     <div className="flex gap-4 w-fit p-2 border  border-gray-300 rounded-md">
+    <div className="fixed z-50 w-full mr-1 flex gap-4 p-2 justify-center sm:justify-items-start items-center ">
+     <div className="flex gap-4 w-fit  p-2 sm:w-screen sm:justify-between border border-gray-300 rounded-md  bg-gradient-to-r  from-blue-300  to-blue-600">
      <ThemeSwitcher />
-      <div className="flex gap-4 justify-center">
-        {NAV_LINKS?.map((link) => {
-          return (
-            <Link
-              href={link.path}
-              key={link.id}
-              className={buttonVariants({ variant: "default" })}
-            >
-              {link.title}
-            </Link>
-          );
-        })}
+      <div className=" sm:hidden flex gap-2 justify-center">
+       <Navbar navbarVariant={navbarVariant.ROW}/>
+      </div>
+      {/* mobileMenu */}
+      <div className="mobile hidden sm:block">
+        <MobileMenu/>
       </div>
      </div>
     </div>

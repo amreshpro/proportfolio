@@ -10,7 +10,7 @@ export default function Hero() {
       <h1 className="text-2xl">Hii, I am </h1>
       {/* Title */}
 
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+      <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500  to-orange-500  scroll-m-20 sm:text-4xl font-extrabold tracking-tight text-5xl">
         Amresh Maurya
       </h1>
 
@@ -18,19 +18,20 @@ export default function Hero() {
       <p className="text-xl text-muted-foreground">{BIO}</p>
 
       {/* Buttons */}
-      <div className="mt-8 gap-3 flex justify-center">
+      <div className="mt-8 gap-3 flex sm:flex-wrap justify-center">
         <Link
           href={SOCIAL_MEDIA_LINKS.github}
           className={buttonVariants({ variant: "default" })}
         >
-          <p className="text-xl px-4">Github </p>{" "}
+          <p className="text-xl px-4">Github</p>
           <FaGithub className="text-2xl" />
+
         </Link>
         <Link
           href={SOCIAL_MEDIA_LINKS.linkedin}
           className={buttonVariants({ variant: "default" })}
         >
-          <p className="text-xl px-4">Linkedin</p>{" "}
+          <p className="text-xl px-4">Linkedin</p>
           <FaLinkedin className="text-2xl" />
         </Link>
       </div>

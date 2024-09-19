@@ -2,21 +2,26 @@
 
 import NAV_LINKS from "@/data/NAV_LINKS";
 import Link from "next/link";
-
+import { buttonVariants } from "../ui/button";
+import ThemeSwitcher from "../theme-switcher";
 
 export default function Header() {
   return (
-    <div className=" flex gap-4 justify-center border-2 border-gray-300">
-      {NAV_LINKS?.map((link) => {
-        return (<Link
-            href={link.path}
-            key={link.id}
-            className="text-gray-500 hover:text-gray-900"
-          >
-            {link.title}hhh
-          </Link>
-        );
-      })}
+    <div className="fixed w-screen flex gap-4 p-2 justify-center items-center ">
+      <ThemeSwitcher />
+      <div className="flex gap-4 justify-center">
+        {NAV_LINKS?.map((link) => {
+          return (
+            <Link
+              href={link.path}
+              key={link.id}
+              className={buttonVariants({ variant: "default" })}
+            >
+              {link.title}
+            </Link>
+          );
+        })}
+      </div>
     </div>
   );
 }

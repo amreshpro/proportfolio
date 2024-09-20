@@ -16,7 +16,7 @@ export default function Home() {
   <Projects/>
   <Contact/>
   <Footer/>
-   <Toaster/>
+  <Toaster position="top-center" reverseOrder={true} />
  </main>
   );
 }

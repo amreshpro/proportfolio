@@ -1,4 +1,4 @@
-import  { Toaster } from 'react-hot-toast';
+import { Toaster } from "react-hot-toast";
 
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
@@ -9,14 +9,14 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
- <main className="px-2 py-2">
-  <Header/>
-  <Hero/>
-  <Skills/>
-  <Projects/>
-  <Contact/>
-  <Footer/>
-  <Toaster position="top-center" reverseOrder={true} />
- </main>
+    <main className="px-2 py-2">
+      <Header />
+      <Hero />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+      <Toaster position="top-center" reverseOrder={true} />
+    </main>
   );
 }

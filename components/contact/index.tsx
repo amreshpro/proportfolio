@@ -6,6 +6,7 @@ import { Input } from "../ui/input";
 import Loading from "../loader";
 import { buttonVariants } from "../ui/button";
 import { Textarea } from "../ui/textarea";
+import { twMerge } from "tailwind-merge";
 
 export default function Contact() {
   const form = useRef(null);
@@ -71,7 +72,7 @@ export default function Contact() {
         <Input
           type="submit"
           value="Send"
-          className={buttonVariants({ variant: "default" })}
+          className={twMerge( buttonVariants({ variant: "default" }),"rounded-full")}
         />
       </div>
     </form>

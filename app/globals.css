@@ -35,14 +35,40 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 221 39% 11%;
+    --foreground: 210 20% 98%;
+    --card: 215 27% 16%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 217, 33%, 17%;
+    --primary-foreground: 287 100% 95.5%;
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 217, 33%, 17%;
+    --input: 215 27.9% 16.9%;
+    --ring: 263.4 70% 50.4%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+
+  .light {
+    --background: 221 39% 11%;
     --foreground: 224 71.4% 4.1%;
     --card: 327.3 73.3% 97.1%;
     --card-foreground: 224 71.4% 4.1%;
     --popover: 0 0% 100%;
     --popover-foreground: 224 71.4% 4.1%;
-    /* --primary: 262.1 83.3% 57.8%; */
-    --primary: 328.6 85.5% 70.2%;
+    --primary: 257 24% 11%;
     --primary-foreground: 240 5.9% 10%;
     --secondary: 327.3 73.3% 97.1%;
     --secondary-foreground: 220.9 39.3% 11%;
@@ -63,32 +89,7 @@ body {
     --chart-5: 27 87% 67%;
   }
 
-  .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-    --card:222.2 84% 4.9%;
-    --card-foreground: 210 20% 98%;
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
-    --primary: 345.3 82.7% 40.8%;
-    --primary-foreground: 287 100% 95.5%;
-    --secondary:291, 63%, 6%;
-    --secondary-foreground: 210 20% 98%;
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 98%;
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 263.4 70% 50.4%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-  }
+ 
 }
 
 @layer base {
@@ -98,9 +99,12 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  .nav-item{
+    @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300;
+   }
+.nav-item-active{
+  @apply nav-item bg-white text-gray-900 hover:bg-white/70  hover:text-gray-900;
+}
 }
 
 
-.ebc-rewst{
-  background-color: hsl(291, 63%, 6%);
-}

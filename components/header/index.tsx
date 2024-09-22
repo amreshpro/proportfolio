@@ -1,22 +1,19 @@
 "use client";
-
-import ThemeSwitcher from "../theme-switcher";
-import MobileMenu from "./mobile-menu";
-import Navbar, { navbarVariant } from "./navbar";
+import NAV_LINKS from "@/data/NAV_LINKS";
+import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="fixed z-50 w-full mr-1 flex gap-4 p-2 justify-center sm:justify-items-start items-center ">
-     <div className="flex gap-4 w-fit  p-2 sm:w-screen sm:justify-between border border-gray-300 rounded-md  bg-gradient-to-r  from-blue-300  to-blue-600">
-     <ThemeSwitcher />
-      <div className=" sm:hidden flex gap-2 justify-center">
-       <Navbar navbarVariant={navbarVariant.ROW}/>
-      </div>
-      {/* mobileMenu */}
-      <div className="mobile hidden sm:block">
-        <MobileMenu/>
-      </div>
-     </div>
+    <div className="flex justify-center items-center fixed top-3 w-full">
+      <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
+        {NAV_LINKS?.map((link) => {
+          return (
+            <Link href={link.path} key={link.id} className={"nav-item "}>
+              {link.title}
+            </Link>
+          );
+        })}
+      </nav>
     </div>
   );
 }

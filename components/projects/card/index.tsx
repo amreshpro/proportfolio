@@ -12,12 +12,13 @@ import {
 import { PROJECT_TYPES } from "@/data/types";
 import Technology from "../technology-used";
 import { buttonVariants } from "@/components/ui/button";
+import { twMerge } from "tailwind-merge";
 
 export default function Project(props: PROJECT_TYPES) {
   const { title, image_url, github_link, live_link, description, tag } = props;
   return (
     <Card
-      className={`  secondary border border-gray-300 rounded-lg  transition-all ease-in-out hover:transform  hover:scale-105 p-3 w-80 h-[450px]`}
+      className={`  secondary border border-gray-300 rounded-xl  transition-all ease-in-out hover:transform  hover:scale-105 p-3 w-80 h-[450px]`}
     >
       <CardHeader className="img-box w-full rounded-lg p-2">
         <Link
@@ -38,19 +39,19 @@ export default function Project(props: PROJECT_TYPES) {
       <CardContent className="content w-full p-2">
         <CardTitle className="text-2xl font-bold">{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
-        <div className="btns py-2  flex gap-4">
+        <div className="btn py-2  flex gap-4">
           {github_link && (
             <Link
-              className={buttonVariants({ variant: "default" })}
+              className={twMerge( buttonVariants({ variant: "default" }),"bg-gray-900/90 rounded-full")}
               href={github_link}
             >
-              {" "}
+          
               Code
             </Link>
           )}
           {live_link && (
             <Link
-              className={buttonVariants({ variant: "default" })}
+              className={twMerge( buttonVariants({ variant: "default" }),"bg-gray-900/90 rounded-full")}
               href={live_link}
             >
               Check Live Site

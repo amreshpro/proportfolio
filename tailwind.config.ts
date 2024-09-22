@@ -36,7 +36,15 @@ const config: Config = {
   	// 		max: '339px'
   	// 	}
   	// },
+
+	  
+	
+
   	extend: {
+		fontFamily:{
+			sans:'var(--font-sans)',
+			serif:'var(--font-serif)',
+		  },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

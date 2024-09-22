@@ -88,8 +88,6 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
   }
-
- 
 }
 
 @layer base {
@@ -99,12 +97,14 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-  .nav-item{
+  .nav-item {
     @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300;
-   }
-.nav-item-active{
-  @apply nav-item bg-white text-gray-900 hover:bg-white/70  hover:text-gray-900;
-}
-}
+  }
+  .nav-item-active {
+    @apply nav-item bg-white text-gray-900 hover:bg-white/70  hover:text-gray-900;
+  }
 
-
+  .hero-ring {
+    @apply absolute border-2 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5;
+  }
+}

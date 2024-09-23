@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning >
       <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
-      <body className={twMerge(inter.variable,calistoga.variable,"bg-gray-900 text-white antialiased font-sans w-[98vw] overflow-x-hidden")}>{children}</body>
+      <body className={twMerge(inter.variable,calistoga.variable,"bg-gray-900 text-white antialiased font-sans w-[98vw] flex flex-col items-center overflow-x-hidden")}>{children}</body>
     </html>
   );
 }

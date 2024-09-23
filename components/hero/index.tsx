@@ -8,8 +8,8 @@ import Orbit from "../orbit";
 
 export default function Hero() {
   return (
-    <div className=" max-w-2xl min-h-[95vh] sm:h-auto  flex flex-col  gap-4 items-center justify-center text-center mx-auto">
-  <Orbit/>
+    <div className="max-w-2xl min-h-[95vh] sm:h-auto  flex flex-col  gap-4 items-center justify-center text-center p-2">
+      <Orbit />
       <h1 className="text-2xl">Hii, I am </h1>
       {/* Title */}
 

@@ -38,7 +38,7 @@ export default function Contact() {
   }
 
   if (isLoading) return <Loading />;
-  return (<>
+  return (<div className="p-2">
   <h1 id="contact" className="text-center text-3xl py-4 sm:text-2xl font-bold ">Contact</h1>
     <form
       ref={form}
@@ -76,6 +76,6 @@ export default function Contact() {
         />
       </div>
     </form>
-          </>
+          </div>
   );
 }

@@ -9,7 +9,7 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <main className="px-2 py-2 ">
+    <main className="px-2 py-2 w-[98vw]">
       <Header />
       <Hero />
       <Skills />

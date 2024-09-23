@@ -54,7 +54,7 @@ export default function Project(props: PROJECT_TYPES) {
               className={twMerge( buttonVariants({ variant: "default" }),"bg-gray-900/90 rounded-full")}
               href={live_link}
             >
-              Check Live Site
+              Visit Live Site
             </Link>
           )}
         </div>

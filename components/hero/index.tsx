@@ -5,12 +5,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 import Orbit from "./orbit";
-import Galaxy from "./galaxy";
 
 export default function Hero() {
   return (
     <div className="w-full flex flex-col justify-center items-center">
-     <Galaxy/>
       <Orbit />
       <div className="max-w-2xl min-h-[98vh] sm:h-auto  flex flex-col  gap-4 items-center justify-center text-center p-2">
         <h1 className="text-2xl">Hii, I am </h1>

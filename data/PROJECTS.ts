@@ -20,6 +20,23 @@ const NEXTJS = {
   image_url: "/skills/nextjs.png",
 };
 
+const NODEJS = {id:"nodejs",name:"Nodejs", image_url:"/skills/nodejs.svg"}
+const EXPRESSJS = {id:"expressjs",name:"Express",image_url:"/skills/expressjs.png"}
+const BUN = {id:"bunjs",name:"Bun",image_url:"/skills/bun.svg"}
+
+const MONGODB = {
+  id:"mongodb",
+  name:"MongoDB",
+  image_url:"/skills/mongodb.png"
+}
+
+const POSTMAN = {
+  id:"postman",
+  name:"Postman",
+  image_url:"/skills/postman.svg"
+}
+
+
 //  project
 export const PROJECTS: PROJECT_TYPES[] = [
   {
@@ -32,6 +49,18 @@ export const PROJECTS: PROJECT_TYPES[] = [
     live_link: "https://filmiflix.netlify.app/",
 
     tag: [NEXTJS, REACT, JS, TAILWINDCSS, CSS, HTML],
+  },
+
+  {
+    id: "projblog",
+    title: "Blogjs",
+    description:
+      "A straightforward and intuitive blog app that lets users easily create, edit, and manage their blog posts. Designed to provide a seamless blogging experience.",
+    image_url: "/projects/blogjs.jpg",
+    github_link: "https://github.com/amreshpro/blogjs",
+    live_link: "",
+
+    tag: [NODEJS,BUN,EXPRESSJS,MONGODB,POSTMAN],
   },
 ];
 

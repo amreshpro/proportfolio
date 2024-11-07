@@ -20,7 +20,9 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        secondary:"var(--secondary)"
+        secondary:"var(--secondary)",
+        ternary:"var(--ternary)",
+
       },
     },
   },

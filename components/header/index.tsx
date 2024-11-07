@@ -8,7 +8,7 @@ export default function Header() {
       <nav className="flex gap-1 p-0.5 px-4 py-2 border border-secondary/15 rounded-full bg-secondary backdrop-blur">
         {NAV_LINKS?.map((link) => {
           return (
-            <Link href={link.path} key={link.id} className={"nav-item "}>
+            <Link href={link.path} key={link.id} className={"nav-item hover:bg-ternary rounded-l-full rounded-r-full px-1.5 "}>
               {link.title}
             </Link>
           );

@@ -1,15 +1,15 @@
 export const PROGRAMMING_LANGUAGES = [
   {
     id: "pl-1",
-    name: "Java",
-    image_url: "/skills/java.svg",
-  },
-  {
-    id: "pl-2",
     name: "Javascript",
     image_url: "/skills/js.png",
   },
-
+  
+  {
+    id: "pl-2",
+    name: "Typescript",
+    image_url: "/skills/typescript.png",
+  },
 ];
 
 export const FRONTEND_TECHNOLOGY = [
@@ -47,12 +47,12 @@ export const BACKEND_TECHNOLOGY = [
     name: "Nodejs",
     image_url: "/skills/nodejs.svg",
   },
-
   {
-    id: "spring",
-    name: "Spring Boot",
-    image_url: "/skills/spring.svg",
+    id: "techidexpress",
+    name: "Express",
+    image_url: "/skills/expressjs.png",
   },
+
 
 ];
 

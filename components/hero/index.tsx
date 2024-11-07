@@ -23,7 +23,7 @@ export default function Hero() {
           <Link
             href={SOCIAL_MEDIA_LINKS.github}
             className={twMerge(
-              "bg-secondary rounded-full p-2 flex hover:bg-slate-900/50 "
+              "bg-secondary rounded-full p-2 flex hover:bg-ternary "
             )}
           >
             <p className="text-xl px-4">Github</p>
@@ -32,7 +32,7 @@ export default function Hero() {
           <Link
             href={SOCIAL_MEDIA_LINKS.linkedin}
             className={twMerge(
-              "bg-secondary rounded-full  p-2 flex hover:bg-slate-900/50"
+              "bg-secondary rounded-full  p-2 flex hover:bg-ternary"
             
             )}
           >

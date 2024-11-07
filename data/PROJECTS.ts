@@ -1,4 +1,5 @@
-import { PROJECT_TYPES } from "./types";
+import { PROJECT_TYPES } from "@/types";
+
 
 const VITE = { id: "techvite", name: "Vite", image_url: "/skills/vite.png" };
 const REACT = {

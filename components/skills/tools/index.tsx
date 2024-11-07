@@ -2,6 +2,7 @@ import { OTHER_SKILLS } from "@/data/SKILLS";
 import SkillTag from "../skill-tag";
 import { SkillPropTypes } from "@/types";
 
+
 export default function ToolBox() {
   return (
     <div className=" bg-gray-800/10 border-2 inset-2 rounded-xl py-3 w-fit border-white/70 ">

@@ -1,6 +1,7 @@
 import { PROGRAMMING_LANGUAGES } from "@/data/SKILLS";
-import { SkillPropTypes } from "@/types";
+
 import SkillTag from "../skill-tag";
+import { SkillPropTypes } from "@/types";
 
 export default function ProgrammingLanguages() {
   return (

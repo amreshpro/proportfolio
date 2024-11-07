@@ -1,6 +1,6 @@
 import { BACKEND_TECHNOLOGY } from "@/data/SKILLS";
 import SkillTag from "../skill-tag";
-import { SkillPropTypes } from "@/data/types";
+import { SkillPropTypes } from "@/types";
 
 export default function BackendTechnology() {
   return (

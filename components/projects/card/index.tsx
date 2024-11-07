@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { PROJECT_TYPES } from "@/data/types";
+import { PROJECT_TYPES } from "@/types";
 import Technology from "../technology-used";
 
 import { twMerge } from "tailwind-merge";

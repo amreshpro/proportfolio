@@ -1,6 +1,6 @@
 import DATABASE from "@/data/DATABASE";
-import { SkillPropTypes } from "@/types";
 import SkillTag from "../skill-tag";
+import { SkillPropTypes } from "@/types";
 
 export default function Databases() {
   return (

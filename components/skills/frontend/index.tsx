@@ -1,6 +1,7 @@
 import { FRONTEND_TECHNOLOGY } from "@/data/SKILLS";
-import { SkillPropTypes } from "@/types";
+
 import SkillTag from "../skill-tag";
+import { SkillPropTypes } from "@/types";
 
 export default function FrontendTechnology() {
   return (

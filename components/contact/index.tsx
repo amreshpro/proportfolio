@@ -76,7 +76,7 @@ export default function Contact() {
             type="submit"
             value="Send"
             className={twMerge(
-              "rounded-full"
+              "bg-secondary border border-secondary/15 rounded-full p-2 flex hover:bg-ternary "
             )}
           />
         </div>

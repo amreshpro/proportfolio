@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-*,:root,html,body{
+*,
+:root,
+html,
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -10,35 +13,37 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #1d1b26;
-  /* --btn-background:#fff; */
-  --secondary:#3d3b45;
-  --ternary : #605e67;
+  --shade-1: #363b4e;
+  --shade-2: #4f3b78;
+  --shade-3: #927fbf;
+  --shade-4: #c4bbf0;
+
+  --primary: var(--shade-1);
+  --secondary: var(--shade-2);
+  --ternary: var(--shade-3);
+  --light: var(--shade-4);
 }
-
-
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1d1b26;
-    --foreground: #ededed;
-  --secondary:#3d3b45;
-  --ternary : #605e67;
+    --shade-4: #9389b1;
+    --shade-3: #504a6e;
+    --shade-2: #261f3a;
+    --shade-1: #18122B;
 
+    --primary: var(--shade-1);
+    --secondary: var(--shade-2);
+    --ternary: var(--shade-3);
+    --light: var(--shade-4);
   }
 }
 
-
-
-
-.btn-dark{
-background-color: var(--secondary);
-padding: 5px;
-
+.btn-dark {
+  background-color: var(--secondary);
+  padding: 5px;
 }
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--light);
+  background: var(--primary);
   font-family: Arial, Helvetica, sans-serif;
 }

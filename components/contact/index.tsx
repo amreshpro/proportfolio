@@ -71,7 +71,7 @@ export default function Contact() {
             required
             name="message"
             placeholder="Type your message here."
-            className="rounded-lg"
+            className="rounded-lg px-2"
           />
           <input
             type="submit"

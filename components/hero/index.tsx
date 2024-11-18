@@ -8,7 +8,7 @@ import { twMerge } from "tailwind-merge";
 export default function Hero() {
   return (
     <div className="w-full flex sm:flex-wrap-reverse justify-center  gap-16 sm:gap-2 items-center">
-      <Image src={"/coding.jpg"} alt={"coding"} width={300} height={300} className="rounded-full" />
+      <Image src={"/profile/amresh.png"} alt={"coding"} width={300} height={300} className="rounded-full" />
       <div className="max-w-2xl min-h-[98vh] sm:h-auto  flex flex-col  gap-4 items-center justify-center text-center p-2">
         <h1 className="text-2xl">Hii, I am </h1>
         {/* Title */}

@@ -10,14 +10,16 @@ body {
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 :root {
-  --shade-4: #12181b;
-  --shade-3: #9ec6fa;
-  --shade-2: #ccf1f7;
-  --shade-1: #e5fcd6;
+
+
+  --shade-1: #5E5BAC;
+  --shade-2: #3E4393;
+  --shade-3: #4B5296;
+  --shade-4: #ceedfa;
 
   --primary: var(--shade-1);
   --secondary: var(--shade-2);
@@ -25,11 +27,16 @@ body {
   --light: var(--shade-4);
 }
 
+.pattern4 {
+  background: url("/pattern/pattern4.jpg");
+  z-index: -10;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --shade-1: #5E5BAC;
-    --shade-2: #3E4393;
-    --shade-3: #4B5296;
+    --shade-1: #090742;
+    --shade-2: #050830;
+    --shade-3: #151b3d;
     --shade-4: #ceedfa;
 
     --primary: var(--shade-1);
@@ -38,22 +45,13 @@ body {
     --light: var(--shade-4);
   }
 
-  .pattern1 {
-    background: url("/pattern/pattern1.jpg");
-  }
-  .pattern2 {
-    background: url("/pattern/pattern2.png");
-  }
-  .pattern3 {
-    background: url("/pattern/pattern3.jpg");
-  }
+ 
+
   .pattern4 {
-    background: url("/pattern/pattern4.jpg");
+    background: url("/pattern/pattern5.jpg");
     z-index: -10;
   }
-  .pattern5 {
-    background: url("/pattern/pattern5.jpg");
-  }
+
 }
 
 .btn-dark {

@@ -33,7 +33,7 @@ export default function RootLayout({
         <meta name="description" content="Your website description here" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased pattern4 `}
       >
         
         {children}

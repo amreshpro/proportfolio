@@ -10,6 +10,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-weight: 600;
 }
 
 :root {
@@ -26,10 +27,10 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --shade-1: #12181b;
-    --shade-2: #202731;
-    --shade-3: #27333a;
-    --shade-4: #e5fcd6;
+    --shade-1: #5E5BAC;
+    --shade-2: #3E4393;
+    --shade-3: #4B5296;
+    --shade-4: #060b44;
 
     --primary: var(--shade-1);
     --secondary: var(--shade-2);
@@ -48,6 +49,7 @@ body {
   }
   .pattern4 {
     background: url("/pattern/pattern4.jpg");
+    z-index: -10;
   }
   .pattern5 {
     background: url("/pattern/pattern5.jpg");

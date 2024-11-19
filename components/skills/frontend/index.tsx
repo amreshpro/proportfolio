@@ -5,7 +5,7 @@ import { SkillPropTypes } from "@/types";
 
 export default function FrontendTechnology() {
   return (
-    <div className=" bg-gray-800/10 border-2 inset-2 rounded-xl py-3 w-fit border-white/70 ">
+    <div className=" bg-secondary border-2 inset-2 rounded-xl py-3 w-fit border-white/70 ">
       <h1 className="text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#f81879ee] to-[#ff4f0a] ">
         Frontend Technology
       </h1>

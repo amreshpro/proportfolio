@@ -5,7 +5,7 @@ import { SkillPropTypes } from "@/types";
 
 export default function ToolBox() {
   return (
-    <div className=" bg-gray-800/10 border-2 inset-2 rounded-xl py-3 w-fit border-white/70 ">
+    <div className=" bg-secondary border-2 inset-2 rounded-xl py-3 w-fit border-white/70 ">
       <h1 className="mt-1 text-2xl sm:text-xl font-bold text-center bg-gradient-to-r bg-clip-text text-transparent from-[#ff8dd9ee] to-[#ff8839] ">
         Development & Productivity Tool I Use
       </h1>

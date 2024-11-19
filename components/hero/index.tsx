@@ -25,7 +25,7 @@ export default function Hero() {
           <Link
             href={SOCIAL_MEDIA_LINKS.github}
             className={twMerge(
-              "bg-secondary border border-secondary/15 rounded-full p-2 flex hover:bg-ternary "
+              "btn-dark hover:bg-secondary rounded-full border border-secondary/15 p-2 flex "
             )}
           >
             <p className="text-xl px-4">Github</p>
@@ -34,7 +34,7 @@ export default function Hero() {
           <Link
             href={SOCIAL_MEDIA_LINKS.linkedin}
             className={twMerge(
-              "bg-secondary border border-secondary/15 rounded-full  p-2 flex hover:bg-ternary"
+              "btn-dark hover:bg-secondary rounded-full border border-secondary/15 p-2 flex "
             )}
           >
             <p className="text-xl px-4">Linkedin</p>
@@ -44,8 +44,9 @@ export default function Hero() {
 
         <Link
           href={"/resume.pdf"}
-          className="p-2 px-4 font-bold  rounded-full border border-secondary/15 bg-secondary hover:scale-110 "
-        >
+          className={twMerge(
+            "btn-dark hover:bg-secondary rounded-full border border-secondary/15 p-2 flex "
+          )}  >
           Resume
         </Link>
 

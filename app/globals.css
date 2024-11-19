@@ -13,10 +13,10 @@ body {
 }
 
 :root {
-  --shade-1: #363b4e;
-  --shade-2: #4f3b78;
-  --shade-3: #927fbf;
-  --shade-4: #c4bbf0;
+  --shade-4: #12181b;
+  --shade-3: #9ec6fa;
+  --shade-2: #ccf1f7;
+  --shade-1: #e5fcd6;
 
   --primary: var(--shade-1);
   --secondary: var(--shade-2);
@@ -26,10 +26,10 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --shade-4: #9389b1;
-    --shade-3: #504a6e;
-    --shade-2: #261f3a;
-    --shade-1: #18122B;
+    --shade-1: #12181b;
+    --shade-2: #202731;
+    --shade-3: #27333a;
+    --shade-4: #e5fcd6;
 
     --primary: var(--shade-1);
     --secondary: var(--shade-2);
@@ -39,13 +39,13 @@ body {
 }
 
 .btn-dark {
-  background-color: var(--secondary);
-  padding: 5px;
+  background-color: var(--ternary);
+  padding: 5px 10px;
 }
 
-
-input,textarea{
-  @apply bg-secondary text-light
+input,
+textarea {
+  @apply bg-secondary text-light;
 }
 
 body {

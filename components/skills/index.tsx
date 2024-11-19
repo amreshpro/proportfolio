@@ -6,7 +6,7 @@ import ToolBox from "./tools";
 
 export default function Skills() {
   return (
-    <div className="flex p-4 flex-col justify-center items-center">
+    <div className=" flex p-4 flex-col justify-center items-center">
       <h1
         id="skills"
         className="my-8 text-3xl sm:text-2xl font-bold  text-center  "

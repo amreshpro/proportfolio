@@ -9,7 +9,7 @@ export default function Projects(){
 
   return (
     <div
-      className={`mt-4 flex  flex-col justify-center items-center px-4 w-full `}
+      className={` pattern1  mt-4 flex  flex-col justify-center items-center px-4 w-full `}
     >
       <h1
         id="projects"

@@ -7,13 +7,20 @@ import { twMerge } from "tailwind-merge";
 
 export default function Hero() {
   return (
-    <div className="w-full flex sm:flex-wrap-reverse justify-center  gap-16 sm:gap-2 items-center">
-      <Image src={"/profile/amresh.png"} alt={"coding"} width={300} height={300} className="rounded-full" />
+    <div className=" pattern4 w-full flex sm:flex-wrap-reverse justify-center  gap-16 sm:gap-2 items-center">
+   
+      <Image
+        src={"/profile/amresh.png"}
+        alt={"coding"}
+        width={300}
+        height={300}
+        className="rounded-full"
+      />
       <div className="max-w-2xl min-h-[98vh] sm:h-auto  flex flex-col  gap-4 items-center justify-center text-center p-2">
-        <h1 className="text-2xl">Hii, I am </h1>
+        <h1 className="text-2xl font-bold">Hii, I am </h1>
         {/* Title */}
 
-        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500  to-orange-500  scroll-m-20 sm:text-5xl md:text-6xl text-7xl font-extrabold tracking-tight">
+        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-100  to-orange-500  scroll-m-20 sm:text-5xl md:text-6xl text-8xl font-extrabold tracking-tight">
           Amresh Maurya
         </h1>
 
@@ -46,7 +53,8 @@ export default function Hero() {
           href={"/resume.pdf"}
           className={twMerge(
             "btn-dark hover:bg-secondary rounded-full border border-secondary/15 p-2 flex "
-          )}  >
+          )}
+        >
           Resume
         </Link>
 

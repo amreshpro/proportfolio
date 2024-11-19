@@ -13,7 +13,7 @@ export default function Footer() {
 
 
   return (
-    <footer className="mt-2 flex flex-col items-center ">
+    <footer className=" mt-2 flex flex-col items-center ">
          <div className={` mt-4 w-screen py-4 `}>
         <div
           className={` mt-6 flex flex-wrap gap-4 justify-center`}

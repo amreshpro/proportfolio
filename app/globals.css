@@ -36,6 +36,22 @@ body {
     --ternary: var(--shade-3);
     --light: var(--shade-4);
   }
+
+  .pattern1 {
+    background: url("/pattern/pattern1.jpg");
+  }
+  .pattern2 {
+    background: url("/pattern/pattern2.png");
+  }
+  .pattern3 {
+    background: url("/pattern/pattern3.jpg");
+  }
+  .pattern4 {
+    background: url("/pattern/pattern4.jpg");
+  }
+  .pattern5 {
+    background: url("/pattern/pattern5.jpg");
+  }
 }
 
 .btn-dark {
@@ -52,4 +68,5 @@ body {
   color: var(--light);
   background: var(--primary);
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 0px 55px 0px;
 }

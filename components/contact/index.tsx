@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import Loading from "../loader";
-import { twMerge } from "tailwind-merge";
+import Button from "../ui/Button";
 
 export default function Contact() {
   const form = useRef(null);
@@ -36,7 +36,7 @@ export default function Contact() {
 
   if (isLoading) return <Loading />;
   return (
-    <div className="p-2">
+    <div className="p-2 w-full flex flex-col items-center">
       <h1
         id="contact"
         className="text-center text-3xl py-4 sm:text-2xl font-bold "
@@ -46,7 +46,7 @@ export default function Contact() {
       <form
         ref={form}
         onSubmit={(e) => sendEmail(e)}
-        className="flex flex-col justify-center items-center "
+        className="flex flex-col justify-center items-center w-fit "
       >
         <div className="flex flex-col gap-4 px-2 sm:w-full w-80">
           <label>Name</label>
@@ -73,13 +73,14 @@ export default function Contact() {
             placeholder="Type your message here."
             className="rounded-lg px-2"
           />
+          <Button>
+
           <input
             type="submit"
             value="Send"
-            className={twMerge(
-              "btn-dark hover:bg-secondary rounded-full border border-secondary/15  "
-            )}
-          />
+     
+            />
+            </Button>
         </div>
       </form>
     </div>

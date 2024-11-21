@@ -3,11 +3,12 @@ import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
-import { twMerge } from "tailwind-merge";
+import Button from "../ui/Button";
+import ProButton from "../ui/ProButton";
 
 export default function Hero() {
   return (
-    <div className="pattern  w-full flex sm:flex-wrap-reverse justify-center  gap-16 sm:gap-2 items-center py-4">
+    <div className="  w-full flex md:flex-wrap-reverse justify-center  gap-16 sm:gap-2 items-center py-4">
       <div className="image p-2 rounded-full border-2 border-slate-400">
         <Image
           src={"/profile/amresh.png"}
@@ -30,34 +31,29 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="mt-8 gap-3 flex sm:flex-wrap justify-center items-center">
-          <Link
-            href={SOCIAL_MEDIA_LINKS.github}
-            className={twMerge(
-              "btn-dark hover:bg-secondary rounded-full border border-secondary/15 p-2 flex "
-            )}
-          >
-            <p className="text-xl px-4">Github</p>
-            <FaGithub className="text-2xl" />
-          </Link>
-          <Link
-            href={SOCIAL_MEDIA_LINKS.linkedin}
-            className={twMerge(
-              "btn-dark hover:bg-secondary rounded-full border border-secondary/15 p-2 flex "
-            )}
-          >
-            <p className="text-xl px-4">Linkedin</p>
-            <FaLinkedin className="text-2xl" />
-          </Link>
+          <Button>
+            <Link
+              href={SOCIAL_MEDIA_LINKS.github}
+              className="flex justify-center items-center"
+            >
+              <p className="text-xl px-4">Github</p>
+              <FaGithub className="text-2xl" />
+            </Link>
+          </Button>
+          <Button>
+            <Link
+              href={SOCIAL_MEDIA_LINKS.linkedin}
+              className="flex justify-center items-center"
+            >
+              <p className="text-xl px-4">Linkedin</p>
+              <FaLinkedin className="text-2xl" />
+            </Link>
+          </Button>
         </div>
 
-        <Link
-          href={"/resume.pdf"}
-          className={twMerge(
-            "btn-dark hover:bg-secondary rounded-full border border-secondary/15 p-2 flex "
-          )}
-        >
-          Resume
-        </Link>
+        <ProButton>
+          <Link href={"/resume.pdf"}>Resume</Link>
+        </ProButton>
 
         {/* End Buttons */}
       </div>

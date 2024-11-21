@@ -4,7 +4,7 @@ import Image from "next/image";
 import { PROJECT_TYPES } from "@/types";
 import Technology from "../technology-used";
 
-import { twMerge } from "tailwind-merge";
+import Button from "@/components/ui/Button";
 
 export default function Project(props: PROJECT_TYPES) {
   const { title, image_url, github_link, live_link, description, tag } = props;
@@ -31,22 +31,16 @@ export default function Project(props: PROJECT_TYPES) {
       <div className="content w-full p-2">
         <h1 className="text-2xl font-bold">{title}</h1>
         <p>{description}</p>
-        <div className="btn py-2   flex items-center gap-4">
+        <div className="btn flex items-center gap-4">
           {github_link && (
-            <Link
-              className={twMerge("btn-dark hover:bg-secondary rounded-full ")}
-              href={github_link}
-            >
-              Code
-            </Link>
+            <Button>
+              <Link href={github_link}>Code</Link>
+            </Button>
           )}
           {live_link && (
-            <Link
-              className={twMerge("btn-dark hover:bg-secondary rounded-full")}
-              href={live_link}
-            >
-              Visit Live Site
-            </Link>
+            <Button>
+              <Link href={live_link}>Visit Live Site</Link>
+            </Button>
           )}
         </div>
         <div className="tag flex  gap-2 sm:gap-1">

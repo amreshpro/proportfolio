@@ -7,20 +7,21 @@ import { twMerge } from "tailwind-merge";
 
 export default function Hero() {
   return (
-    <div className=" pattern4 w-full flex sm:flex-wrap-reverse justify-center  gap-16 sm:gap-2 items-center">
-   
-      <Image
-        src={"/profile/amresh.png"}
-        alt={"coding"}
-        width={300}
-        height={300}
-        className="rounded-full"
-      />
+    <div className="pattern  w-full flex sm:flex-wrap-reverse justify-center  gap-16 sm:gap-2 items-center py-4">
+      <div className="image p-2 rounded-full border-2 border-slate-400">
+        <Image
+          src={"/profile/amresh.png"}
+          alt={"coding"}
+          width={300}
+          height={300}
+          className="rounded-full"
+        />
+      </div>
       <div className="max-w-2xl min-h-[98vh] sm:h-auto  flex flex-col  gap-4 items-center justify-center text-center p-2">
         <h1 className="text-2xl font-bold">Hii, I am </h1>
         {/* Title */}
 
-        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-100  to-orange-500  scroll-m-20 sm:text-5xl md:text-6xl text-8xl font-extrabold tracking-tight">
+        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-100  to-sky-600  scroll-m-20 sm:text-5xl md:text-6xl text-8xl font-extrabold tracking-tight">
           Amresh Maurya
         </h1>
 

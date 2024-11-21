@@ -52,7 +52,7 @@ export default function Hero() {
         </div>
 
         <ProButton>
-          <Link href={"/resume.pdf"}>Resume</Link>
+          <Link href={SOCIAL_MEDIA_LINKS.resume}>Resume</Link>
         </ProButton>
 
         {/* End Buttons */}

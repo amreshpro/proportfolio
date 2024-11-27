@@ -3,7 +3,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 *,
 :root,
 html,
@@ -28,8 +27,6 @@ body {
   --light: var(--shade-4);
 }
 
-
-
 @media (prefers-color-scheme: dark) {
   :root {
     --shade-1: #000319;
@@ -42,16 +39,12 @@ body {
     --ternary: var(--shade-3);
     --light: var(--shade-4);
   }
-
-
 }
 
 .btn-dark {
   background-color: var(--ternary);
   padding: 5px 10px;
 }
-
-
 
 body {
   color: var(--light);

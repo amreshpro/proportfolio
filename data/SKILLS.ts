@@ -5,11 +5,17 @@ export const PROGRAMMING_LANGUAGES = [
     image_url: "/skills/js.png",
   },
   
+  // {
+  //   id: "pl-2",
+  //   name: "Typescript",
+  //   image_url: "/skills/typescript.png",
+  // },
   {
-    id: "pl-2",
-    name: "Typescript",
-    image_url: "/skills/typescript.png",
+    id: "pl-3",
+    name: "C++",
+    image_url: "/skills/cpp.png",
   },
+
 ];
 
 export const FRONTEND_TECHNOLOGY = [

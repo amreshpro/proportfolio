@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 *,
 :root,
 html,
@@ -15,11 +16,31 @@ body {
   font-weight: 400;
 }
 
-:root {
-  --shade-1: #5e5bac;
-  --shade-2: #3e4393;
-  --shade-3: #4b5296;
-  --shade-4: #ceedfa;
+
+
+/* Dark Mode Variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shade-1: #000319; /* Dark mode primary background */
+  --shade-2: #090d26; /* Dark mode secondary */
+  --shade-3: #04071d; /* Dark mode ternary */
+  --shade-4: #cbacf9; /* Dark mode text color */
+
+  --primary: var(--shade-1);
+  --secondary: var(--shade-2);
+  --ternary: var(--shade-3);
+  --light: var(--shade-4);
+  }
+}
+
+
+
+:root,html.light {
+  --shade-1: #f9f9f9; /* Site background: Slight off-white for less strain */
+  --shade-2: #ffffff; /* Card background: Pure white for a clean look */
+  --shade-3: #e8effd; /* Button color: Soft blue-gray for subtle contrast */
+  --shade-4: #222222; /* Text color: Dark gray for better readability */
+  
 
   --primary: var(--shade-1);
   --secondary: var(--shade-2);
@@ -27,28 +48,57 @@ body {
   --light: var(--shade-4);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --shade-1: #000319;
-    --shade-2: #090d26;
-    --shade-3: #04071d;
-    --shade-4: #cbacf9;
+html.dark {
+  --shade-1: #000319; /* Dark mode primary background */
+  --shade-2: #090d26; /* Dark mode secondary */
+  --shade-3: #04071d; /* Dark mode ternary */
+  --shade-4: #cbacf9; /* Dark mode text color */
 
-    --primary: var(--shade-1);
-    --secondary: var(--shade-2);
-    --ternary: var(--shade-3);
-    --light: var(--shade-4);
-  }
+  --primary: var(--shade-1);
+  --secondary: var(--shade-2);
+  --ternary: var(--shade-3);
+  --light: var(--shade-4);
 }
 
-.btn-dark {
-  background-color: var(--ternary);
-  padding: 5px 10px;
-}
 
+/* General Styles */
 body {
   color: var(--light);
-  background: var(--primary);
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0px 0px 55px 0px;
+  background-color: var(--primary);
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Buttons */
+.btn-dark {
+  background-color: var(--ternary);
+  color: var(--light);
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-dark:hover {
+  background-color: var(--secondary);
+  transform: scale(1.05);
+}
+
+/* Inputs and Textareas */
+input,
+textarea {
+  background-color: var(--shade-3);
+  color: var(--light);
+  border: 1px solid var(--secondary);
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--light);
+  background-color: var(--ternary);
 }

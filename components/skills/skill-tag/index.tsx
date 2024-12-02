@@ -9,7 +9,7 @@ export default function SkillTag({
 }) {
   return (
     <div className=" inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full p-0.5">
-      <div className="flex gap-2 p-2  bg-ternary relative group transition duration-200 text-white hover:bg-transparent rounded-full">
+      <div className="flex gap-2 p-2  bg-ternary relative group transition duration-200  hover:bg-transparent rounded-full">
      
           <Image
             unoptimized={true}

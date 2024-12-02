@@ -1,4 +1,3 @@
-import { BIO } from "@/data/ABOUT";
 import SOCIAL_MEDIA_LINKS from "@/data/SOCIAL_MEDIA_LINKS";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
@@ -22,12 +21,12 @@ export default function Hero() {
         <h1 className="text-2xl font-bold">Hii, I am </h1>
         {/* Title */}
 
-        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-100  to-sky-600  scroll-m-20 sm:text-5xl md:text-6xl text-8xl font-extrabold tracking-tight">
+        <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400  to-sky-600  scroll-m-20 sm:text-5xl md:text-6xl text-7xl font-extrabold tracking-tight">
           Amresh Maurya
         </h1>
 
         {/* End Title */}
-        <p className="text-xl text-muted-foreground">{BIO}</p>
+        {/* <p className="text-xl text-muted-foreground">{BIO}</p> */}
 
         {/* Buttons */}
         <div className="mt-8 gap-3 flex sm:flex-wrap justify-center items-center">

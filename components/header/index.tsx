@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="z-50 flex justify-center items-center fixed top-3 sm:top-[90vh] w-full  ">
+    <header className="z-50 flex justify-center items-center self-center mt-2 fixed  ">
       <nav className="flex gap-1 p-0.5  rounded-full backdrop-blur-md    bg-gradient-to-r from-purple-600 to-blue-500">
      <div className="bg-secondary rounded-full p-2">
 

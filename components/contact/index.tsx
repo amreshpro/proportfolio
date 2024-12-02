@@ -74,13 +74,12 @@ export default function Contact() {
             className="rounded-lg px-2"
           />
           <Button>
-
-          <input
-            type="submit"
-            value="Send"
-     
+            <input
+              type="submit"
+              value="Send"
+              className="bg-inherit border-none"
             />
-            </Button>
+          </Button>
         </div>
       </form>
     </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import {ThemeProvider} from 'next-themes'
 
 
 
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <link rel="shortcut icon" href="./" type="image/x-icon" />
       <head>
         <link rel="icon" href="/favicon.ico" />
@@ -26,8 +26,10 @@ export default function RootLayout({
       <body
         className={` antialiased  `}
       >
-        
+        <ThemeProvider attribute="class">
+
         {children}
+        </ThemeProvider>
       </body>
     </html>
   );

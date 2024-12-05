@@ -16,31 +16,27 @@ body {
   font-weight: 400;
 }
 
-
-
 /* Dark Mode Variables */
 @media (prefers-color-scheme: dark) {
   :root {
-    --shade-1: #000319; /* Dark mode primary background */
-  --shade-2: #090d26; /* Dark mode secondary */
-  --shade-3: #04071d; /* Dark mode ternary */
-  --shade-4: #cbacf9; /* Dark mode text color */
+    --shade-1: #0f172a; /* Dark mode primary background */
+    --shade-2: #0f172a; /* Dark mode secondary */
+    --shade-3: #04071d; /* Dark mode ternary */
+    --shade-4: #f0f2f4; /* Dark mode text color */
 
-  --primary: var(--shade-1);
-  --secondary: var(--shade-2);
-  --ternary: var(--shade-3);
-  --light: var(--shade-4);
+    --primary: var(--shade-1);
+    --secondary: var(--shade-2);
+    --ternary: var(--shade-3);
+    --light: var(--shade-4);
   }
 }
 
-
-
-:root,html.light {
+:root,
+html.light {
   --shade-1: #f9f9f9; /* Site background: Slight off-white for less strain */
   --shade-2: #ffffff; /* Card background: Pure white for a clean look */
   --shade-3: #e8effd; /* Button color: Soft blue-gray for subtle contrast */
   --shade-4: #222222; /* Text color: Dark gray for better readability */
-  
 
   --primary: var(--shade-1);
   --secondary: var(--shade-2);
@@ -49,17 +45,16 @@ body {
 }
 
 html.dark {
-  --shade-1: #000319; /* Dark mode primary background */
-  --shade-2: #090d26; /* Dark mode secondary */
-  --shade-3: #04071d; /* Dark mode ternary */
-  --shade-4: #cbacf9; /* Dark mode text color */
+  --shade-1: #0f172a; /* Dark mode primary background */
+  --shade-2: #0f172a; /* Dark mode secondary */
+  --shade-3: #0f172a; /* Dark mode ternary */
+  --shade-4: #f0f2f4; /* Dark mode text color */
 
   --primary: var(--shade-1);
   --secondary: var(--shade-2);
   --ternary: var(--shade-3);
   --light: var(--shade-4);
 }
-
 
 /* General Styles */
 body {
@@ -90,7 +85,7 @@ input,
 textarea {
   background-color: var(--shade-3);
   color: var(--light);
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--light);
   padding: 8px;
   border-radius: 4px;
   transition: background-color 0.3s, border-color 0.3s;

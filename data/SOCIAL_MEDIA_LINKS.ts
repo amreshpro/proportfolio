@@ -5,7 +5,7 @@ const SOCIAL_MEDIA_LINKS = {
   linkedin: "https://linkedin.com/in/amresh9",
   portfolio: "https://amreshpro.vercel.app",
   mail: "amresh.terminal@gmail.com",
-  resume: "/Resume.pdf",
+  resume: "/Amresh_Maurya.pdf",
 };
 
 export default SOCIAL_MEDIA_LINKS;
